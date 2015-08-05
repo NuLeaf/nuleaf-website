@@ -1,0 +1,59 @@
+a:link, a:visited {
+   color: #999999 !important;
+}
+
+a:hover {
+  color: #666666 !important;
+  text-decoration: none !important;
+}
+
+body {
+   background-color: #CCCCCC !important;
+   font-family: Verdana,Arial,Helvetica,sans-serif;
+   font-size: 1em;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+a.sideLink {
+   color: #3399FF !important;
+}
+
+/*Overriding Bootstrap css */
+a.brand {
+   font-weight: bold !important;
+   color: #FFFFFF !important;
+}
+
+/*Overriding Bootstrap css */
+.nav {
+   margin-right: 64px !important;
+}
+
+.content-container {
+  text-align: justify;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 1000px;
+  min-height: 500px;
+  background-color: white;
+  overflow: auto;
+}
+
+/* Overriding Bootstrap css */
+.nav {
+ float: right !important;
+ font-size: 17px;  
+}
+
+
+.dropdown-menu li:hover {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
