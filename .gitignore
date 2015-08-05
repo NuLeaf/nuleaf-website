@@ -68,3 +68,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Host server stuff
+cgi-bin/
+forum/
