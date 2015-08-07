@@ -11,7 +11,7 @@ This repository includes the code for the main part of the [NuLEAF Technology We
 - Git, which you can get [here](https://git-scm.com/downloads) or from GitHub (see optional next step)
 - **Optional**: GitHub's GUI client for [Windows](https://windows.github.com/) or [Mac](https://mac.github.com/)
   - This will also install Git
-  - If you do choose to use the GUI client, it is still recommended (*-cough-* required *-cough-*) you learn the Git basics on the command line.
+  - If you do choose to use the GUI client, it is still recommended (*-cough- required -cough-*) you learn the Git basics on the command line.
 - The [Heroku Toolbelt](https://toolbelt.heroku.com/)
 - [MAMP](https://www.mamp.info/en/) for Windows/OSX or [LAMP](https://help.ubuntu.com/community/ApacheMySQLPHP) for Linux
 - An SFTP client (this will vary depending on your OS and preferences). Some options:
@@ -22,6 +22,8 @@ This repository includes the code for the main part of the [NuLEAF Technology We
 #### Things you need to know
 The links/resources provided below are optional to learn from. Feel free to suggest/add your own links and resources.
 
+- **Optional but highly recommended**: Command Line basics
+  - [The Command Line Crash Course](http://cli.learncodethehardway.org/book/)
 - Git
   - Start with [Try Git](https://try.github.io/levels/1/challenges/1)
   - Move on to [Git Calisthenics](http://www.vikingcodeschool.com/web-development-basics/git-calisthenics)
@@ -31,5 +33,3 @@ The links/resources provided below are optional to learn from. Feel free to sugg
   - *Share your own resource for learning PHP*
 - HTML/CSS and Javascript (frontend)
   - [Free Code Camp](http://www.freecodecamp.com/) covers all three + more and has a detailed learning track which links to other useful resources; as such, we highly recommend using this site for your learning. You do not have to work through all of it for the purposes of this website, especially where they want you to learn `nodejs`.
-- **Optional but highly recommended**: Command Line basics
-  - [The Command Line Crash Course](http://cli.learncodethehardway.org/book/)
