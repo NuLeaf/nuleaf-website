@@ -1,11 +1,11 @@
-<html>
+﻿<html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>NuLEAF Technologies</title>
 
       <link rel="shortcut icon" href="images/favicon.ico">
 
-      <link type="text/css" rel="stylesheet" href="css/main.css?v=1.1">
+      <link type="text/css" rel="stylesheet" href="css/main.css?v=1.2">
       <link type="text/css" rel="stylesheet" href="css/bootstrap-responsive.min.css">
       <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 
