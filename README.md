@@ -1,5 +1,5 @@
 # NuLEAF Technology Website
-This repository includes the code for the main part of the [NuLEAF Technology Website](http://nuleaftech.com/). This repository does NOT include the forum as the [software we are using](https://www.phpbb.com/). You can find the repository for the forum [here](https://github.com/NuLeaf/nuleaf-forum).
+This repository includes the code for the main part of the [NuLEAF Technology Website](http://nuleaftech.com/). This repository does NOT include the forum, which runs on [phpBB](https://www.phpbb.com/). You can find the repository for the customizable parts of the forum [here](https://github.com/NuLeaf/nuleaf-forum).
 
 ## Summary of Everything Needed to Get Started
 #### Accounts you need to sign up for
