@@ -1,0 +1,37 @@
+.row {
+    margin: 0px !important;
+}
+
+.parent:hover > div {
+  opacity: 0.5;
+}
+
+.parent:hover > div:hover {
+  opacity: 1.0;
+}
+
+.thumbnail {
+    width: 245px;
+}
+
+.col-xs-6, .col-md-3 {
+
+}
+
+a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
+    border-color: #8CC43F !important;
+}
+
+section.parent {
+    display: block;
+}
+
+.description {
+    display: none;
+    position: absolute;
+    width: 239px;
+    height: auto;
+    background-color: #FFFFFF;
+    z-index: 1;
+}
+

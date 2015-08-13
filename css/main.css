@@ -1,36 +1,69 @@
-a:link, a:visited {
-    color: #999999 !important;
+.form-control:focus {
+    border-color: #CCCCCC !important;
+    outline: 0 !important;
+    box-shadow: 0 0 8px rgba(24, 198, 79, 0.6) !important;
 }
 
-a:hover {
+#header, #navbar, .content-container, #myCarousel, footer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1100px;
+}
+
+#header {
+    margin-top: -20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    overflow: auto;
+    position: relative; 
+
+}
+
+#logo {
+    float: left;
+    width: 20%;
+}
+
+#search {
+    float: right !important;
+    position: absolute; 
+    bottom: 20px;
+    right: 20px;
+}
+
+#search-button {
+    margin-bottom: 3px;
+}
+
+input.form-control.search-bar {
+    width: 300px !important;
+    display: inline;
+}
+
+#navbar {
+    text-align: center;
+    height: 50px;
+    background-color: #A2BE74;
+    padding: 12px 0px;
+    font-size: large;
+    font-weight: bold;
+}
+
+a:link, a:focus, a:visited, .glyphicon {
+    color: #8CC43F !important;
+}
+
+#navbar a:link, #navbar a:focus, #navbar a:visited {
+    color: #FFFFFF !important;
+}
+
+a:hover, #navbar a:hover, #currentPage {
     color: #666666 !important;
     text-decoration: none !important;
 }
 
-
-a.sideLink {
-    color: #3399FF !important;
-}
-
-/*Overriding Bootstrap css */
-a.brand {
-    font-weight: bold !important;
-    color: #FFFFFF !important;
-}
-
-/*Overriding Bootstrap css */
-.nav {
-    margin-right: 64px !important;
-    float: right !important;
-    font-size: 17px;  
-} 
-
-.dropdown-menu li:hover {
-    visibility: visible;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
+.nav-link {
+    margin: 0px 30px;
 }
 
 body {
@@ -43,30 +76,38 @@ body {
 
 .content-container {
     text-align: justify;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 20px;
-    padding: 20px;
-    width: 1000px;
     min-height: 500px;
     background-color: white;
     overflow: auto;
 }
 
-img#banner {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.content-container div {
+    padding: 10px;
 }
 
-div#left-column {
+div {
+    text-align: initial;
+}
+
+div.left-column {
     float:left;
     width:45%;
 }
 
-div#right-column {
+div.right-column {
     float:right;
     width:50%;
+}
+
+p {
+    margin: 5px 0px !important;
+    display: block;
+}
+
+hr {
+    margin: 0px 0px !important;
+    border-width: 3px !important;
+    border-color: #AEAEAE !important;
 }
 
 .section-title, .title {
@@ -75,18 +116,71 @@ div#right-column {
 
 .section-title {
     color: #95B959;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.table {
+    margin: 20px 0px;
 }
 
 .title {
     color: #000000;
     font-weight: bold;
+    text-align: center;
 }
 
-.image-left {
-    float: left;
-    margin-right: 15px;
+footer {
+    background-color: #FFFFFF !important;
+    overflow: hidden;
+    padding: 10px;
 }
 
-.teaching-meeting {
-    padding-bottom: 15px;
+footer > div {
+    padding: 15px 0px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-gray {
+    color: #848484;
+}
+
+footer a:link, footer a:visited {
+    color: #848484 !important;
+}
+
+footer a:hover {
+    color: #8CC43F !important;
+    text-decoration: none !important;
+}
+
+footer #members a:link, footer #members a:visited {
+    color: #8CC43F !important;
+}
+
+footer #members a:hover {
+    color: #848484 !important;
+    text-decoration: none !important;
+}
+
+#members {
+    color: #8CC43F !important;
+}
+
+.vertical-center {
+    line-height: 50px;
 }
