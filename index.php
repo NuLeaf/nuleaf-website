@@ -89,7 +89,7 @@
         <img class="image-left" src="images/ShariqShah.jpg" width="200" alt="profile"/>
         <div class="text-wrap-right">
             Shariq is about to start his 5th year as a Computer Science student at San Jose State.  From an early age, he was obsessed with software and wanted to be a programmer.
-            He loves to make new friends and connections both personally and professionally. He loves to talk over start up ideas and am always looking for potential partners.
+            He loves to make new friends and connections both personally and professionally. He loves to talk over start up ideas and is always looking for potential partners.
             Some of his hobbies are photography, gaming, and programming.
             <p class="bold">For more information:</p>
             Flickr: <a href="https://www.flickr.com/photos/shariqs">https://www.flickr.com/photos/shariqs</a><br>
