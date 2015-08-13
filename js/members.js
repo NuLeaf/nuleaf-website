@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    // Members page descriptions
+    // Show descriptions when hover
     $(".thumbnail").mouseover(function() {
         $(this).children(".description").show();
     }).mouseout(function() {

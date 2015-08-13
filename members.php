@@ -6,6 +6,7 @@
 
     // Insert page CSS
     echo '<link type="text/css" rel="stylesheet" href="css/members.css?v=1.1">';
+    echo '<script type="text/javascript" src="js/members.js"></script>';
 ?>
 <div class="row">
     <!-- Managerial -->
