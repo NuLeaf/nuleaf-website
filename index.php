@@ -28,7 +28,7 @@
         </div>
 
         <div class="item">
-            <img class="clip" src="images/website.JPG" height="100" alt="Website">
+            <img class="clip" src="images/website.jpg" height="100" alt="Website">
             <div class="carousel-caption">
                 <h3>UNDER CONSTRUCTION</h3>
                 <p>Please be patient as our Website Team is diligently working to improve the website.</p>
