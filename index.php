@@ -10,8 +10,9 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
+
         <div class="item active">
-            <a href="about.php"><img src="images/slideshow1.jpg" height="100" alt="Project"></a>
+            <a href="about.php"><img src="images/slideshow1.JPG" height="100" alt="Project"></a>
             <div class="carousel-caption">
                 <h3>Who are we?</h3>
                 <p>Click to read about our project, progress to date, and future plans.</p>
@@ -19,7 +20,7 @@
         </div>
 
         <div class="item">
-            <a href="members.php"><img src="images/slideshow2.jpg" height="100" alt="Members"></a>
+            <a href="members.php"><img src="images/slideshow2.JPG" height="100" alt="Members"></a>
             <div class="carousel-caption">
                 <h3>Current Members</h3>
                 <p>We have over 60 members working on our project, with students and faculty all over the Bay Area.</p>
@@ -27,7 +28,7 @@
         </div>
 
         <div class="item">
-            <img class="clip" src="images/website.jpg" height="100" alt="Website">
+            <img class="clip" src="images/website.JPG" height="100" alt="Website">
             <div class="carousel-caption">
                 <h3>UNDER CONSTRUCTION</h3>
                 <p>Please be patient as our Website Team is diligently working to improve the website.</p>
