@@ -7,7 +7,7 @@
     // Insert page CSS
     echo '<link type="text/css" rel="stylesheet" href="css/members.css?v=1.1">';
 ?>
-<section class="parent">
+<div class="row">
     <!-- Managerial -->
     <div class="col-xs-6 col-md-3">
         <a href="#" class="thumbnail">
@@ -463,7 +463,7 @@
         </a>
     </div>
 
-</section>
+</div>
 
 <?php
 

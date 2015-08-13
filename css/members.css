@@ -2,11 +2,11 @@
     margin: 0px !important;
 }
 
-.parent:hover > div {
+.row:hover > div {
   opacity: 0.5;
 }
 
-.parent:hover > div:hover {
+.row:hover > div:hover {
   opacity: 1.0;
 }
 

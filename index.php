@@ -80,11 +80,25 @@
 <!-- Right column -->
 <div class="right-column">
     <p class="section-title">FEATURED PROJECTS</p><hr>
-
+    <div>
+        <p class="title">Visual Simulations Model - In Progress</p>
+    </div>
     <p class="section-title">TEACHING MEETINGS</p><hr>
     <div class="teaching-meeting">
+        <p class="title">Forum and Kakao Introduction - 8/13/2015</p>
+        <img class="image-left" src="images/ShariqShah.jpg" width="200" alt="profile"/>
+        <div class="text-wrap-right">
+            Shariq is about to start his 5th year as a Computer Science student at San Jose State.  From an early age, he was obsessed with software and wanted to be a programmer.
+            He loves to make new friends and connections both personally and professionally. He loves to talk over start up ideas and am always looking for potential partners.
+            Some of his hobbies are photography, gaming, and programming.
+            <p class="bold">For more information:</p>
+            Flickr: <a href="https://www.flickr.com/photos/shariqs">https://www.flickr.com/photos/shariqs</a><br>
+            LinkedIn: <a href="https://www.linkedin.com/in/shariqshah">https://www.linkedin.com/in/shariqshah</a>
+        </div>
+    </div>
+    <div class="teaching-meeting">
         <p class="title">Introduction to Nanotechnology - 8/7/2015</p>
-        <img class="image-left" src="images/MargaretAckroyd.jpg"/>
+        <img class="image-left" src="images/MargaretAckroyd.jpg" alt="profile"/>
         <div class="text-wrap-right">
             Margaret Ackroyd is a bioengineering major working towards a career in bio-nanotechnology research. <br>
             Bionanotechnology is a rapidly growing field that denotes research efforts tasked with exploring the relationships between nanoscience and biology;
@@ -95,12 +109,12 @@
     </div>
     <div class="teaching-meeting">
         <p class="title">Protein Folding and Physical Biomodeling - 7/31/2015</p>
-        <img class="image-left" src="images/PromitaChakraborty.jpg"/>
+        <img class="image-left" src="images/PromitaChakraborty.jpg" alt="profile"/>
         <div class="text-wrap-right">
             Dr. Promita Chakraborty is well versed in protein folding and is the exploring the new frontier of physical biomodeling.
             Physical biomodeling is a novel endeavor that intersects natural science, computational science, and precision physical modeling.
             She founded QuezyLab, which seeks to connect the macro-world to the nano-world. 
-            <br><b>For more information:</b><br>
+            <p class="bold">For more information:</p>
             QuezyLab: <a href="http://www.quezylab.com/">http://www.quezylab.com/</a><br>
             Peppytide & Peppy Molecules: <a href="http://www.peppytides.org/">http://www.peppytides.org/</a><br>
             Homepage: <a href="http://people.cs.vt.edu/~promita9/">http://people.cs.vt.edu/~promita9/</a>

@@ -5,7 +5,7 @@
 ?>
 
 <div>
-    <center><img src="images/teams.jpg" width="1000"></center>
+    <center><img src="images/teams.jpg" width="1000" alt="teams"></center>
 
     <h3><b>Pillars</b></h3><hr>
     <p class="section-title">Bio-inspired</p>

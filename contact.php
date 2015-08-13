@@ -4,7 +4,7 @@
     require_once('header.php');
 
     echo '<p class="title">' . $page_title . ' under construction</p>';
-    echo '<center>Email to: <a href="mailto:nuleaftechnologies@gmail.com">nuleaftechnologies@gmail.com</a></center>';
+    echo '<p class="center">Email to: <a href="mailto:nuleaftechnologies@gmail.com">nuleaftechnologies@gmail.com</a></p>';
 
     // Insert the page footer
     require_once('footer.php');
