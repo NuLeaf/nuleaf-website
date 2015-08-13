@@ -80,7 +80,9 @@
 <!-- Right column -->
 <div class="right-column">
     <p class="section-title">FEATURED PROJECTS</p><hr>
-
+    <div>
+        <p class="title">Visual Simulations Model - In Progress</p>
+    </div>
     <p class="section-title">TEACHING MEETINGS</p><hr>
     <div class="teaching-meeting">
         <p class="title">Introduction to Nanotechnology - 8/7/2015</p>

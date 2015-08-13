@@ -28,6 +28,7 @@
         </div>
 
         <div id="navbar">
+            <a class="nav-link" href="index.php">Home</a>
             <a class="nav-link" href="about.php">About</a>
             <a class="nav-link" href="faq.php">FAQ</a>
             <a class="nav-link" href="teams.php">Teams</a>

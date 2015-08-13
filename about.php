@@ -9,7 +9,7 @@
     <p>
         Producing electricity from plants is a powerful, established concept evident in up-and-coming research.  Past methods have involved the use of nanotechnology or natural soil chemistry.  These   
         studies demonstrate both feasibility and ability to commercialize.  However, previous investigations are limited by their low power generation, interference with natural plant processes, and     
-        reliance on the inefficiency of the photosynthetic pathway.
+        reliance on the inefficiency of the photosynthetic pathway.<br><br>
         In contrast, this project proposes a technique that could harness higher levels of power with minimal ecological impact.  The process will not rely on photosynthesis and will be harmlessly      
         integrated into the plant’s biological system and surrounding environment.  This research hinges upon nanogenetics and the use of the plant’s own carbon storage or other biological pathways to 
         create the nanoparticles of the coating and bioelectric network.  In comparison to solar panels, this project has the potential to be cheaper, less toxic, and more efficient by using natural 
@@ -19,10 +19,11 @@
     <p>
         The objective of this project is to develop a mechanism by which electricity can be generated from plants in a biologically harmless manner. This involves the genetic development of a nanoscale  
         optical coating on the leaves that will absorb light not used in photosynthesis. The heat captured by the coating will be transferred to electricity through a carbon nanotube network within the 
-        plant to a root wiring mesh and external power harvester. This is an ambitious, long-term project and several teams will be established. Our teams will focus on the modeling of protein-
-        nanostructure interactions, genetic engineering to create the optical coating and bioelectric network, and conductive root wiring mesh and external power harvester development. Additional 
-        literature search teams will guide our bio-inspired research to ensure the project’s commitment to healthy integration in the plant and ecosystem. The first stage of the project is team 
-        formation and an extended literature search. The goal for the summer is to have each team develop an experimental design report. This project is committed to scientific excellence and to 
+        plant to a root wiring mesh and external power harvester.<br><br>
+        Our teams will focus on the modeling of protein-nanostructure interactions, genetic engineering to create the optical coating and bioelectric network, 
+        and conductive root wiring mesh and external power harvester development. Additional literature search teams will guide our bio-inspired research 
+        to ensure the project’s commitment to healthy integration in the plant and ecosystem. The first stage of the project is team 
+        formation and an extended literature search. This project is committed to scientific excellence and to 
         teaching young scientists through “STEMinars” and real- world experience to help them gain confidence to develop both personally and professionally for their future careers.
     </p>
     <h4>STEPS</h4>
@@ -43,8 +44,7 @@
     <p>
         The proposal is three months old.  The project lead gave several presentations for recruitment.  Nearly 150 people applied and now 14 teams with a total of 60 people are established.  These 
         students come from various scientific backgrounds, including biology, chemistry, psychology, kinesiology, animation, and computer science, to name a few.  The education of students ranges from 
-        lower division undergraduate to master programs.  The STEMinars, in which students, industry professionals, and established scientists give lectures, have begun.  Given the three-month age of 
-        the project, we have already come incredibly far.
+        lower division undergraduate to master programs.  The STEMinars, in which students, industry professionals, and established scientists give lectures, have begun.
     </p>
 
     <p class="section-title">How to contribute?</p><hr>
