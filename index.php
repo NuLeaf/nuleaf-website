@@ -52,6 +52,9 @@
     <p class="section-title">LATEST UPDATES</p><hr>
     <table class="table table-striped">
         <tr>
+            <td><span class="title">August 21, 2015 - Teaching Meeting 5pm-7pm</span><br>Meeting Room at Campbell Library <br>Introduction to Organic Chemistry with Stan Bode</td>
+        </tr>
+        <tr>
             <td><span class="title">August 14, 2015 - Teaching Meeting 5pm-7pm</span><br>Orchard Room at Los Altos Library<br>Forum and Kakao Introduction with Shariq Shah</td>
         </tr>
         <tr>
