@@ -52,7 +52,7 @@
     <p class="section-title">LATEST UPDATES</p><hr>
     <table class="table table-striped">
         <tr>
-            <td><span class="title">August 14, 2015 - Teaching Meeting 5pm-7pm</span><br>Program Room at Los Altos Library<br>Forum and Kakao Introduction with Shariq Shah</td>
+            <td><span class="title">August 14, 2015 - Teaching Meeting 5pm-7pm</span><br>Orchard Room at Los Altos Library<br>Forum and Kakao Introduction with Shariq Shah</td>
         </tr>
         <tr>
             <td><span class="title">August 7, 2015 - Teaching Meeting 3:30pm-5:30pm</span><br>Meeting Room at Saratoga Library<br>Introduction to Nanotechnology with Margaret Ackroyd</td>
@@ -89,7 +89,7 @@
         <img class="image-left" src="images/ShariqShah.jpg" width="200" alt="profile"/>
         <div class="text-wrap-right">
             Shariq is about to start his 5th year as a Computer Science student at San Jose State.  From an early age, he was obsessed with software and wanted to be a programmer.
-            He loves to make new friends and connections both personally and professionally. He loves to talk over start up ideas and am always looking for potential partners.
+            He loves to make new friends and connections both personally and professionally. He loves to talk over start up ideas and is always looking for potential partners.
             Some of his hobbies are photography, gaming, and programming.
             <p class="bold">For more information:</p>
             Flickr: <a href="https://www.flickr.com/photos/shariqs">https://www.flickr.com/photos/shariqs</a><br>
