@@ -32,7 +32,6 @@
             <a class="nav-link" href="faq.php">FAQ</a>
             <a class="nav-link" href="teams.php">Teams</a>
             <a class="nav-link" href="members.php">Members</a>
-            <a class="nav-link" href="contact.php">Contact</a>
         </div>
 
         <div class="content-container" id="index-content">
