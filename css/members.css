@@ -1,5 +1,6 @@
 .row {
     margin: 0px !important;
+    padding-bottom: 40px;
 }
 
 .row:hover > div {
@@ -26,7 +27,7 @@ section.parent {
     display: block;
 }
 
-.description {
+.description {  
     display: none;
     position: absolute;
     width: 239px;
@@ -34,4 +35,3 @@ section.parent {
     background-color: #FFFFFF;
     z-index: 1;
 }
-

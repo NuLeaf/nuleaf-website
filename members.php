@@ -442,29 +442,30 @@
         </a>
     </div>
 
-    <!-- External Pwoer Harvester -->
-    <div class="col-xs-6 col-md-3">
+    <!-- External Power Harvester -->
+    <div class="col-xs-6 col-md-3 last-row">
         <a href="#" class="thumbnail">
             <img class="graystyle" src="images/unknown.jpg" onmouseover="this.src='images/unknown2.jpg'" onmouseout="this.src='images/unknown.jpg'" alt="profile">
             <div class="description"><p class="section-title">Manveer Siani</p></div>
         </a>
     </div>
 
-    <div class="col-xs-6 col-md-3">
+    <div class="col-xs-6 col-md-3 last-row">
         <a href="#" class="thumbnail">
             <img class="graystyle" src="images/unknown.jpg" onmouseover="this.src='images/unknown2.jpg'" onmouseout="this.src='images/unknown.jpg'" alt="profile">
             <div class="description"><p class="section-title">Derek Hsu</p></div>
         </a>
     </div>
 
-    <div class="col-xs-6 col-md-3">
+    <div class="col-xs-6 col-md-3 last-row">
         <a href="#" class="thumbnail">
             <img class="graystyle" src="images/unknown.jpg" onmouseover="this.src='images/unknown2.jpg'" onmouseout="this.src='images/unknown.jpg'" alt="profile">
             <div class="description"><p class="section-title">Jonathan Chen</p></div>
         </a>
     </div>
-
 </div>
+
+<div><p class="bold center">Interested in joining our team? Please visit our <a href="faq.php">FAQ</a> for more information on how to get involved in NuLEAF Technologies.</p></div>
 
 <?php
 
