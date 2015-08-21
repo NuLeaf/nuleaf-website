@@ -52,7 +52,7 @@
     <p class="section-title">LATEST UPDATES</p><hr>
     <table class="table table-striped">
         <tr>
-            <td><span class="title">August 21, 2015 - Teaching Meeting 5pm-7pm</span><br>Meeting Room at Campbell Library <br>Introduction to Organic Chemistry with Stan Bode</td>
+            <td><span class="title">August 21, 2015 - Teaching Meeting 5pm-7pm</span><br>Meeting Room at Campbell Library <br>Introduction to Chemistry with Stan Bode</td>
         </tr>
         <tr>
             <td><span class="title">August 14, 2015 - Teaching Meeting 5pm-7pm</span><br>Orchard Room at Los Altos Library<br>Forum and Kakao Introduction with Shariq Shah</td>
@@ -87,6 +87,14 @@
         <p class="title">Visual Simulations Model - In Progress</p>
     </div>
     <p class="section-title">TEACHING MEETINGS</p><hr>
+    <div class="teaching-meeting">
+        <p class="title">Introduction to Chemistry - 8/21/2015</p>
+        <img class="image-left" src="images/StanleyBode.jpg" width="200" alt="profile"/>
+        <div class="text-wrap-right">
+            Stanley Bode is a biochemistry major who will be attending UC Davis in the Fall. 
+            He has had a near lifelong interest in chemistry, and hopes to work in a research lab in the near future.
+        </div>
+    </div>
     <div class="teaching-meeting">
         <p class="title">Forum and Kakao Introduction - 8/13/2015</p>
         <img class="image-left" src="images/ShariqShah.jpg" width="200" alt="profile"/>
