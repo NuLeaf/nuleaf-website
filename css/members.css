@@ -27,6 +27,11 @@ section.parent {
     display: block;
 }
 
+.section-title {
+    text-align: center;
+    margin: -5px 0px !important;
+}
+
 .description {  
     display: none;
     position: absolute;
