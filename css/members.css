@@ -1,6 +1,6 @@
 .row {
     margin: 0px !important;
-    padding-bottom: 40px;
+    padding-bottom: 116px !important;
 }
 
 .row:hover > div {
@@ -13,10 +13,7 @@
 
 .thumbnail {
     width: 245px;
-}
-
-.col-xs-6, .col-md-3 {
-
+    padding: 0px !important;
 }
 
 a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
@@ -28,15 +25,30 @@ section.parent {
 }
 
 .section-title {
-    text-align: center;
     margin: -5px 0px !important;
+}
+
+.team {
+   font-style: italic;
+   color: #009242 !important;
+   font-size: 15px;
+   padding-bottom: 5px;
+}
+
+.contact {
+   text-align: center;
+}
+
+.thumbnail a>img, .thumbnail>img {
+   display: inline;
 }
 
 .description {  
     display: none;
     position: absolute;
-    width: 239px;
+    width: 243px;
     height: auto;
     background-color: #FFFFFF;
     z-index: 1;
+    text-align: center;
 }
