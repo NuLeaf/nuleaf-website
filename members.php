@@ -82,7 +82,7 @@
                 Wolfgang is currently a student attending both De Anza College and Ohlone Collge, studying Electrical Engineering and Computer Science.
                 He specializes in full stack web development, but also has interests in artificial intelligence, parallel computing, and cyber security.
                 <p class="contact"><a href="https://www.linkedin.com/in/wolfgangcstrack" target="_blank"><img src="images/linkedin.png"></a>
-                <a href="https://github.com/vulfgang" target="_blank"><img src="images/github.png"></a><a href="mailto:wolfgangcstrackgmail.com"><img src="images/email.png"></a></p>
+                <a href="https://github.com/vulfgang" target="_blank"><img src="images/github.png"></a><a href="mailto:wolfgangcstrack@gmail.com"><img src="images/email.png"></a></p>
             </div>
         </div>
     </div>
