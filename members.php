@@ -256,7 +256,7 @@
     <div class="col-xs-6 col-md-3">
         <div class="thumbnail">
             <img class="graystyle" src="images/portraits/SunnyLee1.jpg" onmouseover="this.src='images/portraits/SunnyLee2.jpg'" onmouseout="this.src='images/portraits/SunnyLee1.jpg'" alt="profile">
-            <div class="description"><p class="section-title">Sunny Lee</p><p class="section-title team">Root Wiring Mesh and External Power Harvester Team</p>un
+            <div class="description"><p class="section-title">Sunny Lee</p><p class="section-title team">Root Wiring Mesh and External Power Harvester Team</p>
                Sunny is currently studying Biochemistry at De Anza College. 
             </div>
         </div>
