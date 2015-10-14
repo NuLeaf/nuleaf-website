@@ -52,7 +52,22 @@
     <p class="section-title">LATEST UPDATES</p><hr>
     <table class="table table-striped">
         <tr>
-            <td><span class="title">August 21, 2015 - Teaching Meeting 5pm-7pm</span><br>Meeting Room at Campbell Library <br>Introduction to Chemistry with Stan Bode</td>
+            <td><span class="title">October 2, 2015 - ICG Projects Club Meeting 2pm</span><br>Room 4714 at Foothill College<br></td>
+        </tr>
+        <tr>
+            <td><span class="title">October 16, 2015 - Teaching Meeting 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+        </tr>
+        <tr>
+            <td><span class="title">October 9, 2015 - ICG Social 1pm-3pm</span><br>Room 4714 at Foothill Campus<br></td>
+        </tr>
+        <tr>
+            <td><span class="title">October 2, 2015 - ICG Projects Club Meeting 2pm</span><br>Room 4714 at Foothill College<br></td>
+        </tr>
+        <tr>
+            <td><span class="title">September 18, 2015 - Student Presentations 12pm-2pm</span><br>Foothill College<br></td>
+        </tr>
+        <tr>
+            <td><span class="title">August 21, 2015 - Teaching Meeting 3pm-5pm</span><br>Meeting Room at Campbell Library <br>Introduction to Chemistry with Stan Bode</td>
         </tr>
         <tr>
             <td><span class="title">August 14, 2015 - Teaching Meeting 5pm-7pm</span><br>Orchard Room at Los Altos Library<br>Forum and Kakao Introduction with Shariq Shah</td>
@@ -85,6 +100,12 @@
     <p class="section-title">FEATURED PROJECTS</p><hr>
     <div>
         <p class="title">Visual Simulations Model - In Progress</p>
+        <div class="center">
+        <object data="simulation/index.html" width="500" height="300"><embed src="imulation/index.html" width="500" height="300"></embed>Error: Embedded data could not be displayed.</object>
+        <b>Click <a href="simulation/index.html">here</a> to view full-screen model.</b><br><br>
+         The goal is to create an animation of protein-nanoscale interactions. The model will detail protein folding of
+         proteins found in plants, and also show the chemical structure of these proteins when carbon               
+         nanostructures are attached. For questions and/or suggestions, please contact <a href="shariqshah@hostanalytics.com">Shariq Shah</a>.
     </div>
     <p class="section-title">TEACHING MEETINGS</p><hr>
     <div class="teaching-meeting">

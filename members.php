@@ -114,7 +114,7 @@
             <img class="graystyle" src="images/portraits/ShariqShah1.jpg" onmouseover="this.src='images/portraits/ShariqShah2.jpg'" onmouseout="this.src='images/portraits/ShariqShah1.jpg'" alt="profile">
             <div class="description"><p class="section-title">Shariq Shah</p><p class="section-title team">Nano-Simulations Team</p>
                 Shariq is currently studying Computer Science at San Jose State University. He is interested in information security, simulations, artificial intelligence, 
-                and machine learning. Outside of his studies, he enjoys photographying and gaming.
+                and machine learning. Outside of his studies, he enjoys photographing and gaming.
                 <p class="contact"><a href="https://www.linkedin.com/in/shariqshah" target="_blank"><img src="images/linkedin.png"></a><a href="https://www.flickr.com/photos/shariqs"><img src="images/flickr.png"></a></p>
             </div>
         </div>
