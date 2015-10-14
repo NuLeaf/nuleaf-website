@@ -52,10 +52,10 @@
     <p class="section-title">LATEST UPDATES</p><hr>
     <table class="table table-striped">
         <tr>
-            <td><span class="title">October 2, 2015 - ICG Projects Club Meeting 2pm</span><br>Room 4714 at Foothill College<br></td>
+            <td><span class="title">October 16, 2015 - Teaching Meeting 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
         </tr>
         <tr>
-            <td><span class="title">October 16, 2015 - Teaching Meeting 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+            <td><span class="title">October 15, 2015 - ICG Projects Club Meeting 2pm</span><br>Room 4714 at Foothill College<br></td>
         </tr>
         <tr>
             <td><span class="title">October 9, 2015 - ICG Social 1pm-3pm</span><br>Room 4714 at Foothill Campus<br></td>
