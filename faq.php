@@ -11,7 +11,7 @@
     </p>
 
     <p class="section-title"><span class="glyphicon glyphicon-triangle-right"></span>Who is on the team?</p>
-    <p>We have over 60 people working on our project, with students coming from various scientific and educational backgrounds. To see who's on our team, please visit our <a href="members.php">Members Page</a>.</p>
+    <p>We have over 40 people working on our project, with students coming from various scientific and educational backgrounds. To see who's on our team, please visit our <a href="members.php">Members Page</a>.</p>
 
     <p class="section-title"><span class="glyphicon glyphicon-triangle-right"></span>What is your mission?</p>
     <p>Our mission is to research and produce a technique to harness higher levels of power with a process that is harmelssly integrated into the plant's biological system. The first objective is to create a carbon coating on the surface of the plane leaf capable of absorbing light outside of photosynthetically active radiation. The second objective is to generate electricity through the thermoelectric effect and to create a pathway for this electricity to an external power harvester. Please visit our <a href="about.php">About page</a> for more information.

@@ -9,13 +9,14 @@
 ?>
 
 <div>
+    <div class="center bold" style="color:red">Hovers do not work on Firefox. Please view on another browser. We apologize for any inconvenience. Our IT Team is on their way to fix this.</div>
     <h3 class="bold" id="map-directions">Hover over numbers for team descriptions.</h3>
 
     <center><img id="map-image" src="images/teams.jpg" width="1050" usemap="#map" alt="teams"></center>
 
     <map id="team-map" name="team-map">
         <area shape="circle" coords="25,25,25" title="readware" href="" tabindex="0">
-        <area shape="circle" coords="25,25,25" title="liveware-coating" href="" tabindex="1">
+        <area shape="circle" coords="25,25,25" title="liveware-coating" href="" tabindex="1"><
         <area shape="circle" coords="25,25,25" title="liveware-network" href="" tabindex="2">
         <area shape="circle" coords="25,25,25" title="hardware" href="" tabindex="3">
         <area shape="circle" coords="25,25,25" title="software" href="" tabindex="4">

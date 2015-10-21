@@ -42,8 +42,7 @@
     </p>
     <h4>UPCOMING PLANS</h4>
     <p>
-        The proposal is three months old.  The project lead gave several presentations for recruitment.  Nearly 150 people applied and now 13 teams with a total of 60 people are established.  These 
-        students come from various scientific backgrounds, including biology, chemistry, psychology, kinesiology, animation, and computer science, to name a few.  The education of students ranges from 
+        Our team come from various scientific backgrounds, including biology, chemistry, psychology, kinesiology, animation, and computer science, to name a few.  The education of the students ranges from 
         lower division undergraduate to master programs.  The STEMinars, in which students, industry professionals, and established scientists give lectures, have begun.
     </p>
 
