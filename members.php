@@ -22,17 +22,6 @@
         </div>
     </div>
 
-    <div class="col-xs-6 col-md-3">
-        <div class="thumbnail">
-            <img class="graystyle" src="images/portraits/MargaretAckroyd1.jpg" onmouseover="this.src='images/portraits/MargaretAckroyd2.jpg'" onmouseout="this.src='images/portraits/MargaretAckroyd1.jpg'" alt="profile">
-            <div class="description"><p class="section-title">Margaret Ackroyd</p><p class="section-title team">Project Lead</p>
-                Margaret is currently a Bioengineering student at Foothill College. She is interested in Nanoscience, Electrical Engineering, and Biomimetic Design.
-                <p class="contact"><a href="https://www.linkedin.com/pub/margaret-ackroyd/58/3a4/170" target="_blank"><img src="images/linkedin.png"></a>
-                <a href="mailto:margaret.ackroyd@nuleaftech.com"><img src="images/email.png"></a></p>
-            </div>
-        </div>
-    </div>
-
     <!-- Managerial -->
     <div class="col-xs-6 col-md-3">
         <div class="thumbnail">
@@ -45,20 +34,19 @@
 
     <div class="col-xs-6 col-md-3">
         <div class="thumbnail">
-            <img class="graystyle" src="images/portraits/GowriKaruppiah1.jpg" onmouseover="this.src='images/portraits/GowriKaruppiah2.jpg'" onmouseout="this.src='images/portraits/GowriKaruppiah1.jpg'" alt="profile">
-            <div class="description"><p class="section-title">Gowri Karuppiah</p><p class="section-title team">Managerial Team</p>
-                Gowri is a student at Foothill College. She is studying both Computer Science and Geographic Information Systems (GIS).
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col-xs-6 col-md-3">
-        <div class="thumbnail">
             <img class="graystyle" src="images/portraits/BrianaGardener1.jpg" onmouseover="this.src='images/portraits/BrianaGardener2.jpg'" onmouseout="this.src='images/portraits/BrianaGardener1.jpg'" alt="profile">
             <div class="description"><p class="section-title">Briana Gardener</p><p class="section-title team">Managerial Team</p>
                 Briana is currently a Computer Science student at Foothill College. She enjoys climbing rocks, photographing, and playing the ukulele.
                 <p class="contact"><a href="https://www.linkedin.com/pub/briana-gardener/104/928/236" target="_blank"><img src="images/linkedin.png"></a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+        <div class="thumbnail">
+            <img class="graystyle" src="images/portraits/GowriKaruppiah1.jpg" onmouseover="this.src='images/portraits/GowriKaruppiah2.jpg'" onmouseout="this.src='images/portraits/GowriKaruppiah1.jpg'" alt="profile">
+            <div class="description"><p class="section-title">Gowri Karuppiah</p><p class="section-title team">Managerial Team</p>
+                Gowri is a student at Foothill College. She is studying both Computer Science and Geographic Information Systems (GIS).
             </div>
         </div>
     </div>
@@ -255,9 +243,18 @@
     <!-- Root Wiring Mesh and External Power Harvester -->
     <div class="col-xs-6 col-md-3">
         <div class="thumbnail">
+            <img class="graystyle" src="images/portraits/AnnieLee1.jpg" onmouseover="this.src='images/portraits/AnnieLee2.jpg'" onmouseout="this.src='images/portraits/AnnieLee1.jpg'" alt="profile">
+            <div class="description"><p class="section-title">Youngon Lee</p><p class="section-title team">Root Wiring Mesh and External Power Harvester Team</p>
+               Youngon is currently studying Mechanical Engineering at De Anza College. 
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+        <div class="thumbnail">
             <img class="graystyle" src="images/portraits/SunnyLee1.jpg" onmouseover="this.src='images/portraits/SunnyLee2.jpg'" onmouseout="this.src='images/portraits/SunnyLee1.jpg'" alt="profile">
-            <div class="description"><p class="section-title">Sunny Lee</p><p class="section-title team">Root Wiring Mesh and External Power Harvester Team</p>
-               Sunny is currently studying Biochemistry at De Anza College. 
+            <div class="description"><p class="section-title">Youngsun Lee</p><p class="section-title team">Root Wiring Mesh and External Power Harvester Team</p>
+               Youngsun is currently studying Biochemistry at De Anza College. 
             </div>
         </div>
     </div>
@@ -416,7 +413,10 @@
 
 </div>
 
-<div><p class="bold center">Interested in joining our team? Please visit our <a href="faq.php">FAQ</a> for more information on how to get involved in NuLEAF Technologies.</p></div>
+<div>
+    <p class="bold center">NuLEAF Technologies has also recieved the hard work, time, and expertise of many <a href="past-members.php">past team members</a>.</p>
+    <p class="bold center">Interested in joining our team? Please visit our <a href="faq.php">FAQ</a> for more information on how to get involved in NuLEAF Technologies.</p>
+</div>
 
 <?php
 

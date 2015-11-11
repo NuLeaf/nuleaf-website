@@ -1,4 +1,4 @@
-<?php
+﻿<?php
     // Insert the page header
     //$page_title = 'Home';   
     require_once('header.php');
@@ -23,7 +23,7 @@
             <a href="members.php"><img src="images/slideshow2.JPG" height="100" alt="Members"></a>
             <div class="carousel-caption">
                 <h3>Current Members</h3>
-                <p>We have over 60 members working on our project, with students and faculty all over the Bay Area.</p>
+                <p>We have over 40 members working on our project, with students and faculty all over the Bay Area.</p>
             </div>
         </div>
 
@@ -52,7 +52,34 @@
     <p class="section-title">LATEST UPDATES</p><hr>
     <table class="table table-striped">
         <tr>
+            <td><span class="title">November 27, 2015 - STEMinar 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+        </tr>
+        <tr>
+            <td><span class="title">November 20, 2015 - Student Presentations 3pm-4:30pm</span><br>Room 4714 at Foothill Campus<br></td>
+        </tr>
+        <tr>
+            <td><span class="title">November 13, 2015 - STEMinar 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+        </tr>
+        <tr>
+            <td><span class="title">November 13, 2015 - AVS Energy Storage and Conversion 12:30pm-4pm</span><br>Semi Global Headquarters Seminar Rooms 1 & 2<br>3081 Zanker Rd. San Jose, CA</td>
+        </tr>
+         <tr>
+            <td><span class="title">November 6, 2015 - STEMinar 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+        </tr>
+        <tr>
+            <td><span class="title">November 6, 2015 - ICG Projects Club Meeting 2pm</span><br>Room 4714 at Foothill Campus<br></td>
+        </tr>
+        <tr>
+            <td><span class="title">October 30, 2015 - STEMinar 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+        </tr>                               
+        <tr>
+            <td><span class="title">October 23, 2015 - STEMinar 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+        </tr>
+        <tr>
             <td><span class="title">October 16, 2015 - Teaching Meeting 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+        </tr>
+        <tr>
+            <td><span class="title">October 16, 2015 - ICG Projects Club Meeting 2pm</span><br>Room 4714 at Foothill Campus<br></td>
         </tr>
         <tr>
             <td><span class="title">October 15, 2015 - ICG Projects Club Meeting 2pm</span><br>Room 4714 at Foothill College<br></td>
@@ -62,30 +89,7 @@
         </tr>
         <tr>
             <td><span class="title">October 2, 2015 - ICG Projects Club Meeting 2pm</span><br>Room 4714 at Foothill College<br></td>
-        </tr>
-        <tr>
-            <td><span class="title">September 18, 2015 - Student Presentations 12pm-2pm</span><br>Foothill College<br></td>
-        </tr>
-        <tr>
-            <td><span class="title">August 21, 2015 - Teaching Meeting 3pm-5pm</span><br>Meeting Room at Campbell Library <br>Introduction to Chemistry with Stan Bode</td>
-        </tr>
-        <tr>
-            <td><span class="title">August 14, 2015 - Teaching Meeting 5pm-7pm</span><br>Orchard Room at Los Altos Library<br>Forum and Kakao Introduction with Shariq Shah</td>
-        </tr>
-        <tr>
-            <td><span class="title">August 7, 2015 - Teaching Meeting 3:30pm-5:30pm</span><br>Meeting Room at Saratoga Library<br>Introduction to Nanotechnology with Margaret Ackroyd</td>
-        </tr>
-        <tr>
-            <td><span class="title">August 5, 2015 - ASL poster event 2pm-4pm</span><br>Building 152, Room 171 at NASA Ames Research Park (Moffett Field)
-        <tr>
-            <td><span class="title">July 31, 2015 - Teaching Meeting 3pm-5pm</span><br>Meeting Room at Saratoga Library<br>Protein Folding and Physical Biomodeling with Dr. Promita Chakraborty</td>
-        </tr>
-        <tr>
-            <td><span class="title">July 10, 2015 - Summer Social 1pm-3pm</span><br>Varian Park, Cupertino</td>
-        </tr>   
-        <tr>
-            <td><span class="title">July 5, 2015 - Summer applications close</span></td>
-        </tr>      
+        </tr>     
     </table>
 
     <p class="section-title">ACKNOWLEDGEMENTS</p><hr>
@@ -107,49 +111,26 @@
          proteins found in plants, and also show the chemical structure of these proteins when carbon               
          nanostructures are attached. For questions and/or suggestions, please contact <a href="shariqshah@hostanalytics.com">Shariq Shah</a>.
     </div>
-    <p class="section-title">TEACHING MEETINGS</p><hr>
+    <p class="section-title">STEMinar</p><hr> 
     <div class="teaching-meeting">
-        <p class="title">Introduction to Chemistry - 8/21/2015</p>
-        <img class="image-left" src="images/StanleyBode.jpg" width="200" alt="profile"/>
+        <p class="title">What is Biomimicry? - 11/13/2015</p>
+        <img class="image-left" src="images/JeanetteLim.jpg" width="200" alt="profile"/>
         <div class="text-wrap-right">
-            Stanley Bode is a biochemistry major who will be attending UC Davis in the Fall. 
-            He has had a near lifelong interest in chemistry, and hopes to work in a research lab in the near future.
+            Jeanette Lim works at the Biomimicry Institute and is the AskNature Content Coordinator. Jeanette has a PhD in Biomechanics from Harvard University. She is passionate about education, the environment, and science and technology.<br><br>
+            The topic of Jeanette’s talk will be “What is Biomimcry” with an emphasis on applications. Biomimcry seeks inspiration from nature to solve human design problems. 
+            Nature has 3.8 billion years of R&D under its belt, and has created a wealth of knowledge and solutions. These solutions are elegant, brilliant, interdisciplinary, and sustainable.<br><br>
+            The examples of biomimcry are everywhere – in the re-design of axial fans to model owl wings, the color-changing paint on plastics modeled after butterflies, water-soluble polymers from oyster shell growth, research towards a new type of battery inspired by virus proteins, and more!<br><br>
+            The inspiration for the next game-changing technology could be right outside your window.
         </div>
-    </div>
+    </div>  
     <div class="teaching-meeting">
-        <p class="title">Forum and Kakao Introduction - 8/13/2015</p>
-        <img class="image-left" src="images/ShariqShah.jpg" width="200" alt="profile"/>
+        <p class="title">Zotero Introduction and Workshop - 10/6/2015</p>
+        <img class="image-left" src="images/LisaSewell.jpg" width="200" alt="profile"/>
         <div class="text-wrap-right">
-            Shariq is about to start his 5th year as a Computer Science student at San Jose State.  From an early age, he was obsessed with software and wanted to be a programmer.
-            He loves to make new friends and connections both personally and professionally. He loves to talk over start up ideas and is always looking for potential partners.
-            Some of his hobbies are photography, gaming, and programming.
-            <p class="bold">For more information:</p>
-            Flickr: <a href="https://www.flickr.com/photos/shariqs">https://www.flickr.com/photos/shariqs</a><br>
-            LinkedIn: <a href="https://www.linkedin.com/in/shariqshah">https://www.linkedin.com/in/shariqshah</a>
-        </div>
-    </div>
-    <div class="teaching-meeting">
-        <p class="title">Introduction to Nanotechnology - 8/7/2015</p>
-        <img class="image-left" src="images/MargaretAckroyd.jpg" alt="profile"/>
-        <div class="text-wrap-right">
-            Margaret Ackroyd is a bioengineering major working towards a career in bio-nanotechnology research. <br>
-            Bionanotechnology is a rapidly growing field that denotes research efforts tasked with exploring the relationships between nanoscience and biology;
-            one such aspect would be biomimetic design on the nanoscale.<br><br>
-            Margaret Ackroyd is currently a student at Foothill College. Margaret has dabbled in many areas of expertise, 
-            some of which include design, medicine, business law, computer science, environmental stewardship, and entrepreneurship.
-        </div>
-    </div>
-    <div class="teaching-meeting">
-        <p class="title">Protein Folding and Physical Biomodeling - 7/31/2015</p>
-        <img class="image-left" src="images/PromitaChakraborty.jpg" alt="profile"/>
-        <div class="text-wrap-right">
-            Dr. Promita Chakraborty is well versed in protein folding and is the exploring the new frontier of physical biomodeling.
-            Physical biomodeling is a novel endeavor that intersects natural science, computational science, and precision physical modeling.
-            She founded QuezyLab, which seeks to connect the macro-world to the nano-world. 
-            <p class="bold">For more information:</p>
-            QuezyLab: <a href="http://www.quezylab.com/">http://www.quezylab.com/</a><br>
-            Peppytide & Peppy Molecules: <a href="http://www.peppytides.org/">http://www.peppytides.org/</a><br>
-            Homepage: <a href="http://people.cs.vt.edu/~promita9/">http://people.cs.vt.edu/~promita9/</a>
+            This week we have the honor of hosting Lisa Sewell, a NASA Librarian! Her and Rachel will be hosting an Introduction to Zotero workshop. Some of you may remember the talk Lisa gave a couple of weeks ago about how to do a literature search.<br><br>
+            Zotero is a free, open source reference management and organizational tool. It makes using and sorting your references extremely easy with a built-in browser icon, tabs for different categories of references, and an in-text citation tool!<br><br>
+            It is extremely useful for NuLEAF Tech activities as well as general writing of school papers, because we all know sorting references can become an extreme headache.
+            There is a bit of a learning curve with Zotero, so we will hold several workshops to help guide your usage.
         </div>
     </div>
 </div>

@@ -42,16 +42,15 @@
     </p>
     <h4>UPCOMING PLANS</h4>
     <p>
-        The proposal is three months old.  The project lead gave several presentations for recruitment.  Nearly 150 people applied and now 13 teams with a total of 60 people are established.  These 
-        students come from various scientific backgrounds, including biology, chemistry, psychology, kinesiology, animation, and computer science, to name a few.  The education of students ranges from 
+        Our team come from various scientific backgrounds, including biology, chemistry, psychology, kinesiology, animation, and computer science, to name a few.  The education of the students ranges from 
         lower division undergraduate to master programs.  The STEMinars, in which students, industry professionals, and established scientists give lectures, have begun.
     </p>
 
     <p class="section-title">How to contribute?</p><hr>
     <p>
         Applications open at the beginning of each season. Please check back. If you have questions about the application process, please visit our <a href="faq.php">FAQ page</a>.<br>
-        If you would like to volunteer as a Teaching Meeting speaker or have resources and ideas you would like to add, please email to: 
-        <a href="mailto:nuleaftechnologies@gmail.com">nuleaftechnologies@gmail.com</a>.
+        If you would like to volunteer as a STEMinar speaker or have resources and ideas you would like to add, please email to: 
+        <a href="mailto:contact@nuleaftech.com">contact@nuleaftech.com</a>.
     </p>
 </div>
 
