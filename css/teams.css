@@ -24,27 +24,27 @@ area.active, area.active:hover {
 
 area[title="readware"] {
     left: 119px;
-    bottom: 964px;
+    bottom: 944px;
 }
 
 area[title="liveware-coating"] {
     left: 64px;
-    bottom: 716px;
+    bottom: 696px;
 }
 
 area[title="liveware-network"] {
     left: 212px;
-    bottom: 557px;
+    bottom: 537px;
 }
 
 area[title="hardware"] {
     left: 330px;
-    bottom: 53px;
+    bottom: 33px;
 }
 
 area[title="software"] {
     left: 589px;
-    bottom: 593px;
+    bottom: 573px;
 }
 
 .tiptext {

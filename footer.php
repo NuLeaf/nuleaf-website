@@ -7,7 +7,13 @@
             <p>
                 <a href="index.php">Home</a> | <a href="about.php">About</a> | <a href="faq.php">FAQ</a> | <a href="teams.php">Teams</a> | <a href="members.php">Members</a>
             <p>
-            <p id="members"><a href="members-login.php">Members Login</a> | <a href="/forum">Forum</a></p> 
+<?php
+            if (isset($_SESSION['username'])) {
+                echo '<p id="members"><a href="members-logout.php">Members Logout (' . $_SESSION['username'] . ')</a> | <a href="/forum">Forum</a><p>';
+            } else {
+                echo '<p id="members"><a href="members-login.php">Members Login</a> | <a href="/forum">Forum</a></p>';
+            }
+?>
         </div>
     </footer>
 </html>
