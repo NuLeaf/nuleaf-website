@@ -1,0 +1,221 @@
+/******************
+ * Page Structure *
+ *****************/
+
+.cp-container {
+  margin: 46px 0 20px;
+  padding: 0;
+  position: relative;
+}
+.cp-container:after
+.cp-bar:after {
+  clear:both;
+}
+.cp-container:before, .cp-container:after,
+.cp-bar:before, .cp-bar:after {
+  content: " ";
+  display: table;
+}
+
+.cp-title {
+  color: #666;
+  margin: 25px 0;
+  font-size: 24px;
+}
+
+.cp-bar {
+  background-color: #fff;
+  padding: 0 20px;
+  margin: -25px -20px 0;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-bottom: 1px solid #e7ecf1;
+}
+
+.cp-breadcrumb {
+  display: inline-block;
+  float: left;
+  padding: 11px 0;
+  margin: 0;
+  list-style: none;
+}
+.cp-breadcrumb>li {
+  display: inline-block;
+}
+.cp-breadcrumb>li>a,
+.cp-breadcrumb>li>span {
+  color: #888;
+  font-size: 14px;
+  text-shadow: none;
+}
+.cp-breadcrumb>li>i {
+  color: #aaa;
+  font-size: 14px;
+  text-shadow: none;
+}
+.cp-breadcrumb>li>.fa-circle {
+  font-size: 5px;
+  margin: 0 5px;
+  position: relative;
+  top: -3px;
+  opacity: .4;
+  filter: alpha(opacity=40);
+}
+
+.cp-date {
+  display: inline-block;
+  float: right;
+  padding: 6px 0;
+}
+
+.cp-content {
+  margin-top: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+/******************
+ * Navigation Bar *
+ *****************/
+
+.cp-navbar {
+  background-color: #83a54b;
+  background-image: none;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  height: 46px;
+  min-height: 46px;
+  position: fixed;
+  filter: none;
+  z-index: 9995;
+  box-shadow: none;
+}
+
+.top-menu .navbar-nav {
+  padding: 0;
+  margin-right: 20px;
+  display: block;
+}
+.top-menu .navbar-nav .badge {
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-weight: 300;
+  padding: 3px 6px;
+}
+.top-menu .navbar-nav .badge-default {
+  background-color: #b70808;
+  color: #fff;
+}
+.top-menu .navbar-nav .dropdown {
+  margin: 0;
+  padding: 0 4px;
+  height: 46px;
+  display: inline-block
+}
+.top-menu .navbar-nav .dropdown:last-child,
+.top-menu .navbar-nav .dropdown-toggle:last-child {
+  padding-right: 0;
+}
+.top-menu .navbar-nav .dropdown-toggle {
+  margin: 0;
+  padding: 17px 10px 9px;
+}
+.top-menu .navbar-nav .dropdown-toggle:focus {
+  background: 0;
+}
+.top-menu .navbar-nav .dropdown-toggle>i {
+  font-size: 17px;
+}
+.top-menu .navbar-nav .dropdown-menu {
+  margin-top: 3px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.top-menu .navbar-nav .dropdown-menu:before {
+  position: absolute;
+  top: -7px;
+  right: 9px;
+  display: inline-block!important;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #eee;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, .2);
+  content: '';
+}
+.top-menu .navbar-nav .dropdown-menu:after {
+  position: absolute;
+  top: -6px;
+  right: 10px;
+  display: inline-block!important;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #fff;
+  border-left: 6px solid transparent;
+  content: '';
+}
+.top-menu .navbar-nav .dropdown-menu>li>a {
+  color: #555;
+}
+.top-menu .navbar-nav .dropdown-user .dropdown-toggle {
+  padding: 14px 6px 12px 8px;
+}
+.top-menu .navbar-nav .dropdown-user .dropdown-toggle>.username {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 300;
+}
+.top-menu .navbar-nav .dropdown-user .dropdown-toggle>img {
+  float: left;
+  margin-top: -5px;
+  margin-right: 5px;
+  height: 29px;
+  display: inline-block;
+}
+.top-menu .navbar-nav .dropdown-user .dropdown-toggle>i {
+  display: inline-block;
+  margin: 0;
+  font-size: 13px;
+}
+.top-menu .navbar-nav .dropdown-user .dropdown-menu {
+  width: 175px;
+}
+.top-menu .navbar-nav .dropdown-user .dropdown-menu>li>a {
+  font-size: 14px;
+  font-weight: 300;
+}
+.top-menu .navbar-nav .dropdown-user .dropdown-menu>li>a i {
+  width: 15px;
+  display: inline-block;
+  margin-right: 9px;
+}
+.top-menu .navbar-nav .dropdown-user .dropdown-menu>li>a .badge {
+  margin-right: 10px;
+}
+
+.top-menu {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.cp-logo {
+  float: left;
+  display: block;
+  width: 235px;
+  height: 46px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cp-logo .logo-default {
+  margin: 16px 0 0;
+}

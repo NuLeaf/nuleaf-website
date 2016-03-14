@@ -1,0 +1,84 @@
+map {
+    position: relative;
+    display: block;
+}
+
+h3#map-directions {
+    position: absolute;
+    margin-left: 33px;
+    z-index: 1;
+}
+
+area {
+    display: inline-block;
+    position: absolute;
+    width: 61px;
+    height: 66px;
+    z-index: 1;
+    border-radius: 3em/2em;
+}
+
+area.active, area.active:hover {
+    background: rgba(0,0,0,0.5);
+}
+
+area[title="readware"] {
+    left: 119px;
+    bottom: 944px;
+}
+
+area[title="liveware-coating"] {
+    left: 64px;
+    bottom: 696px;
+}
+
+area[title="liveware-network"] {
+    left: 212px;
+    bottom: 537px;
+}
+
+area[title="hardware"] {
+    left: 330px;
+    bottom: 33px;
+}
+
+area[title="software"] {
+    left: 589px;
+    bottom: 573px;
+}
+
+.tiptext {
+    position:absolute;
+    float:left;
+    z-index:1;
+    padding: 0px 5px !important;
+    width:250px;
+    height: auto;
+    background:#FFFFFF;  
+    border:1px solid #AEAEAE;  
+}
+
+#readware{
+    margin-left: 205px;
+    margin-top: -1200px;
+} 
+
+#liveware-coating{
+    margin-left: 30px;
+    margin-top: -845px;
+} 
+
+#liveware-network {
+    margin-left: 45px;
+    margin-top: -682px;
+}
+
+#hardware {
+    margin-left: 60px;
+    margin-top: -145px;
+}
+
+#software {
+    margin-left: 455px;
+    margin-top: -853px; 
+}
