@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+=======
 ###SublimeText###
 
 # cache files for sublime text
@@ -31,8 +38,7 @@ sftp-config.json
 .LSOverride
 
 # Icon must end with two \r
-Icon
-
+Icon
 
 # Thumbnails
 ._*
@@ -73,4 +79,4 @@ $RECYCLE.BIN/
 # Host server stuff
 cgi-bin/
 forum/
-.env
+>>>>>>> 6907ac470c2317866fa2bf3ea47a53fd158e5c13
