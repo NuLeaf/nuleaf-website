@@ -7,7 +7,6 @@ use App\Http\Requests\CreateTeamRequest;
 use App\Team;
 
 // TODO (TP): 
-//   - Create Policy for Team.
 //   - Create Request.
 class TeamsController extends Controller
 {
@@ -19,11 +18,6 @@ class TeamsController extends Controller
    */
   public function store(CreateTeamRequest $request)
   {
-    // if (Gate::denies('storeTeams'))
-    // {
-    //   abort(403);
-    // }
-
     $team_name = $request->input('team_name');
     Team::create([$team_name]);
     return redirect(action('AdminController@index'));
@@ -38,11 +32,6 @@ class TeamsController extends Controller
    */
   public function update(CreateTeamRequest $request, Team $team)
   {
-    // if (Gate::denies('update', $team))
-    // {
-    //   abort(403);
-    // }
-
     $team_name = $request->input('team_name');
     $team->update([$team_name]);
     return redirect(action('AdminController@index'));
@@ -56,11 +45,6 @@ class TeamsController extends Controller
    */
   public function destroy(Team $team)
   {
-    // if (Gate::denies('destroy', $team))
-    // {
-    //   abort(403);
-    // }
-    
     $team->delete();
     return redirect(action('AdminController@index'));
   }

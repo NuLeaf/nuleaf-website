@@ -15,6 +15,8 @@
     {{ csrf_field() }}
     <input id="username_search" type="button" value="Search">
   </form>
+  <div id="user_autofill">
+  </div>
 </div>
 @endsection
 

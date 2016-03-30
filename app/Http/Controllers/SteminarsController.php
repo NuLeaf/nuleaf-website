@@ -17,11 +17,6 @@ class SteminarsController extends Controller
    */
   public function index()
   {
-    if (Gate::denies('manageSteminars'))
-    {
-      abort(403);
-    }
-
     return view('cp.steminars.index');
   }
 
@@ -32,11 +27,6 @@ class SteminarsController extends Controller
    */
   public function showAll()
   {
-    if (Gate::denies('viewAllSteminars'))
-    {
-      abort(403);
-    }
-
     $steminars = Steminar::latest('date')->paginate(10);
     return view('cp.steminars.show_all', compact('steminars'));
   }
@@ -48,11 +38,6 @@ class SteminarsController extends Controller
    */
   public function create()
   {
-    if (Gate::denies('storeSteminars'))
-    {
-      abort(403);
-    }
-
     return view('cp.steminars.create');
   }
 
@@ -64,11 +49,6 @@ class SteminarsController extends Controller
    */
   public function show(Steminar $steminar)
   {
-    if (Gate::denies('view', $steminar))
-    {
-      abort(403);
-    }
-
     return view('cp.steminars.show', $steminar);
   }
   
@@ -80,11 +60,6 @@ class SteminarsController extends Controller
    */
   public function store(CreateSteminarRequest $request)
   {
-    if (Gate::denies('storeSteminars'))
-    {
-      abort(403);
-    }
-
     Steminar::create($request->only(array('title', 'date', 'location', 'body')));
     return redirect(action('SteminarsController@showAll'));
   }
@@ -97,11 +72,6 @@ class SteminarsController extends Controller
    */
   public function edit(Steminar $steminar)
   {
-    if (Gate::denies('update', $steminar))
-    {
-      abort(403);
-    }
-
     return view('cp.steminars.edit', compact('steminar'));
   }
 
@@ -114,11 +84,6 @@ class SteminarsController extends Controller
    */
   public function update(CreateSteminarRequest $request, Steminar $steminar)
   {
-    if (Gate::denies('update', $steminar))
-    {
-      abort(403);
-    }
-
     $steminar->update($request->only(array('title', 'date', 'location', 'body')));
     return redirect(action('SteminarsController@showAll'));
   }
@@ -131,11 +96,6 @@ class SteminarsController extends Controller
    */
   public function destroy(Steminar $steminar)
   {
-    if (Gate::denies('destroy', $steminar))
-    {
-      abort(403);
-    }
-    
     $steminar->delete();
     return redirect(action('SteminarsController@showAll'));
   }

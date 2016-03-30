@@ -17,11 +17,6 @@ class UsersController extends Controller
 {
   public function show(User $user)
   {
-    // if (Gate::denies('view', $user))
-    // {
-    //   abort(403);
-    // }
-    
     $teams = Team::all()->sortBy('team_name');
     $roles = Role::all()->sortBy('role_name');
 
@@ -61,53 +56,28 @@ class UsersController extends Controller
 
   public function create()
   {
-    // if (Gate::denies('storeUsers'))
-    // {
-    //   abort(403);
-    // }
-    
     return view('users.create');
   }
 
   public function store(CreateUserRequest $request)
   {
-    // if (Gate::denies('storeUsers'))
-    // {
-    //   abort(403);
-    // }
-    
     // User::create( // )
     return redirect(action('AdminController@index'));
   }
 
   public function edit(User $user)
   {
-    // if (Gate::denies('update', $user))
-    // {
-    //   abort(403);
-    // }
-    
     return view('users.edit', compact('user'));
   }
 
   public function update(CreateUserRequest $request, User $user)
   {
-    // if (Gate::denies('update', $user))
-    // {
-    //   abort(403);
-    // }
-    
     // $user->update( // )
     return redirect(action('AdminController@index'));
   }
 
   public function destroy(User $user)
   {
-    // if (Gate::denies('destroy', $user))
-    // {
-    //   abort(403);
-    // }
-    
     // $user->delete();
     return redirect(action('AdminController@index'));
   }

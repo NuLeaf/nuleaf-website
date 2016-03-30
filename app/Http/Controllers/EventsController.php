@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\CreateEventRequest;
-use App\Http\Controllers\Controller;
 
 use Gate;
+use Carbon\Carbon;
+use App\Http\Controllers\Controller;
+
+use App\Http\Requests\CreateEventRequest;
 use App\Event;
 
 class EventsController extends Controller
@@ -17,11 +19,6 @@ class EventsController extends Controller
    */
   public function index()
   {
-    if (Gate::denies('manageEvents'))
-    {
-      abort(403);
-    }
-
     return view('cp.events.index');
   }
 
@@ -32,11 +29,6 @@ class EventsController extends Controller
    */
   public function showAll()
   {
-    if (Gate::denies('viewAllEvents'))
-    {
-      abort(403);
-    }
-
     $events = Event::latest('date')->paginate(10);
     return view('cp.events.show_all', compact('events'));
   }
@@ -48,11 +40,6 @@ class EventsController extends Controller
    */
   public function create()
   {
-    if (Gate::denies('storeEvents'))
-    {
-      abort(403);
-    }
-
     return view('cp.events.create');
   }
 
@@ -64,11 +51,6 @@ class EventsController extends Controller
    */
   public function show(Event $event)
   {
-    if (Gate::denies('view', $event))
-    {
-      abort(403);
-    }
-
     return view('cp.events.show', compact('event'));
   }
   
@@ -80,12 +62,14 @@ class EventsController extends Controller
    */
   public function store(CreateEventRequest $request)
   {
-    if (Gate::denies('storeEvents'))
-    {
-      abort(403);
-    }
+    $title    = $request->input('title');
+    $date     = new Carbon($request->input('date'));
+    $location = $request->input('location');
 
-    Event::create($request->only(['title', 'date', 'location']));
+    // TODO: Other input validation not completed by request.
+    //       or put it in the request class.
+
+    // Event::create($request->only(['title', 'date', 'location']));
     return redirect(action('EventsController@showAll'));
   }
 
@@ -97,11 +81,6 @@ class EventsController extends Controller
    */
   public function edit(Event $event)
   {
-    if (Gate::denies('update', $event))
-    {
-      abort(403);
-    }
-
     return view('cp.events.edit', compact('event'));
   }
 
@@ -114,11 +93,6 @@ class EventsController extends Controller
    */
   public function update(CreateEventRequest $request, Event $event)
   {
-    if (Gate::denies('update', $event))
-    {
-      abort(403);
-    }
-
     $event->update($request->only(array('title', 'date', 'location')));
     return redirect(action('EventsController@showAll'));
   }
@@ -131,11 +105,6 @@ class EventsController extends Controller
    */
   public function destroy(Event $event)
   {
-    if (Gate::denies('destroy', $event))
-    {
-      abort(403);
-    }
-    
     $event->delete();
     return redirect(action('EventsController@showAll'));
   }
