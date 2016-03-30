@@ -14,9 +14,19 @@
 $factory->define(App\Event::class, function (Faker\Generator $faker)
 {
   return [
-    'title' => $faker->sentence,
-    'date' => $faker->dateTimeBetween('-1 year', '2017-01-01 00:00:00'),
+    'title'    => $faker->unique()->sentence,
+    'date'     => $faker->dateTimeBetween('-1 year', '2017-01-01 00:00:00'),
     'location' => $faker->address,
+  ];
+});
+
+$factory->define(App\Steminar::class, function (Faker\Generator $faker)
+{
+  return [
+    'title'    => $faker->unique()->sentence,
+    'date'     => $faker->dateTimeBetween('-1 year', '2017-01-01 00:00:00'),
+    'location' => $faker->address,
+    'body'     => $faker->text
   ];
 });
 

@@ -23,9 +23,12 @@ class CreateSteminarRequest extends Request
    */
   public function rules()
   {
+    $steminar    = $this->route('steminar');
+    $steminar_id = isset($steminar) ? $steminar->steminar_id : NULL;
+    $steminar_id = isset($steminar_id) ? ','.$steminar_id.',steminar_id' : '';
     return [
-      'title'    => 'required|string|unique:steminars,title|min:5|max:100',
-      'date'     => 'required|date_format:F d, Y g a',
+      'title'    => 'required|string|unique:steminars,title'.$steminar_id.'|min:5|max:100',
+      'date'     => 'required|date',
       'location' => 'required|string|min:5|max:100',
       'body'     => 'required|string|min:100|max:2000'
     ];

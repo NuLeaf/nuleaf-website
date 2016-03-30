@@ -8,6 +8,6 @@
 </div>
 <div class="form-group">
   <label for="date">Date:</label>
-  <input id='dateTimePicker' class="form-control" type="text" maxlength="100" name="date" value="{{ $event->date or old('date') }}"/>
+  <input id='dateTimePicker' class="form-control" type="text" maxlength="100" name="date" value="{{ date('F jS, Y h:i A', strtotime(isset($event->date) ? $event->date : old('date'))) }}"/>
 </div>
 <input type="submit" name="submit" value="{{ $submitButtonValue }}"/>

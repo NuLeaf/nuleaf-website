@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
       ]);
 
       factory(App\Event::class, 50)->create();
+      factory(App\Steminar::class, 50)->create();
       factory(App\Team::class, 10)->create();
     }
 }

@@ -2,16 +2,20 @@
 
 namespace App\Http\Controllers;
 
+/** Laravel */
 use App\Http\Requests\CreateSteminarRequest;
 use App\Http\Controllers\Controller;
 
-use Gate;
+/** Vendors */
+use Carbon\Carbon;
+
+/** Models */
 use App\Steminar;
 
 class SteminarsController extends Controller
 {
   /**
-   * Display a listing of the resource.
+   * Display a landing page for the resource.
    *
    * @return \Illuminate\Http\Response
    */
@@ -44,7 +48,7 @@ class SteminarsController extends Controller
   /**
    * Show the resource.
    *
-   * @param  \App\Steminar  $steminar
+   * @param  \App\Steminar
    * @return \Illuminate\Http\Response
    */
   public function show(Steminar $steminar)
@@ -55,19 +59,24 @@ class SteminarsController extends Controller
   /**
    * Store a newly created resource in storage.
    *
-   * @param  App\Http\Requests\CreateSteminarRequest  $request
+   * @param  App\Http\Requests\CreateSteminarRequest
    * @return \Illuminate\Http\Response
    */
   public function store(CreateSteminarRequest $request)
   {
-    Steminar::create($request->only(array('title', 'date', 'location', 'body')));
+    $title    = $request->input('title');
+    $date     = new Carbon($request->input('date'));
+    $location = $request->input('location');
+    $body     = $request->input('body');
+
+    Steminar::create(compact('title', 'date', 'location', 'body'));
     return redirect(action('SteminarsController@showAll'));
   }
 
   /**
    * Show the form for editing the specified resource.
    *
-   * @param  \App\Steminar  $steminar
+   * @param  \App\Steminar
    * @return \Illuminate\Http\Response
    */
   public function edit(Steminar $steminar)
@@ -78,13 +87,18 @@ class SteminarsController extends Controller
   /**
    * Update the specified resource in storage.
    *
-   * @param  App\Http\Requests\CreateSteminarRequest  $request
-   * @param  \App\Steminar                $steminar
+   * @param  App\Http\Requests\CreateSteminarRequest
+   * @param  \App\Steminar
    * @return \Illuminate\Http\Response
    */
   public function update(CreateSteminarRequest $request, Steminar $steminar)
   {
-    $steminar->update($request->only(array('title', 'date', 'location', 'body')));
+    $title    = $request->input('title');
+    $date     = new Carbon($request->input('date'));
+    $location = $request->input('location');
+    $body     = $request->input('body');
+
+    $steminar->update(compact('title', 'date', 'location', 'body'));
     return redirect(action('SteminarsController@showAll'));
   }
 

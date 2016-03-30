@@ -23,9 +23,12 @@ class CreateEventRequest extends Request
    */
   public function rules()
   {
+    $event    = $this->route('event');
+    $event_id = isset($event) ? $event->event_id : NULL;
+    $event_id = isset($event_id) ? ','.$event_id.',event_id' : '';
     return [
-      'title'    => 'required|string|unique:events,title|min:5|max:100',
-      'date'     => 'required|date_format:F d, Y g a',
+      'title'    => 'required|string|unique:events,title'.$event_id.'|min:5|max:100',
+      'date'     => 'required|date',
       'location' => 'required|string|min:5|max:100'
     ];
   }
