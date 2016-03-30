@@ -24,9 +24,9 @@ class CreateEventRequest extends Request
   public function rules()
   {
     return [
-      'title'    => 'required|string',
-      'date'     => 'required|date',
-      'location' => 'required|string'
+      'title'    => 'required|string|unique:events,title|min:5|max:100',
+      'date'     => 'required|date_format:F d, Y g a',
+      'location' => 'required|string|min:5|max:100'
     ];
   }
 }

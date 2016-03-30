@@ -20,7 +20,7 @@ class CreateEventsTable extends Migration
       //       ->references('user_id')->on('users')
       //       ->onDelete('cascade')
       //       ->onUpdate('cascade');
-      $table->string('title', 100);
+      $table->string('title', 100)->unique();
       $table->date('date');
       $table->string('location', 100);
       $table->timestamps();

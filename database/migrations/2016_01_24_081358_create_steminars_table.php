@@ -21,8 +21,8 @@ class CreateSteminarsTable extends Migration
       //       ->onUpdate('cascade');
       $table->string('title', 100);
       $table->date('date');
-      $table->string('location');
-      $table->text('body');
+      $table->string('location', 100);
+      $table->text('body', 2000);
       $table->timestamps();
     });
   }

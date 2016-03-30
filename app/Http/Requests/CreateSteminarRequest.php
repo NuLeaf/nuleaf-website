@@ -24,10 +24,10 @@ class CreateSteminarRequest extends Request
   public function rules()
   {
     return [
-      'title'    => 'required|string',
-      'date'     => 'required|date',
-      'location' => 'required|string',
-      'body'     => 'required|string',
+      'title'    => 'required|string|unique:steminars,title|min:5|max:100',
+      'date'     => 'required|date_format:F d, Y g a',
+      'location' => 'required|string|min:5|max:100',
+      'body'     => 'required|string|min:100|max:2000'
     ];
   }
 }
