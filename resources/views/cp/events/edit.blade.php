@@ -30,3 +30,9 @@ Edit Event
   </div>
 </div>
 @stop
+
+@section ('module_level_plugins')
+<script type="text/javascript" src="{{ URL::asset('js/moment.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/bootstrap-datetimepicker.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/events.js') }}"></script>
+@stop

@@ -2,6 +2,7 @@
 
 @section ('page_level_styles')
 <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/events.css?v=1.1') }}">
+@yield ('module_level_styles')
 @stop
 
 @section ('content')
@@ -39,7 +40,5 @@
 @stop
 
 @section ('page_level_plugins')
-  <script type="text/javascript" src="{{ URL::asset('js/moment.js') }}"></script>
-  <script type="text/javascript" src="{{ URL::asset('js/bootstrap-datetimepicker.js') }}"></script>
-  <script type="text/javascript" src="{{ URL::asset('js/events.js') }}"></script>
+  @yield ('module_level_plugins')
 @stop

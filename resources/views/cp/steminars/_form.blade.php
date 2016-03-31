@@ -8,7 +8,7 @@
 </div>
 <div class="form-group">
   <label for="date">Date:</label>
-  <input id='dateTimePicker' class="form-control" type="text" maxlength="100" name="date" value="{{ date('F jS, Y h:i A', strtotime(isset($steminar->date) ? $steminar->date : old('date'))) }}"/>
+  <input id='dateTimePicker' class="form-control" type="text" maxlength="100" name="date" value="{{ isset($steminar->date) ? date('F jS, Y h:i A', strtotime($steminar->date)) : (null !== old('date') ? date('F jS, Y h:i A', strtotime(old('date'))) : '') }}"/>
 </div>
 <div class="form-group">
   <label for="body">Body:</label>

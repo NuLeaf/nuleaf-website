@@ -1,4 +1,4 @@
-@extends ('layouts.guests')
+@extends ('layouts.pages')
 
 @section ('title')
 {{ trans('pages.main_title') }} - Members

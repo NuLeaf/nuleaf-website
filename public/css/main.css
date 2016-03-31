@@ -4,13 +4,13 @@
     box-shadow: 0 0 8px rgba(24, 198, 79, 0.6) !important;
 }
 
-#header, #navbar, .content-container, #myCarousel, footer {
+header, #navbar, .content-container, #myCarousel, footer {
     margin-right: auto;
     margin-left: auto;
     width: 1100px;
 }
 
-#header {
+header {
     margin-top: -20px;
     padding: 20px;
     background-color: #FFFFFF;

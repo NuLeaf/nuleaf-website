@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  @include ('partials.header')
+  @include ('_head')
+
   <!-- BEGIN LOCAL STYLES -->
-    <!--
-    <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/cp.css') }}" />
-    -->
     <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/components.css') }}" />
     <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/layout.css') }}" />
     <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/darkblue.css') }}" id="style_color" />
   <!-- END LOCAL STYLES -->
+
   <!-- BEGIN PAGE LEVEL STYLES -->
   @yield ('page_level_styles')
   <!-- END PAGE LEVEL STYLES -->
 
   <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
-    @include ('cp.partials.header')
+    @include ('cp._header')
 
     <!-- BEGIN HEADER & CONTENT DIVIDER -->
     <div class="clearfix"> </div>
@@ -22,7 +21,7 @@
     
     <!-- BEGIN PAGE CONTAINER -->
     <div class="page-container">
-      @include ('cp.partials.sidebar')
+      @include ('cp._sidebar')
 
       <!-- BEGIN CONTENT -->
       <div class="page-content-wrapper">
@@ -61,7 +60,7 @@
     <!-- END PAGE CONTAINER -->
   </body>
 
-  @include ('partials.footer')
+  @include ('_foot')
   <!-- BEGIN LOCAL PLUGINS -->
   <!-- END LOCAL PLUGINS -->
   <!-- BEGIN PAGE LEVEL PLUGINS -->
