@@ -26,10 +26,7 @@ class User extends Authenticatable
    * @var array
    */
   protected $guarded = [
-    'user_id',
-    'username',
-    'email',
-    'password',
+    'user_id'
   ];
 
   /**
@@ -41,6 +38,36 @@ class User extends Authenticatable
     'password',
     'remember_token',
   ];
+
+  /**
+   * Gets all the user's role_ids.
+   *
+   * @return array
+   */
+  public function getRoleIdsAttribute()
+  {
+    return $this->roles->pluck('role_id')->toArray();
+  }
+
+  /**
+   * Gets the team id of the user.
+   *
+   * @return int | null
+   */
+  public function getTeamIdAttribute()
+  {
+    return (isset($this->team) ? $this->team->team_id : null);
+  }
+
+  /**
+   * Gets the full name of the user.
+   *
+   * @return string
+   */
+  public function getFullNameAttribute()
+  {
+    return $this->firstname.' '.$this->lastname;
+  }
 
   /**
    * Determines if the user has a role.

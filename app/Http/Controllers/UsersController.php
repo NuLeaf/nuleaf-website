@@ -10,17 +10,13 @@ use App\Team;
 use App\Role;
 
 // TODO (TP):
-//   - Create Policy for User.
 //   - Create Request.
 //   - Write Documentation.
 class UsersController extends Controller
 {
   public function show(User $user)
   {
-    $teams = Team::all()->sortBy('team_name');
-    $roles = Role::all()->sortBy('role_name');
-
-    return view('cp.acp.users.show', compact('teams', 'roles', 'user'));
+    return view('cp.acp.users.show', compact('user'));
   }
 
   public function search(Request $request)
@@ -56,29 +52,67 @@ class UsersController extends Controller
 
   public function create()
   {
-    return view('users.create');
+    // TODO: Decide between object or array using pluck.
+    //       Pluck is more efficient but sacrifices readability.
+    $teams = Team::orderBy('team_name')->get();
+    $roles = Role::orderBy('role_name')->get();
+
+    return view('cp.acp.users.create', compact('teams', 'roles'));
   }
 
   public function store(CreateUserRequest $request)
   {
-    // User::create( // )
+    $username    = $request->input('username');
+    $email       = $request->input('email');
+    $password    = bcrypt($request->input('password'));
+    $firstname   = $request->input('firstname');
+    $lastname    = $request->input('lastname');
+    $image1      = $request->input('image1');
+    $image2      = $request->input('image2');
+    $description = $request->input('description');
+    $team_id     = $request->input('team_id');
+
+    $user = User::create(compact('username', 'email', 'password', 'firstname', 'lastname', 'image1', 'image2', 'description', 'team_id'));
+    
+    $role_ids = $request->input('role_ids');
+    $user->roles()->sync($role_ids);
+
     return redirect(action('AdminController@index'));
   }
 
   public function edit(User $user)
   {
-    return view('users.edit', compact('user'));
+    // TODO: Decide between object or array using pluck.
+    //       Pluck is more efficient but sacrifices readability.
+    $teams = Team::orderBy('team_name')->get();
+    $roles = Role::orderBy('role_name')->get();
+
+    return view('cp.acp.users.edit', compact('user', 'teams', 'roles'));
   }
 
   public function update(CreateUserRequest $request, User $user)
   {
-    // $user->update( // )
+    $username    = $request->input('username');
+    $email       = $request->input('email');
+    $password    = bcrypt($request->input('password'));
+    $firstname   = $request->input('firstname');
+    $lastname    = $request->input('lastname');
+    $image1      = $request->input('image1');
+    $image2      = $request->input('image2');
+    $description = $request->input('description');
+    $team_id     = $request->input('team_id');
+
+    $user->update(compact('username', 'email', 'password', 'firstname', 'lastname', 'image1', 'image2', 'description', 'team_id'));
+
+    $role_ids = $request->input('role_ids');
+    $user->roles()->sync($role_ids);
+
     return redirect(action('AdminController@index'));
   }
 
   public function destroy(User $user)
   {
-    // $user->delete();
+    $user->delete();
     return redirect(action('AdminController@index'));
   }
 }

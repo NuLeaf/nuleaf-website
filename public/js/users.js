@@ -12,7 +12,16 @@ $(document).ready(function() {
       data: { query: incomplete_username },
       success: function(users)
       {
-        $('#user_autofill').html(users);
+        var html = (users.length > 0) ? '<ul>' : '';
+
+        for (var i = 0; i < users.length; ++i)
+        {
+          html += '<li>' + users[i] + '</li>';
+        }
+
+        html += (users.length > 0) ? '</ul>' : '';
+
+        $('#user_autofill').html(html);
         // TODO: Error checking.
         // TODO: Add jqueryUI.autocomplete or jquery.autocomplete
         // $('#username_input').autocomplete();
