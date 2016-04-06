@@ -6,8 +6,26 @@ use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
-  protected $table      = 'events';
+  /**
+   * The table associated with this model.
+   *
+   * @var string
+   */
+  protected $table = 'events';
+
+  /**
+   * Indicates the primary id column of the table.
+   *
+   * @var string
+   */
   protected $primaryKey = 'event_id';
+
+  /**
+   * The attributes that should be mutated to dates.
+   *
+   * @var array
+   */
+  protected $dates = ['date'];
 
   /**
    * The attributes that are not mass assignable.

@@ -1,2 +1,96 @@
-/** Fallback */
+/**
+ * Control Panel Custom CSS
+ */
 
+/* Layouts */
+.page-container {
+  margin-left: 230px;
+}
+
+/* Side Navigation Bar */
+.sidebar {
+  height: 100%;
+  left: 0;
+  overflow-y: auto;
+  padding-top: 79px;
+  position: fixed;
+  top: 0;
+}
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 230px;
+}
+.sidebar-nav > .divider {
+  height: 10px;
+  overflow: hidden;
+}
+.sidebar-nav > li {
+  border-bottom: 1px solid #fff;
+  line-height: 40px;
+}
+.sidebar-nav > li > a {
+  display: block;
+  text-decoration: none;
+}
+.sidebar-nav > li > a:hover {
+  text-decoration: none;
+}
+.sidebar-nav > li > a:active,
+.sidebar-nav > li > a:focus {
+  text-decoration: none;
+}
+.sidebar-icon {
+  border-right: 1px solid #fff;
+  display: inline-block;
+  height: 100%;
+  padding-left: 13px;
+  width: 41px;
+}
+.sidebar-title {
+  padding-left: 10px;
+}
+
+/* Page Bar */
+.page-bar {
+  border-bottom: 1px solid #e7ecf1;
+  margin: 40px 0 0 230px ;
+}
+.page-bar > .breadcrumb {
+  background-color: #fff;
+  margin: 0;
+}
+
+/** 
+ * Bootstrap Custom CSS
+ */
+
+/* Reduce Navigation Bar Height */
+.navbar-sm  {
+  height: 40px;
+  min-height: 40px;
+  padding-top: 8px;
+}
+.navbar-sm .navbar-brand {
+  font-size: 16px;
+  height: 40px;
+  padding: 0 12px;
+}
+.navbar-sm .navbar-nav > li > a  {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.navbar-sm .navbar-toggle {
+  margin-bottom: 0;
+  margin-top: 0;
+  top: -5px;
+}
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 22px;
+  border-radius: 25px;
+}

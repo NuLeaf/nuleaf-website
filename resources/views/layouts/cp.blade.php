@@ -3,57 +3,51 @@
   @include ('_head')
 
   <!-- BEGIN LOCAL STYLES -->
-    <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/components.css') }}" />
-    <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/layout.css') }}" />
-    <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/darkblue.css') }}" id="style_color" />
+  <link href="{{ URL::asset('css/cp.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ URL::asset('css/nuleaf_light.css') }}" rel="stylesheet" type="text/css">
   <!-- END LOCAL STYLES -->
 
   <!-- BEGIN PAGE LEVEL STYLES -->
   @yield ('page_level_styles')
   <!-- END PAGE LEVEL STYLES -->
 
-  <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+  <body>
+    <!-- BEGIN PAGE MODALS -->
+    @yield ('page_modals')
+    <!-- END PAGE MODALS -->
+
     @include ('cp._header')
+    @include ('cp._sidebar')
 
-    <!-- BEGIN HEADER & CONTENT DIVIDER -->
-    <div class="clearfix"> </div>
-    <!-- END HEADER & CONTENT DIVIDER -->
-    
+    <!-- BEGIN PAGE BAR -->
+    <div class="page-bar">
+
+      <!-- BEGIN BREADCRUMB -->
+      <ol class="breadcrumb">
+        @yield ('breadcrumb')
+        @stack ('breadcrumb')
+        
+        @foreach ($breadcrumbs as $breadcrumb => $url)
+          {!! $url !== '' ? '<li><a href="'.$url.'">' : '<li class="active">' !!}
+          {{ ucfirst($breadcrumb) }}
+          {!! $url !== '' ? '</a>' : '' !!}</li>
+        @endforeach
+      </ol>
+      <!-- END BREADCRUMB -->
+
+    </div>
+    <!-- END PAGE BAR -->
+
     <!-- BEGIN PAGE CONTAINER -->
-    <div class="page-container">
-      @include ('cp._sidebar')
+    <div class="container-fluid page-container">
 
-      <!-- BEGIN CONTENT -->
-      <div class="page-content-wrapper">
+      <!-- BEGIN PAGE TITLE -->
+      @yield ('page_title')
+      <!-- END PAGE TITLE -->
 
-        <!-- BEGIN CONTENT BODY -->
-        <div class="page-content" style="min-height:1112px">
-
-          <!-- BEGIN PAGE HEADER -->
-
-          <!-- BEGIN PAGE BAR -->
-          <div class="page-bar">
-            <ul class="page-breadcrumb">
-              @yield ('page_breadcrumb')
-            </ul>
-          </div>
-          <!-- END PAGE BAR -->
-
-          <!-- BEGIN PAGE TITLE -->
-          @yield ('page_title')
-          <!-- END PAGE TITLE -->
-
-          <!-- END PAGE HEADER -->
-
-          <!-- BEGIN CONTENT INNER BODY -->
-          @yield ('content')
-          <!-- END CONTENT INNER BODY -->
-
-        </div>
-        <!-- END CONTENT BODY -->
-
-      </div>
-      <!-- END CONTENT -->
+      <!-- BEGIN CONTENT INNER BODY -->
+      @yield ('content')
+      <!-- END CONTENT INNER BODY -->
 
     <!-- END PAGE CONTAINER -->
   </body>

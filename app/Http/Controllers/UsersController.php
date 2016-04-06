@@ -14,9 +14,14 @@ use App\Role;
 //   - Write Documentation.
 class UsersController extends Controller
 {
+  public function index()
+  {
+    return view('cp.users.index');
+  }
+
   public function show(User $user)
   {
-    return view('cp.acp.users.show', compact('user'));
+    return view('cp.users.show', compact('user'));
   }
 
   public function search(Request $request)
@@ -57,7 +62,7 @@ class UsersController extends Controller
     $teams = Team::orderBy('team_name')->get();
     $roles = Role::orderBy('role_name')->get();
 
-    return view('cp.acp.users.create', compact('teams', 'roles'));
+    return view('cp.users.create', compact('teams', 'roles'));
   }
 
   public function store(CreateUserRequest $request)
@@ -87,7 +92,7 @@ class UsersController extends Controller
     $teams = Team::orderBy('team_name')->get();
     $roles = Role::orderBy('role_name')->get();
 
-    return view('cp.acp.users.edit', compact('user', 'teams', 'roles'));
+    return view('cp.users.edit', compact('user', 'teams', 'roles'));
   }
 
   public function update(CreateUserRequest $request, User $user)

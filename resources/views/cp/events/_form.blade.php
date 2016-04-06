@@ -1,13 +1,12 @@
 <div class="form-group">
-  <label for="title">Title:</label>
-  <input class="form-control" type="text" maxlength="100" name="title" value="{{ $event->title or old('subject') }}"/>
+  <label for="title">Title</label>
+  <input class="form-control" id="title" maxlength="100" name="title" placeholder="Event Title" type="text" />
 </div>
 <div class="form-group">
-  <label for="location">Location:</label>
-  <input class="form-control" type="text" maxlength="100" name="location" value="{{ $event->location or old('location') }}"/>
+  <label for="location">Location</label>
+  <input class="form-control" id="location" maxlength="100" name="location" placeholder="Event Location" type="text" />
 </div>
 <div class="form-group">
-  <label for="date">Date:</label>
-  <input id='dateTimePicker' class="form-control" type="text" maxlength="100" name="date" value="{{ isset($event->date) ? date('F jS, Y h:i A', strtotime($event->date)) : (null !== old('date') ? date('F jS, Y h:i A', strtotime(old('date'))) : '') }}"/>
+  <label for="date">Date</label>
+  <input class="form-control" id="date" name="date" placeholder="Event Date" type="text" />
 </div>
-<input type="submit" name="submit" value="{{ $submitButtonValue }}"/>

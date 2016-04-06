@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateEventRequest;
 
 /** Vendors */
+use Illuminate\Http\Request;
 use Carbon\Carbon;
 
 /** Models */
@@ -15,34 +16,14 @@ use App\Event;
 class EventsController extends Controller
 {
   /**
-   * Display a landing page for the resource.
+   * Display a listing of the resource.
    *
    * @return \Illuminate\Http\Response
    */
   public function index()
   {
-    return view('cp.events.index');
-  }
-
-  /**
-   * Display a listing of the resource.
-   *
-   * @return \Illuminate\Http\Response
-   */
-  public function showAll()
-  {
-    $events = Event::latest('date')->paginate(10);
-    return view('cp.events.show_all', compact('events'));
-  }
-
-  /**
-   * Show the form for creating a new resource.
-   *
-   * @return \Illuminate\Http\Response
-   */
-  public function create()
-  {
-    return view('cp.events.create');
+    $events = Event::latest('date')->paginate(9);
+    return view('cp.events.index', compact('events'));
   }
 
   /**
@@ -57,30 +38,24 @@ class EventsController extends Controller
   }
   
   /**
-   * Store a newly created resource in storage.
+   * Store a newly created resource.
    *
    * @param  App\Http\Requests\CreateEventRequest
    * @return \Illuminate\Http\Response
    */
   public function store(CreateEventRequest $request)
   {
-    $title    = $request->input('title');
-    $date     = new Carbon($request->input('date'));
-    $location = $request->input('location');
+    if ($request->ajax())
+    {
+      $title    = $request->input('title');
+      $location = $request->input('location');
+      $date     = new Carbon($request->input('date'));
+      
+      Event::create(compact('title', 'date', 'location'));
+      return;
+    }
 
-    Event::create(compact('title', 'date', 'location'));
-    return redirect(action('EventsController@showAll'));
-  }
-
-  /**
-   * Show the form for editing the specified resource.
-   *
-   * @param  \App\Event
-   * @return \Illuminate\Http\Response
-   */
-  public function edit(Event $event)
-  {
-    return view('cp.events.edit', compact('event'));
+    return redirect(action('EventsController@index'));
   }
 
   /**
@@ -91,24 +66,35 @@ class EventsController extends Controller
    * @return \Illuminate\Http\Response
    */
   public function update(CreateEventRequest $request, Event $event)
-  {
-    $title    = $request->input('title');
-    $date     = new Carbon($request->input('date'));
-    $location = $request->input('location');
+  { 
+    if ($request->ajax())
+    {
+      $title    = $request->input('title');
+      $location = $request->input('location');
+      $date     = new Carbon($request->input('date'));
 
-    $event->update(compact('title', 'date', 'location'));
-    return redirect(action('EventsController@showAll'));
+      $event->update(compact('title', 'date', 'location'));
+      return;
+    }
+
+    return redirect(action('EventsController@index'));
   }
 
   /**
    * Remove the specified resource from storage.
    *
    * @param  \App\Event
+   * @param  \Illuminate\Http\Request
    * @return \Illuminate\Http\Response
    */
-  public function destroy(Event $event)
+  public function destroy(Request $request, Event $event)
   {
-    $event->delete();
-    return redirect(action('EventsController@showAll'));
+    if ($request->ajax())
+    {
+      $event->delete();
+      return;
+    }
+
+    return redirect(action('EventsController@index'));
   }
 }

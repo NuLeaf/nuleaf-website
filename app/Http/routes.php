@@ -64,12 +64,8 @@ Route::group(['middleware' => 'web'], function()
       // Resource: Events
       Route::get   ('/cp/events'             , 'EventsController@index');
       Route::post  ('/cp/events'             , 'EventsController@store');
-      Route::get   ('/cp/events/all'         , 'EventsController@showAll');
-      Route::get   ('/cp/events/create'      , 'EventsController@create');
-      Route::get   ('/cp/events/{event}'     , 'EventsController@show');
       Route::patch ('/cp/events/{event}'     , 'EventsController@update');
       Route::delete('/cp/events/{event}'     , 'EventsController@destroy');
-      Route::get   ('/cp/events/{event}/edit', 'EventsController@edit');
 
       // Resource: Steminars
       Route::get   ('/cp/steminars'                , 'SteminarsController@index');
@@ -86,23 +82,23 @@ Route::group(['middleware' => 'web'], function()
        */
       Route::group(['middleware' => 'admin'], function()
       {
-        Route::get('/cp/admin', 'AdminController@index');
 
         // Resource: Users
-        Route::post  ('/cp/admin/users'            , 'UsersController@store');
-        Route::get   ('/cp/admin/users/search'     , 'UsersController@search');
-        Route::get   ('/cp/admin/users/create'     , 'UsersController@create');
-        Route::get   ('/cp/admin/users/{user}'     , 'UsersController@show');
-        Route::patch ('/cp/admin/users/{user}'     , 'UsersController@update');
-        Route::delete('/cp/admin/users/{user}'     , 'UsersController@destroy');
-        Route::get   ('/cp/admin/users/{user}/edit', 'UsersController@edit');
+        Route::get   ('/cp/users'            , 'UsersController@index');
+        Route::post  ('/cp/users'            , 'UsersController@store');
+        Route::get   ('/cp/users/search'     , 'UsersController@search');
+        Route::get   ('/cp/users/create'     , 'UsersController@create');
+        Route::get   ('/cp/users/{user}'     , 'UsersController@show');
+        Route::patch ('/cp/users/{user}'     , 'UsersController@update');
+        Route::delete('/cp/users/{user}'     , 'UsersController@destroy');
+        Route::get   ('/cp/users/{user}/edit', 'UsersController@edit');
 
         // Resource: Teams
         // Note (TP): Team forms should be within Admin index
         //            because they are so simple.
-        Route::post  ('/cp/admin/teams'       , 'TeamsController@store');
-        Route::patch ('/cp/admin/teams/{team}', 'TeamsController@update');
-        Route::delete('/cp/admin/teams/{team}', 'TeamsController@destroy');
+        Route::post  ('/cp/teams'       , 'TeamsController@store');
+        Route::patch ('/cp/teams/{team}', 'TeamsController@update');
+        Route::delete('/cp/teams/{team}', 'TeamsController@destroy');
       });
     });
   });
