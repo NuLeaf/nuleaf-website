@@ -2,13 +2,13 @@
 
 @section ('page_level_styles')
   <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/bootstrap-datetimepicker.css') }}">
-  <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/events.css?v=1.1') }}">
+  <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/resource.css') }}">
 @stop
 
 @section ('page_modals')
 
   <!-- BEGIN CONFIRMATION MODAL -->
-  <div class="modal fade" id="confirm-delete-modal" tabindex="-1" role="dialog" aria-labelledby="delete-confirmation" aria-hidden="true">
+  <div class="modal fade" id="confirm-modal" tabindex="-1" role="dialog" aria-labelledby="delete-confirmation" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
 
@@ -22,7 +22,6 @@
         </div>
 
         <div class="modal-body">
-            Are you sure you want to delete <strong id="modal-event-title"></strong>
         </div>
 
         <div class="modal-footer">
@@ -36,7 +35,7 @@
   <!-- END CONFIRMATION MODAL -->
 
   <!-- BEGIN POST MODAL -->
-  <div class="modal fade" id="post-event-modal" tabindex="-1" role="dialog" aria-labelledby="post-event-modal-title" aria-hidden="true">
+  <div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="post-event-modal-title" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
 
@@ -96,14 +95,14 @@
     <div class="row">
 
       <!-- BEGIN PAGINATION -->
-      <div class="col-xs-8">
+      <div class="col-xs-8 col-md-8">
         {{ $events->render() }}
       </div>
       <!-- END PAGINATION -->
       
       <!-- BEGIN ADD EVENT BUTTON -->
-      <div class="col-xs-1 col-xs-offset-3 event-add-btn pull-right">
-        <a class="btn btn-circle btn-success" data-href="{{ action('EventsController@store') }}" data-backdrop="static" data-target="#post-event-modal" data-toggle="modal" data-method="post" role="button">
+      <div class="add-resource-btn col-xs-3 col-xs-offset-1 col-md-1 col-md-offset-3 text-right">
+        <a class="btn btn-circle btn-success" data-href="{{ action('EventsController@store') }}" data-backdrop="static" data-close="dblclick" data-target="#form-modal" data-toggle="modal" data-method="post" role="button">
           <i aria-label="Create New Event" class="fa fa-plus"></i>
         </a>
       </div>
@@ -114,38 +113,32 @@
     <!-- BEGIN EVENT LIST -->
     <ul class="list-group">
       @foreach ($events as $event)
-        <li class="list-group-item row">
+        <li class="list-group-item row event">
+          <div class="peelable"></div>
 
-          <div class="col-md-1 event-date">
-            <span class="day">{{ $event->date->day }}</span>
+          <div class="hidden-xs hidden-sm col-md-1 event-date">
             <span class="month">{{ $event->date->format('M') }}</span>
-            <span class="time
-              @if ($event->date->hour > 20 && $event->date->hour < 4)
-                dark
-              @elseif ($event->date->hour < 7)
-                dawn
-              @elseif ($event->date->hour < 18)
-                light
-              @else
-                dusk
-              @endif
-            ">
-              {{ $event->date->format('h:i') }}
-            </span>
+            <span class="day">{{ $event->date->day }}</span>
           </div>
 
           <div class="col-md-8">
-            <h4 class="event-title">{{ $event->title }}<small> at {{ $event->location }}</small></h4>
+            <h4 class="event-title">{{ $event->title }}
+              <small>
+                <span class="hidden-xs hidden-sm"> {{ $event->date->format('h:s A') }}</span>
+                 at {{ $event->location }}
+                <span class="visible-xs-inline visible-sm-inline"> on {{ $event->date->format('M d, Y h:i A') }}</span>
+              </small>
+            </h4>
           </div>
 
           <div class="col-md-2 col-md-offset-1 text-right">
             <div aria-label="Actions" class="btn-group" role="group">
 
-              <a class="btn btn-default" data-href="{{ action('EventsController@update', $event) }}" data-backdrop="static" data-event="{{ $event }}" data-method="patch" data-target="#post-event-modal" data-toggle="modal" role="button">
+              <a class="btn btn-default" data-href="{{ action('EventsController@update', $event) }}" data-backdrop="static" data-close="dblclick" data-resource="{{ $event }}" data-form="modal" data-method="patch" data-target="#form-modal" data-toggle="modal" role="button">
                 <i aria-label="Edit" class="fa fa-pencil-square-o"></i>
               </a>
 
-              <a class="btn btn-warning" data-event="{ title:{{ $event->title }} }" data-href="{{ action('EventsController@destroy', $event) }}" data-method="delete" data-target="#confirm-delete-modal" data-toggle="modal" href="#" role="button">
+              <a class="btn btn-warning" data-resource="{{ $event }}" data-form="modal" data-href="{{ action('EventsController@destroy', $event) }}" data-method="delete" data-target="#confirm-modal" data-toggle="modal" href="#" role="button">
                 <i aria-label="Delete" class="fa fa-trash"></i>
               </a>
 
@@ -163,5 +156,8 @@
 @section ('page_level_plugins')
   <script type="text/javascript" src="{{ URL::asset('js/moment.js') }}"></script>
   <script type="text/javascript" src="{{ URL::asset('js/bootstrap-datetimepicker.js') }}"></script>
-  <script src="{{ URL::asset('js/events.js') }}"></script>
+  <script src="{{ URL::asset('js/jquery.inputmask.bundle.js') }}"></script>
+  <script src="{{ URL::asset('js/inputmask.date.extensions.js') }}"></script>
+  <script src="{{ URL::asset('js/modal-form.js') }}"></script>
+  <script src="{{ URL::asset('js/resource.js') }}"></script>
 @stop

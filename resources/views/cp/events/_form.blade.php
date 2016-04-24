@@ -1,12 +1,23 @@
 <div class="form-group">
   <label for="title">Title</label>
   <input class="form-control" id="title" maxlength="100" name="title" placeholder="Event Title" type="text" />
+  <span class="error-message" data-input="#title"></span>
 </div>
 <div class="form-group">
   <label for="location">Location</label>
   <input class="form-control" id="location" maxlength="100" name="location" placeholder="Event Location" type="text" />
+  <span class="error-message" data-input="#location"></span>
 </div>
 <div class="form-group">
   <label for="date">Date</label>
-  <input class="form-control" id="date" name="date" placeholder="Event Date" type="text" />
+  <div class="date hidden-md hidden-lg input-group mobile">
+    <span class="input-group-addon">
+      <i class="glyphicon glyphicon-calendar"></i>
+    </span>
+    <input class="form-control" id="date_mobile" name="date" placeholder="Event Date" readonly type="text" />
+  </div>
+  <span class="error-message hidden-md hidden-lg" data-input="#date_mobile"></span>
+
+  <input class="date hidden-xs hidden-sm form-control" id="date" name="date" maxlength="19" placeholder="mm/dd/yyyy hh:mm pm" type="text" />
+  <span class="error-message hidden-xs hidden-sm" data-input="#date"></span>
 </div>

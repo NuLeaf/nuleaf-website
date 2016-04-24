@@ -4,12 +4,15 @@
 
   <!-- BEGIN LOCAL STYLES -->
   <link href="{{ URL::asset('css/cp.css') }}" rel="stylesheet" type="text/css">
-  <link href="{{ URL::asset('css/nuleaf_light.css') }}" rel="stylesheet" type="text/css">
   <!-- END LOCAL STYLES -->
 
   <!-- BEGIN PAGE LEVEL STYLES -->
   @yield ('page_level_styles')
   <!-- END PAGE LEVEL STYLES -->
+
+  <!-- BEGIN THEME STYLES -->
+  <link href="{{ URL::asset('css/nuleaf_light.css') }}" rel="stylesheet" type="text/css">
+  <!-- BEGIN THEME STYLES -->
 
   <body>
     <!-- BEGIN PAGE MODALS -->
@@ -17,29 +20,29 @@
     <!-- END PAGE MODALS -->
 
     @include ('cp._header')
-    @include ('cp._sidebar')
-
-    <!-- BEGIN PAGE BAR -->
-    <div class="page-bar">
-
-      <!-- BEGIN BREADCRUMB -->
-      <ol class="breadcrumb">
-        @yield ('breadcrumb')
-        @stack ('breadcrumb')
-        
-        @foreach ($breadcrumbs as $breadcrumb => $url)
-          {!! $url !== '' ? '<li><a href="'.$url.'">' : '<li class="active">' !!}
-          {{ ucfirst($breadcrumb) }}
-          {!! $url !== '' ? '</a>' : '' !!}</li>
-        @endforeach
-      </ol>
-      <!-- END BREADCRUMB -->
-
-    </div>
-    <!-- END PAGE BAR -->
 
     <!-- BEGIN PAGE CONTAINER -->
     <div class="container-fluid page-container">
+      @include ('cp._sidebar')
+
+      <!-- BEGIN PAGE BAR -->
+      <div>
+
+        <!-- BEGIN BREADCRUMB -->
+        <ol class="breadcrumb">
+          @yield ('breadcrumb')
+          @stack ('breadcrumb')
+          
+          @foreach ($breadcrumbs as $breadcrumb => $url)
+            {!! $url !== '' ? '<li><a href="'.$url.'">' : '<li class="active">' !!}
+            {{ ucfirst($breadcrumb) }}
+            {!! $url !== '' ? '</a>' : '' !!}</li>
+          @endforeach
+        </ol>
+        <!-- END BREADCRUMB -->
+
+      </div>
+      <!-- END PAGE BAR -->
 
       <!-- BEGIN PAGE TITLE -->
       @yield ('page_title')
@@ -60,4 +63,11 @@
   <!-- BEGIN PAGE LEVEL PLUGINS -->
   @yield ('page_level_plugins')
   <!-- END PAGE LEVEL PLUGINS -->
+
+  <script>
+  $('[data-toggle="slide"]').click(function()
+  {
+    $($(this).data('target')).toggleClass('slide-in');
+  });
+  </script>
 </html>
