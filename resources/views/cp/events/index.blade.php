@@ -102,7 +102,7 @@
       
       <!-- BEGIN ADD EVENT BUTTON -->
       <div class="add-resource-btn col-xs-3 col-xs-offset-1 col-md-1 col-md-offset-3 text-right">
-        <a class="btn btn-circle btn-success" data-href="{{ action('EventsController@store') }}" data-backdrop="static" data-close="dblclick" data-target="#form-modal" data-toggle="modal" data-method="post" role="button">
+        <a class="btn btn-circle btn-success" data-href="{{ action('EventsController@store') }}" data-backdrop="static" data-close="dblclick" data-resource-title='Event' data-target="#form-modal" data-toggle="modal" data-method="post" role="button">
           <i aria-label="Create New Event" class="fa fa-plus"></i>
         </a>
       </div>
@@ -113,8 +113,8 @@
     <!-- BEGIN EVENT LIST -->
     <ul class="list-group">
       @foreach ($events as $event)
-        <li class="list-group-item row event">
-          <div class="peelable"></div>
+        <li class="list-group-item row event flipped">
+          <div class="hidden-xs hidden-sm peelable"></div>
 
           <div class="hidden-xs hidden-sm col-md-1 event-date">
             <span class="month">{{ $event->date->format('M') }}</span>
@@ -124,7 +124,7 @@
           <div class="col-md-8">
             <h4 class="event-title">{{ $event->title }}
               <small>
-                <span class="hidden-xs hidden-sm"> {{ $event->date->format('h:s A') }}</span>
+                <span class="hidden-xs hidden-sm"> {{ $event->date->format('h:i A') }}</span>
                  at {{ $event->location }}
                 <span class="visible-xs-inline visible-sm-inline"> on {{ $event->date->format('M d, Y h:i A') }}</span>
               </small>
@@ -134,11 +134,11 @@
           <div class="col-md-2 col-md-offset-1 text-right">
             <div aria-label="Actions" class="btn-group" role="group">
 
-              <a class="btn btn-default" data-href="{{ action('EventsController@update', $event) }}" data-backdrop="static" data-close="dblclick" data-resource="{{ $event }}" data-form="modal" data-method="patch" data-target="#form-modal" data-toggle="modal" role="button">
+              <a class="btn btn-default" data-href="{{ action('EventsController@update', $event) }}" data-backdrop="static" data-close="dblclick" data-resource='{ "title":"{{ $event->title }}", "location":"{{ $event->location }}", "date":"{{ $event->date->format('m/d/Y h:i a') }}" }' data-form="modal" data-method="patch" data-target="#form-modal" data-toggle="modal" role="button">
                 <i aria-label="Edit" class="fa fa-pencil-square-o"></i>
               </a>
 
-              <a class="btn btn-warning" data-resource="{{ $event }}" data-form="modal" data-href="{{ action('EventsController@destroy', $event) }}" data-method="delete" data-target="#confirm-modal" data-toggle="modal" href="#" role="button">
+              <a class="btn btn-warning" data-resource='{ "title":"{{ $event->title }}" }' data-form="modal" data-href="{{ action('EventsController@destroy', $event) }}" data-method="delete" data-target="#confirm-modal" data-toggle="modal" href="#" role="button">
                 <i aria-label="Delete" class="fa fa-trash"></i>
               </a>
 

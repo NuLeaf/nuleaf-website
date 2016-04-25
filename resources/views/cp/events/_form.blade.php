@@ -18,6 +18,6 @@
   </div>
   <span class="error-message hidden-md hidden-lg" data-input="#date_mobile"></span>
 
-  <input class="date hidden-xs hidden-sm form-control" id="date" name="date" maxlength="19" placeholder="mm/dd/yyyy hh:mm pm" type="text" />
+  <input class="date hidden-xs hidden-sm form-control" id="date" name="date" maxlength="19" placeholder="Event Date" type="text" />
   <span class="error-message hidden-xs hidden-sm" data-input="#date"></span>
 </div>

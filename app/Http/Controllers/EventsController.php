@@ -22,7 +22,7 @@ class EventsController extends Controller
    */
   public function index()
   {
-    $events = Event::latest('date')->paginate(9);
+    $events = Event::latest('date')->paginate(10);
     return view('cp.events.index', compact('events'));
   }
 

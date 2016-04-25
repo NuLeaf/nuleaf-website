@@ -16,7 +16,7 @@ $factory->define(App\Event::class, function (Faker\Generator $faker)
   return [
     'title'    => $faker->unique()->sentence,
     'date'     => $faker->dateTimeBetween('-1 year', 'now'),
-    'location' => $faker->address,
+    'location' => $faker->streetAddress,
   ];
 });
 
@@ -25,7 +25,7 @@ $factory->define(App\Steminar::class, function (Faker\Generator $faker)
   return [
     'title'    => $faker->unique()->sentence,
     'date'     => $faker->dateTimeBetween('-1 year', 'now'),
-    'location' => $faker->address,
+    'location' => $faker->streetAddress,
     'body'     => $faker->text
   ];
 });
