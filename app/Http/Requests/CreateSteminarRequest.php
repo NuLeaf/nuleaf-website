@@ -31,7 +31,7 @@ class CreateSteminarRequest extends Request
                      unique:steminars,title'.$steminar_id,
       'date'     => 'required|date',
       'location' => 'required|string|min:5|max:100',
-      'body'     => 'required|string|min:100|max:2000'
+      'body'     => 'required|string|min:100'
     ];
   }
 }

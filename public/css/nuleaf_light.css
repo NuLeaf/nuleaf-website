@@ -1,6 +1,9 @@
-/**
+/* ======================================================
  * NuLeaf Theme - Light
- */
+ * ======================================================
+ * Organization:   NuLeaf Technologies
+ * Lead Developer: Tuan Pham (https://github.com/ttpham0111)
+ * ======================================================*/
 
 /* Bootstrap Custom CSS */
 .btn-success {
@@ -61,7 +64,7 @@
   font-variant: small-caps; 
 }
 
-/* Events */
+/* Resources */
 .pagination > li > a {
   color: #888;
 }
@@ -73,7 +76,9 @@
   background-color: #888;
   border-color: #888;
 }
-.peelable {
+
+/* Animations */
+.peel {
   background: #d5e6b9;
 }
 

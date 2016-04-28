@@ -1,6 +1,6 @@
 <div class="form-group">
   <label for="title">Title</label>
-  <input class="form-control" id="title" maxlength="100" name="title" placeholder="Event Title" type="text" />
+  <input class="form-control" id="title" data-html-entities="true" maxlength="100" name="title" placeholder="Event Title" type="text" />
   <span class="error-message" data-input="#title"></span>
 </div>
 <div class="form-group">

@@ -85,7 +85,7 @@ var ModalForm = (function($)
     });
 
     // Assist with date input.
-    // $inputs.filter('.date').inputmask('mm/dd/yyyy hh:mm xm');
+    $inputs.filter('.date').inputmask('mm/dd/yyyy hh:mm xm');
 
     // Prepare modal form with resource data.
     this.prepare_modal_form();
@@ -115,36 +115,60 @@ var ModalForm = (function($)
     this.$modal.find('.help-block').remove();
     this.$modal.find('.has-feedback').removeClass('has-feedback has-error has-success');
   };
+
+  /* Helper method to decode an html string with html entities. */
+  ModalForm.prototype.decode_html = function(html)
+  {
+    var text_area = document.createElement("textarea");
+    text_area.innerHTML = html;
+    return text_area.value;
+  };
   
   /* Prepares the modal form with data */
   ModalForm.prototype.prepare_modal_form = function()
   {
-    var $inputs        = this.$modal.find('input');
-    var resource       = this.$target.data('resource');
-    var resource_title = this.$target.data('resource-title');
-    switch (this.$target.data('method'))
+    var $this;
+    var $name;
+    var value;
+    var modal_form     = this;
+    var $modal         = this.$modal;
+    var $target        = this.$target;
+    var $inputs        = $modal.find('input');
+    var resource       = $target.data('resource');
+    var resource_title = $target.data('resource-title');
+    var ckeditor       = $modal.data('ckeditor');
+    switch ($target.data('method'))
     {
       case 'delete':
-        this.$modal.find('.modal-body')
+        $modal.find('.modal-body')
           .html('Are you sure you want to delete <strong>'+resource.title+'</strong>?');
       break;
       case 'patch':
-        this.$modal.find('.modal-title').text(resource.title);
-        this.$modal.find('.btn-ok').text('Edit '+resource_title);
-
-        var $name;
+        $modal.find('.modal-title').text(resource.title);
+        $modal.find('.btn-ok').text('Edit '+resource_title);
         $inputs.each(function()
         {
-          name = ($(this).attr('name'));
-          if (resource.hasOwnProperty(name)) $(this).val(resource[name]);
+          $this = $(this);
+          name  = $this.attr('name');
+          if (resource.hasOwnProperty(name))
+          {
+            if ($this.data('html-entities'))
+              value = modal_form.decode_html(resource[name]);
+            else value = resource[name];
+            $this.val(value);
+          }
         });
+        if (ckeditor !== undefined)
+          CKEDITOR.instances[ckeditor].setData(this.decode_html(resource[$('#'+ckeditor).attr('name')]));
       break;
       case 'post':
       // no break.
       default:
-        this.$modal.find('.modal-title').text('Create New '+resource_title);
-        this.$modal.find('.btn-ok').text('Create '+resource_title);
+        $modal.find('.modal-title').text('Create New '+resource_title);
+        $modal.find('.btn-ok').text('Create '+resource_title);
         $inputs.each(function() { $(this).val(''); });
+        if (ckeditor !== undefined)
+          CKEDITOR.instances[ckeditor].setData('');
     }
   };
 
@@ -155,7 +179,7 @@ var ModalForm = (function($)
     {
       case 'delete':
         this.$modal.modal('toggle');
-        this.$target.parent().parent().parent().slideUp(400, function() { window.location.reload(true); });
+        this.$target.closest('li').slideUp(400, function() { window.location.reload(true); });
       break;
       case 'patch':
       // no break.
@@ -207,7 +231,7 @@ var ModalForm = (function($)
       break;
 
       default:
-        console.log('error: '+jqXHR.status);
+        console.log('error: '+jqXHR.responseText);
     }
   };
 
@@ -216,9 +240,15 @@ var ModalForm = (function($)
   {
     this.remove_validation_errors();
 
-    var data   = {};
+    var data     = {};
+    var ckeditor = this.$modal.data('ckeditor');
     this.$modal.find('input').filter(':visible').each(function() { data[$(this).attr('name')] = $(this).val(); });
-
+    if (ckeditor !== undefined)
+    {
+      var $ckeditor = $('#'+ckeditor);
+      CKEDITOR.instances[ckeditor].updateElement();
+      data[$ckeditor.attr('name')] = $ckeditor.val();
+    }
     data._token = $('input[name="_token"]').val();
     data._method = this.$target.data('method');
 

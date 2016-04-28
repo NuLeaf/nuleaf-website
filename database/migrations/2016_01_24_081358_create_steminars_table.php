@@ -22,7 +22,7 @@ class CreateSteminarsTable extends Migration
       $table->string('title', 100);
       $table->dateTime('date');
       $table->string('location', 100);
-      $table->text('body', 2000);
+      $table->binary('body');
       $table->timestamps();
     });
   }

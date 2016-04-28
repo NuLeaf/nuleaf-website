@@ -63,8 +63,30 @@
   text-decoration: none;
 }
 
-/* Bootstrap Datetimepicker */
-.bootstrap-datetimepicker-widget {
+/* Animation States */
+.peel {
+  background: #eee;
+  border: 0 solid;
+  border-color: transparent #fff #fff transparent;
+  -webkit-border-top-left-radius: 2px;
+  -moz-border-top-left-radius: 2px;
+  border-top-left-radius: 2px;
+  bottom: -1px;
+  -moz-box-shadow: 2px 0 0 #fff, 0 4px 0 #fff, -1px 1px 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 2px 0 0 #fff, 0 4px 0 #fff, -1px 1px 5px rgba(0,0,0,0.5);
+  box-shadow: 2px 0 0 #fff, 0 4px 0 #fff, -1px 1px 5px rgba(0,0,0,.5);
+  height: 0;
+  position: absolute;
+  right: -1px;
+  -moz-transition: border-width 0.2s ease-out;
+  -o-transition: border-width 0.2s ease-out;
+  -webkit-transition: border-width 0.2s ease-out;
+  transition: border-width 0.2s ease-out;
+  width: 0;
+  z-index: 1000;
+}
+.peelable:hover > .peel {
+  border-width: 20px;
 }
 
 /* Buttons */

@@ -1,5 +1,12 @@
 <?php
 
+/* ======================================================
+ * Events Controller
+ * ======================================================
+ * Organization:   NuLeaf Technologies
+ * Lead Developer: Tuan Pham (https://github.com/ttpham0111)
+ * ======================================================*/
+
 namespace App\Http\Controllers;
 
 /** Laravel */
@@ -24,17 +31,6 @@ class EventsController extends Controller
   {
     $events = Event::latest('date')->paginate(10);
     return view('cp.events.index', compact('events'));
-  }
-
-  /**
-   * Show the resource.
-   *
-   * @param  \App\Event
-   * @return \Illuminate\Http\Response
-   */
-  public function show(Event $event)
-  {
-    return view('cp.events.show', compact('event'));
   }
   
   /**
@@ -83,8 +79,8 @@ class EventsController extends Controller
   /**
    * Remove the specified resource from storage.
    *
-   * @param  \App\Event
    * @param  \Illuminate\Http\Request
+   * @param  \App\Event $event
    * @return \Illuminate\Http\Response
    */
   public function destroy(Request $request, Event $event)

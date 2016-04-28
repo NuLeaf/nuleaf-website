@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
         'lastname'  => 'test',
       ]);
 
-      factory(App\Event::class, 50)->create();
-      factory(App\Steminar::class, 50)->create();
-      factory(App\Team::class, 10)->create();
+      factory(App\Event::class, 1000)->create();
+      factory(App\Steminar::class, 1000)->create();
+      factory(App\Team::class, 100)->create();
     }
 }

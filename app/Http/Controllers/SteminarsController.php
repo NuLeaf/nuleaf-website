@@ -1,5 +1,12 @@
 <?php
 
+/* ======================================================
+ * Steminars Controller
+ * ======================================================
+ * Organization:   NuLeaf Technologies
+ * Lead Developer: Tuan Pham (https://github.com/ttpham0111)
+ * ======================================================*/
+
 namespace App\Http\Controllers;
 
 /** Laravel */
@@ -7,6 +14,7 @@ use App\Http\Requests\CreateSteminarRequest;
 use App\Http\Controllers\Controller;
 
 /** Vendors */
+use Illuminate\Http\Request;
 use Carbon\Carbon;
 
 /** Models */
@@ -15,34 +23,14 @@ use App\Steminar;
 class SteminarsController extends Controller
 {
   /**
-   * Display a landing page for the resource.
+   * Display a listing of the resource.
    *
    * @return \Illuminate\Http\Response
    */
   public function index()
   {
-    return view('cp.steminars.index');
-  }
-
-  /**
-   * Display a listing of the resource.
-   *
-   * @return \Illuminate\Http\Response
-   */
-  public function showAll()
-  {
-    $steminars = Steminar::latest('date')->paginate(10);
-    return view('cp.steminars.show_all', compact('steminars'));
-  }
-
-  /**
-   * Show the form for creating a new resource.
-   *
-   * @return \Illuminate\Http\Response
-   */
-  public function create()
-  {
-    return view('cp.steminars.create');
+    $steminars = Steminar::latest('date')->paginate(5);
+    return view('cp.steminars.index', compact('steminars'));
   }
 
   /**
@@ -53,7 +41,7 @@ class SteminarsController extends Controller
    */
   public function show(Steminar $steminar)
   {
-    return view('cp.steminars.show', $steminar);
+    return view('cp.steminars.show', compact($steminar));
   }
   
   /**
@@ -64,24 +52,18 @@ class SteminarsController extends Controller
    */
   public function store(CreateSteminarRequest $request)
   {
-    $title    = $request->input('title');
-    $date     = new Carbon($request->input('date'));
-    $location = $request->input('location');
-    $body     = $request->input('body');
+    if ($request->ajax())
+    {
+      $title    = $request->input('title');
+      $location = $request->input('location');
+      $date     = new Carbon($request->input('date'));
+      $body     = $request->input('body');
+      
+      Steminar::create(compact('title', 'date', 'location', 'body'));
+      return;
+    }
 
-    Steminar::create(compact('title', 'date', 'location', 'body'));
-    return redirect(action('SteminarsController@showAll'));
-  }
-
-  /**
-   * Show the form for editing the specified resource.
-   *
-   * @param  \App\Steminar
-   * @return \Illuminate\Http\Response
-   */
-  public function edit(Steminar $steminar)
-  {
-    return view('cp.steminars.edit', compact('steminar'));
+    return redirect(action('SteminarsController@index'));
   }
 
   /**
@@ -93,24 +75,35 @@ class SteminarsController extends Controller
    */
   public function update(CreateSteminarRequest $request, Steminar $steminar)
   {
-    $title    = $request->input('title');
-    $date     = new Carbon($request->input('date'));
-    $location = $request->input('location');
-    $body     = $request->input('body');
+    if ($request->ajax())
+    {
+      $title    = $request->input('title');
+      $location = $request->input('location');
+      $date     = new Carbon($request->input('date'));
+      $body     = $request->input('body');
+      
+      $steminar->update(compact('title', 'date', 'location', 'body'));
+      return;
+    }
 
-    $steminar->update(compact('title', 'date', 'location', 'body'));
-    return redirect(action('SteminarsController@showAll'));
+    return redirect(action('SteminarsController@index'));
   }
 
   /**
    * Remove the specified resource from storage.
    *
-   * @param  \App\Steminar  $steminar
+   * @param  \Illuminate\Http\Request
+   * @param  \App\Steminar $steminar
    * @return \Illuminate\Http\Response
    */
-  public function destroy(Steminar $steminar)
+  public function destroy(Request $request, Steminar $steminar)
   {
-    $steminar->delete();
-    return redirect(action('SteminarsController@showAll'));
+    if ($request->ajax())
+    {
+      $steminar->delete();
+      return;
+    }
+
+    return redirect(action('SteminarsController@index'));
   }
 }
