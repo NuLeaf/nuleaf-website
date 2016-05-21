@@ -11,7 +11,6 @@ namespace App\Http\Controllers;
 
 /** Laravel */
 use App\Http\Requests\CreateSteminarRequest;
-use App\Http\Controllers\Controller;
 
 /** Vendors */
 use Illuminate\Http\Request;
@@ -62,7 +61,6 @@ class SteminarsController extends Controller
       Steminar::create(compact('title', 'date', 'location', 'body'));
       return;
     }
-
     return redirect(action('SteminarsController@index'));
   }
 
@@ -85,7 +83,6 @@ class SteminarsController extends Controller
       $steminar->update(compact('title', 'date', 'location', 'body'));
       return;
     }
-
     return redirect(action('SteminarsController@index'));
   }
 
@@ -103,7 +100,6 @@ class SteminarsController extends Controller
       $steminar->delete();
       return;
     }
-
     return redirect(action('SteminarsController@index'));
   }
 }

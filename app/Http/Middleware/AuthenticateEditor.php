@@ -1,5 +1,12 @@
 <?php
 
+/* ======================================================
+ * Authenticate Editor Middleware
+ * ======================================================
+ * Organization:   NuLeaf Technologies
+ * Lead Developer: Tuan Pham (https://github.com/ttpham0111)
+ * ======================================================*/
+
 namespace App\Http\Middleware;
 
 use Closure;
@@ -16,7 +23,7 @@ class AuthenticateEditor
   public function handle($request, Closure $next)
   {
     if (!$request->user() ||
-        !$request->user()->hasRole(['admin', 'editor'], 'or')
+        !$request->user()->hasRoles(['admin', 'editor'], 'or')
     )
     {
       if ($request->ajax())

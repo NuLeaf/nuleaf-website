@@ -1,5 +1,12 @@
 <?php
 
+/* ======================================================
+ * Authenticat Admin Middleware
+ * ======================================================
+ * Organization:   NuLeaf Technologies
+ * Lead Developer: Tuan Pham (https://github.com/ttpham0111)
+ * ======================================================*/
+
 namespace App\Http\Middleware;
 
 use Closure;
@@ -15,7 +22,7 @@ class AuthenticateAdmin
      */
     public function handle($request, Closure $next)
     {
-      if (!$request->user() || !$request->user()->hasRole('admin'))
+      if (!$request->user() || !$request->user()->hasRoles('admin'))
       {
         if ($request->ajax())
         {

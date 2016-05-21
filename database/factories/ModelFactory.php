@@ -36,3 +36,17 @@ $factory->define(App\Team::class, function (Faker\Generator $faker)
     'team_name' => $faker->unique()->colorName,
   ];
 });
+
+$factory->define(App\User::class, function (Faker\Generator $faker)
+{
+  return [
+    'username'    => $faker->unique()->userName,
+    'password'    => bcrypt('root'),
+    'email'       => $faker->unique()->safeEmail,
+    'firstname'   => $faker->firstName,
+    'lastname'    => $faker->lastName,
+    'image1'      => $faker->unique()->imageUrl(250, 250, 'cats'),
+    'image2'      => $faker->unique()->imageUrl(250, 250, 'cats'),
+    'description' => $faker->text
+  ];
+});

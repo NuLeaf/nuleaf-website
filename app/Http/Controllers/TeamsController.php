@@ -1,13 +1,20 @@
 <?php
 
+/* ======================================================
+ * Teams Controller
+ * ======================================================
+ * Organization:   NuLeaf Technologies
+ * Lead Developer: Tuan Pham (https://github.com/ttpham0111)
+ * ======================================================*/
+
 namespace App\Http\Controllers;
 
+/** Laravel */
 use App\Http\Requests\CreateTeamRequest;
 
+/** Models */
 use App\Team;
 
-// TODO (TP): 
-//   - Create Request.
 class TeamsController extends Controller
 {
   /**
@@ -20,7 +27,7 @@ class TeamsController extends Controller
   {
     $team_name = $request->input('team_name');
     Team::create([$team_name]);
-    return redirect(action('AdminController@index'));
+    return redirect(action('UserController@index'));
   }
 
   /**
@@ -34,7 +41,7 @@ class TeamsController extends Controller
   {
     $team_name = $request->input('team_name');
     $team->update([$team_name]);
-    return redirect(action('AdminController@index'));
+    return redirect(action('UserController@index'));
   }
 
   /**
@@ -46,6 +53,6 @@ class TeamsController extends Controller
   public function destroy(Team $team)
   {
     $team->delete();
-    return redirect(action('AdminController@index'));
+    return redirect(action('UserController@index'));
   }
 }

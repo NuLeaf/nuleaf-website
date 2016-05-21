@@ -8,7 +8,7 @@
 @section ('page_modals')
 
   <!-- BEGIN CONFIRMATION MODAL -->
-  <div class="modal fade" id="confirm-modal" tabindex="-1" role="dialog" aria-labelledby="delete-confirmation" aria-hidden="true">
+  <div class="modal fade" data-method="delete" id="confirm-modal" tabindex="-1" role="dialog" aria-labelledby="delete-confirmation" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
 
@@ -22,11 +22,12 @@
         </div>
 
         <div class="modal-body">
+          Are you sure you want to delete <strong data-resource-key-text="title"></strong>?
         </div>
 
         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-danger btn-ok">Delete</button>
+            <button type="button" class="btn btn-danger btn-submit btn-ok">Delete</button>
         </div>
 
       </div>
@@ -35,7 +36,7 @@
   <!-- END CONFIRMATION MODAL -->
 
   <!-- BEGIN POST MODAL -->
-  <div class="modal fade" data-ckeditor="body" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="post-modal-title" aria-hidden="true">
+  <div class="modal fade" data-ckeditor="steminar-body" data-resource-type="Steminar" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="post-modal-title" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
 
@@ -43,8 +44,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <h4 class="modal-title" id="post-modal-title">
-          </h4>
+          <h4 class="modal-title" data-default-text="Create New Steminar" data-resource-key-text="title" id="post-modal-title"></h4>
         </div>
 
         <div class="modal-body">
@@ -53,7 +53,7 @@
 
         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-success btn-ok"></button>
+            <button type="button" class="btn btn-submit btn-success btn-ok"></button>
             <p id="errors">
             </p>
         </div>        
@@ -102,7 +102,7 @@
       
       <!-- BEGIN ADD STEMINAR BUTTON -->
       <div class="add-resource-btn col-xs-3 col-xs-offset-1 col-md-1 col-md-offset-3 text-right">
-        <a class="btn btn-circle btn-success" data-href="{{ action('SteminarsController@store') }}" data-backdrop="static" data-close="dblclick" data-resource-title='Steminar' data-target="#form-modal" data-toggle="modal" data-method="post" role="button">
+        <a class="btn btn-circle btn-success" data-href-post="{{ action('SteminarsController@store') }}" data-backdrop="static" data-close="dblclick" data-target="#form-modal" data-toggle="modal" data-method="post" role="button">
           <i aria-label="Create New Steminar" class="fa fa-plus"></i>
         </a>
       </div>
@@ -113,7 +113,7 @@
     <!-- BEGIN STEMINAR LIST -->
     <ul class="list-group">
       @foreach ($steminars as $steminar)
-        <li class="list-group-item peelable">
+        <li class="list-group-item peelable resource" data-href-delete="{{ action('SteminarsController@destroy', $steminar) }}" data-href-patch="{{ action('SteminarsController@update', $steminar) }}" data-close="dblclick" data-resource='{ "title":"{{ htmlspecialchars(htmlspecialchars($steminar->title)) }}", "location":"{{ $steminar->location }}", "date":"{{ $steminar->date->format('m/d/Y h:i a') }}", "body":"{{ htmlspecialchars(htmlspecialchars($steminar->body)) }}" }'>
           <div class="hidden-xs hidden-sm peel"></div>
           <div class="row">
             <div class="col-xs-7">
@@ -122,11 +122,11 @@
             <div class="col-xs-5 text-right">
               <div aria-label="Actions" class="btn-group" role="group">
 
-                <a class="btn btn-default" data-href="{{ action('SteminarsController@update', $steminar) }}" data-backdrop="static" data-close="dblclick" data-resource='{ "title":"{{ htmlspecialchars(htmlspecialchars($steminar->title)) }}", "location":"{{ $steminar->location }}", "date":"{{ $steminar->date->format('m/d/Y h:i a') }}", "body":"{{ htmlspecialchars(htmlspecialchars($steminar->body)) }}" }' data-resource-title="Steminar" data-form="modal" data-method="patch" data-target="#form-modal" data-toggle="modal" role="button">
+                <a class="btn btn-default" data-backdrop="static" data-target="#form-modal" data-toggle="modal" role="button">
                   <i aria-label="Edit" class="fa fa-pencil-square-o"></i>
                 </a>
 
-                <a class="btn btn-warning" data-resource='{ "title":"{{ $steminar->title }}" }' data-form="modal" data-href="{{ action('SteminarsController@destroy', $steminar) }}" data-method="delete" data-target="#confirm-modal" data-toggle="modal" href="#" role="button">
+                <a class="btn btn-warning" data-form="modal" data-target="#confirm-modal" data-toggle="modal" role="button">
                   <i aria-label="Delete" class="fa fa-trash"></i>
                 </a>
 

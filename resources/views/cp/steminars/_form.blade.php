@@ -10,7 +10,7 @@
 </div>
 <div class="form-group">
   <label for="date">Date</label>
-  <div class="date hidden-md hidden-lg input-group mobile">
+  <div class="date datetimepicker hidden-md hidden-lg input-group mobile">
     <span class="input-group-addon">
       <i class="glyphicon glyphicon-calendar"></i>
     </span>
@@ -18,11 +18,11 @@
   </div>
   <span class="error-message hidden-md hidden-lg" data-input="#date_mobile"></span>
 
-  <input class="date hidden-xs hidden-sm form-control" id="date" name="date" maxlength="19" placeholder="Steminar Date" type="text" />
+  <input class="date hidden-xs hidden-sm inputmask form-control" id="date" name="date" maxlength="19" placeholder="Steminar Date" type="text" />
   <span class="error-message hidden-xs hidden-sm" data-input="#date"></span>
 </div>
 <div class="form-group">
-  <label for="body">Body</label>
-  <textarea id="body" name="body"></textarea>
-  <span class="error-message" data-input="#body"></span>
+  <label for="steminar-body">Body</label>
+  <textarea id="steminar-body" name="body"></textarea>
+  <span class="error-message" data-input="#steminar-body"></span>
 </div>

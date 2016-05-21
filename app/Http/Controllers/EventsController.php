@@ -10,7 +10,6 @@
 namespace App\Http\Controllers;
 
 /** Laravel */
-use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateEventRequest;
 
 /** Vendors */
@@ -50,7 +49,6 @@ class EventsController extends Controller
       Event::create(compact('title', 'date', 'location'));
       return;
     }
-
     return redirect(action('EventsController@index'));
   }
 
@@ -72,7 +70,6 @@ class EventsController extends Controller
       $event->update(compact('title', 'date', 'location'));
       return;
     }
-
     return redirect(action('EventsController@index'));
   }
 
@@ -90,7 +87,6 @@ class EventsController extends Controller
       $event->delete();
       return;
     }
-
     return redirect(action('EventsController@index'));
   }
 }

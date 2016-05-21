@@ -40,6 +40,38 @@
   padding: 15px;
 }
 
+/* Users */
+.user {
+  margin-bottom: 15px;
+}
+.user-profile {
+  position: relative;
+}
+.user-profile:hover > .user-profile-overlay,
+.user-profile-photo:focus + .user-profile-overlay {
+  display: block;
+}
+.user-profile-overlay {
+  background-color: hsla(0, 0%, 50%, 0.5);
+  display: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.user-profile-overlay > .btn-group {
+  top: 43%;
+}
+.user-description {
+  font-size: 20px;
+}
+.user-details-img {
+  margin-bottom: 20px;
+}
+.user-details-actions {
+  margin-bottom: 15px;
+}
+
  /* Buttons */
  .add-resource-btn {
   padding-top: 15px;

@@ -28,6 +28,6 @@ class SeedUsersTable extends Migration
    */
   public function down()
   {
-    DB::table('users')->where('username', 'root')->delete();
+    DB::table('users')->where('username', env('ROOT_USERNAME', 'root'))->delete();
   }
 }

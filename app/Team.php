@@ -10,7 +10,7 @@ class Team extends Model
   protected $primaryKey = 'team_id';
 
   // Don't store created_at/updated_at in database.
-  public $timestamps    = false;
+  public $timestamps = false;
 
   /**
    * The attributes that are not mass assignable.
@@ -28,6 +28,6 @@ class Team extends Model
    */
   public function users()
   {
-    return $this->hasMany('App\User');
+    return $this->hasMany('App\User', 'team_id', 'team_id');
   }
 }

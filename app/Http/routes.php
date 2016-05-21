@@ -86,16 +86,10 @@ Route::group(['middleware' => 'web'], function()
         // Resource: Users
         Route::get   ('/cp/users'            , 'UsersController@index');
         Route::post  ('/cp/users'            , 'UsersController@store');
-        Route::get   ('/cp/users/search'     , 'UsersController@search');
-        Route::get   ('/cp/users/create'     , 'UsersController@create');
-        Route::get   ('/cp/users/{user}'     , 'UsersController@show');
         Route::patch ('/cp/users/{user}'     , 'UsersController@update');
         Route::delete('/cp/users/{user}'     , 'UsersController@destroy');
-        Route::get   ('/cp/users/{user}/edit', 'UsersController@edit');
 
         // Resource: Teams
-        // Note (TP): Team forms should be within Admin index
-        //            because they are so simple.
         Route::post  ('/cp/teams'       , 'TeamsController@store');
         Route::patch ('/cp/teams/{team}', 'TeamsController@update');
         Route::delete('/cp/teams/{team}', 'TeamsController@destroy');

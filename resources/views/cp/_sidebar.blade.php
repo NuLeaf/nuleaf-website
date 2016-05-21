@@ -15,6 +15,7 @@
         @endif
       </a>
     </li>
+    @if (Auth::user()->hasRoles(['admin', 'editor'], 'or'))
     <li role="separator" class="divider"></li>
     <li{{ $sidebar_selected === 'events' ? ' class=active' : '' }}>
       <a href="{{ action('EventsController@index') }}">
@@ -37,7 +38,9 @@
           <span class="selected hidden-xs hidden-sm"></span>
         @endif
       </a>
-    </li> 
+    </li>
+    @endif
+    @if (Auth::user()->hasRoles('admin'))
     <li{{ $sidebar_selected === 'users' ? ' class=active' : '' }}>
       <a href="{{ action('UsersController@index') }}">
         <div class="sidebar-icon">
@@ -49,6 +52,7 @@
         @endif
       </a>
     </li>
+    @endif
   </ul>
 </nav>
 <!-- END SIDE NAVIGATION BAR -->

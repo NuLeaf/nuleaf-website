@@ -12,8 +12,11 @@
   left: 0;
   z-index: 10;
   margin-left: -50px;
+  -moz-box-shadow: 6px 6px 12px rgba(0,0,0,.175);
   -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
   box-shadow: 6px 6px 12px rgba(0,0,0,.175);
+  -moz-transition: margin-left 0.5s;
+  -o-transition: margin-left 0.5s;
   -webkit-transition: margin-left 0.5s;
   transition: margin-left 0.5s;
 }
@@ -24,8 +27,10 @@
 #toggle-sidebar-btn {
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 #toggle-sidebar-btn:hover {
@@ -33,7 +38,8 @@
 }
 .sidebar.slide-in {
   margin-left: 0;
-
+  -moz-transition: margin-left 0.5s;
+  -o-transition: margin-left 0.5s;
   -webkit-transition: margin-left 0.5s;
   transition: margin-left 0.5s;
 }
@@ -63,30 +69,63 @@
   text-decoration: none;
 }
 
+/* Form */
+.select-default-first,
+.select-default-first > option {
+  color: #000;
+}
+.select-default-first:invalid,
+.select-default-first > option:first-child {
+  color: #aaa;
+}
+
 /* Animation States */
 .peel {
-  background: #eee;
-  border: 0 solid;
-  border-color: transparent #fff #fff transparent;
-  -webkit-border-top-left-radius: 2px;
+  background: -moz-linear-gradient(-45deg, #fff 50%, #bbb 51%, #ccc 55%, #ddd 60%, #fff 85%);
+  background: -o-linear-gradient(-45deg, #fff 50%, #bbb 51%, #ccc 55%, #ddd 60%, #fff 85%);
+  background: -webkit-linear-gradient(-45deg, #fff 50%, #bbb 51%, #ccc 55%, #ddd 60%, #fff 85%);
+  background: -webkit-gradient(-45deg, #fff 50%, #bbb 51%, #ccc 55%, #ddd 60%, #fff 85%);
+  background: linear-gradient(-45deg, #fff 50%, #bbb 51%, #ccc 55%, #ddd 60%, #fff 85%);
   -moz-border-top-left-radius: 2px;
+  -webkit-border-top-left-radius: 2px;
   border-top-left-radius: 2px;
-  bottom: -1px;
-  -moz-box-shadow: 2px 0 0 #fff, 0 4px 0 #fff, -1px 1px 5px rgba(0,0,0,0.5);
-  -webkit-box-shadow: 2px 0 0 #fff, 0 4px 0 #fff, -1px 1px 5px rgba(0,0,0,0.5);
-  box-shadow: 2px 0 0 #fff, 0 4px 0 #fff, -1px 1px 5px rgba(0,0,0,.5);
+  bottom: 0;
+  -moz-box-shadow: -3px -1px 5px -2px rgba(0,0,0,0.5);
+  -webkit-box-shadow: -3px -1px 5px -2px rgba(0,0,0,0.5);
+  box-shadow: -3px -1px 5px -2px rgba(0,0,0,0.5);
   height: 0;
   position: absolute;
-  right: -1px;
-  -moz-transition: border-width 0.2s ease-out;
-  -o-transition: border-width 0.2s ease-out;
-  -webkit-transition: border-width 0.2s ease-out;
-  transition: border-width 0.2s ease-out;
+  right: -1.2px;
+  -moz-transition: width 0.3s ease-out, height 0.3s ease-out;
+  -o-transition: width 0.3s ease-out, height 0.3s ease-out;
+  -webkit-transition: width 0.3s ease-out, height 0.3s ease-out;
+  transition: width 0.3s ease-out, height 0.3s ease-out;
   width: 0;
-  z-index: 1000;
+  z-index: 1;
 }
 .peelable:hover > .peel {
-  border-width: 20px;
+  width: 35px;
+  height: 35px;
+}
+.slideable {
+  overflow: hidden !important;
+  position: relative;
+}
+.slideable > .slide-out {
+  left: -100%;
+  position: relative;
+  -moz-transition: left 0.4s ease-in-out;
+  -o-transition: left 0.4s ease-in-out;
+  -webkit-transition: left 0.4s ease-in-out;
+  transition: left 0.4s ease-in-out;
+}
+.slideable > .slide-in {
+  left: 0;
+  position: relative;
+  -moz-transition: left 0.4s ease-in-out;
+  -o-transition: left 0.4s ease-in-out;
+  -webkit-transition: left 0.4s ease-in-out;
+  transition: left 0.4s ease-in-out;
 }
 
 /* Buttons */
@@ -142,12 +181,13 @@
 .navbar-nav .open .dropdown-menu {
   border: 1px solid #ccc;
   border: 1px solid rgba(0,0,0,.15);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
   -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
   box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
 .navbar-nav > .dropdown {
   display: inline-block;
-  }
+}
 
 /* Breadcrumb */
 .breadcrumb {
@@ -177,6 +217,7 @@
     top: 9px;
     width: 225px;
     padding-top: 100px;
+    -moz-box-shadow: 0 0 0 0;
     -webkit-box-shadow: 0 0 0 0;
     box-shadow: 0 0 0 0;
   }
@@ -193,5 +234,13 @@
   .sidebar-nav .selected {
     position: relative;
     left: 13px;
+  }
+
+  /* Custom Helpers */
+  .pull-right-md {
+    float: right !important;
+  }
+  .pull-left-md {
+    float: left !important;
   }
 }

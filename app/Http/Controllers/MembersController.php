@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+/* ======================================================
+ * Members Controller
+ * ======================================================
+ * Organization:   NuLeaf Technologies
+ * Lead Developer: Tuan Pham (https://github.com/ttpham0111)
+ * ======================================================*/
 
-use App\Http\Requests;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use App\Role;
+namespace App\Http\Controllers;
 
 class MembersController extends Controller
 {

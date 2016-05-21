@@ -12,7 +12,7 @@ class SeedRoleUserTable extends Migration
   function __construct()
   {
     $this->admin_role_id = DB::table('roles')->where('role_name', 'admin')->pluck('role_id')[0];
-    $this->user_id = DB::table('users')->where('username', 'root')->pluck('user_id')[0];
+    $this->user_id = DB::table('users')->where('username', env('ROOT_USERNAME', 'root'))->pluck('user_id')[0];
   }
 
   /**
