@@ -49,46 +49,46 @@
 
 <!-- Left column -->
 <div class="left-column">
-    <p class="section-title">LATEST UPDATES</p><hr>
+    <p class="section-title">EVENTS</p><hr>
     <table class="table table-striped">
         <tr>
-            <td><span class="title">November 27, 2015 - STEMinar 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+            <td><span class="title">July 12, 2016 - Semicon West </span><br>Meet at SEMI Institute in San Jose, Shuttle to Mascone Center in San Francisco<br></td>
         </tr>
         <tr>
-            <td><span class="title">November 20, 2015 - Student Presentations 3pm-4:30pm</span><br>Room 4714 at Foothill Campus<br></td>
+            <td><span class="title">June 6, 2016 - The Human Library 10am-3pm</span><br>Foothill College Library<br></td>
         </tr>
         <tr>
-            <td><span class="title">November 13, 2015 - STEMinar 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+            <td><span class="title">June 3, 2016 - Physics Olympics 2-4pm</span><br>PSEC Quad<br></td>
         </tr>
         <tr>
-            <td><span class="title">November 13, 2015 - AVS Energy Storage and Conversion 12:30pm-4pm</span><br>Semi Global Headquarters Seminar Rooms 1 & 2<br>3081 Zanker Rd. San Jose, CA</td>
+            <td><span class="title">June 3, 2016 - STEM Student-Professor Lunch 12-2pm </span><br>Hearthside Lounge, Foothill Campus<br></td>
         </tr>
          <tr>
-            <td><span class="title">November 6, 2015 - STEMinar 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+            <td><span class="title">May 27, 2016 - Bio-Curious, "Biohacking and Climate Change” - 7pm </span></td>
         </tr>
         <tr>
-            <td><span class="title">November 6, 2015 - ICG Projects Club Meeting 2pm</span><br>Room 4714 at Foothill Campus<br></td>
+            <td><span class="title">May 27, 2016 - STEMinar - Silke, "Digital Photonic Production with Lasers – Bits to Photons to Atoms" 2-4pm</span><br>Room 4715, Foothill Campus<br></td>
         </tr>
         <tr>
-            <td><span class="title">October 30, 2015 - STEMinar 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+            <td><span class="title">May 20, 2016 - STEMinar - Jean-Phillipe (JP) Lavoie, "Lasers in Material Processing" 12-1pm</span><br>Room 4716, Foothill Campus<br></td>
         </tr>                               
         <tr>
-            <td><span class="title">October 23, 2015 - STEMinar 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+            <td><span class="title">May 17, 2016 - IEEE Symposium: Nanotechnology in Biosystems, Medicine, and Health 8:30-5:45pm</span><br>Texas Instruments Auditorium, Santa Clara CA<br></td>
         </tr>
         <tr>
-            <td><span class="title">October 16, 2015 - Teaching Meeting 3pm-5pm</span><br>Room 4714 at Foothill Campus<br></td>
+            <td><span class="title">May 13, 2016 - STEMinar - Frank Osterloh, "Artificial Photosynthesis with Inorganic Materials" 12-1:30pm</span><br>Room 4716, Foothill Campus<br></td>
         </tr>
         <tr>
-            <td><span class="title">October 16, 2015 - ICG Projects Club Meeting 2pm</span><br>Room 4714 at Foothill Campus<br></td>
+            <td><span class="title">May 13, 2016 - Autodesk Workshop at Foothill 1-4pm</span><br>Room 4223, Foothill Campus<br></td>
         </tr>
         <tr>
-            <td><span class="title">October 15, 2015 - ICG Projects Club Meeting 2pm</span><br>Room 4714 at Foothill College<br></td>
+            <td><span class="title">April 29, 2016 - STEMinar - Victoria Armigo, "Open Sesame: The Story of Seeds" 12-2pm</span><br>Room 4716, Foothill Campus<br></td>
         </tr>
         <tr>
-            <td><span class="title">October 9, 2015 - ICG Social 1pm-3pm</span><br>Room 4714 at Foothill Campus<br></td>
+            <td><span class="title">May 22, 2016 - Earth Day NASA AMES Event 1-4pm</span><br>NASA Ames Sustainability Base<br></td>
         </tr>
         <tr>
-            <td><span class="title">October 2, 2015 - ICG Projects Club Meeting 2pm</span><br>Room 4714 at Foothill College<br></td>
+            <td><span class="title">May 20, 2016 - Club Day at Foothill 12-1pm</span><br>Library Quad on the Foothill Campus<br></td>
         </tr>     
     </table>
 
@@ -101,36 +101,33 @@
 
 <!-- Right column -->
 <div class="right-column">
+
     <p class="section-title">FEATURED PROJECTS</p><hr>
     <div>
         <p class="title">Visual Simulations Model - In Progress</p>
         <div class="center">
-        <object data="simulation/index.html" width="500" height="300"><embed src="imulation/index.html" width="500" height="300"></embed>Error: Embedded data could not be displayed.</object>
-        <b>Click <a href="simulation/index.html">here</a> to view full-screen model.</b><br><br>
-         The goal is to create an animation of protein-nanoscale interactions. The model will detail protein folding of
-         proteins found in plants, and also show the chemical structure of these proteins when carbon               
-         nanostructures are attached. For questions and/or suggestions, please contact <a href="shariqshah@hostanalytics.com">Shariq Shah</a>.
-    </div>
-    <p class="section-title">STEMinar</p><hr> 
-    <div class="teaching-meeting">
-        <p class="title">What is Biomimicry? - 11/13/2015</p>
-        <img class="image-left" src="images/JeanetteLim.jpg" width="200" alt="profile"/>
-        <div class="text-wrap-right">
-            Jeanette Lim works at the Biomimicry Institute and is the AskNature Content Coordinator. Jeanette has a PhD in Biomechanics from Harvard University. She is passionate about education, the environment, and science and technology.<br><br>
-            The topic of Jeanette’s talk will be “What is Biomimcry” with an emphasis on applications. Biomimcry seeks inspiration from nature to solve human design problems. 
-            Nature has 3.8 billion years of R&D under its belt, and has created a wealth of knowledge and solutions. These solutions are elegant, brilliant, interdisciplinary, and sustainable.<br><br>
-            The examples of biomimcry are everywhere – in the re-design of axial fans to model owl wings, the color-changing paint on plastics modeled after butterflies, water-soluble polymers from oyster shell growth, research towards a new type of battery inspired by virus proteins, and more!<br><br>
-            The inspiration for the next game-changing technology could be right outside your window.
+            <object data="simulation/index.html" width="500" height="300"><embed src="imulation/index.html" width="500" height="300"></embed>Error: Embedded data could not be displayed.</object>
+            <b>Click <a href="simulation/index.html">here</a> to view full-screen model.</b><br><br>
+             The goal is to create an animation of protein-nanoscale interactions. The model will detail protein folding of
+             proteins found in plants, and also show the chemical structure of these proteins when carbon               
+             nanostructures are attached. For questions and/or suggestions, please contact <a href="shariqshah@hostanalytics.com">Shariq Shah</a>.
         </div>
-    </div>  
+    </div>
+
+    <p class="section-title">STEMinars</p><hr> 
     <div class="teaching-meeting">
-        <p class="title">Zotero Introduction and Workshop - 10/6/2015</p>
-        <img class="image-left" src="images/LisaSewell.jpg" width="200" alt="profile"/>
+        <p class="title">Digital Photonic Production with Lasers – Bits to Photons to Atoms - 5/27/16</p>
+        <img class="image-left" src="images/Silke.jpg" width="200" alt="profile"/>
         <div class="text-wrap-right">
-            This week we have the honor of hosting Lisa Sewell, a NASA Librarian! Her and Rachel will be hosting an Introduction to Zotero workshop. Some of you may remember the talk Lisa gave a couple of weeks ago about how to do a literature search.<br><br>
-            Zotero is a free, open source reference management and organizational tool. It makes using and sorting your references extremely easy with a built-in browser icon, tabs for different categories of references, and an in-text citation tool!<br><br>
-            It is extremely useful for NuLEAF Tech activities as well as general writing of school papers, because we all know sorting references can become an extreme headache.
-            There is a bit of a learning curve with Zotero, so we will hold several workshops to help guide your usage.
+          Silke received a Ph.D. in mechanical engineering from the Technical University in Aachen. She started her career in lasers at Fraunhofer Institute for Laser Technology in Aachen, and has held engineering and marketing positions working with high power laser diodes and fiber lasers. Today, she has 25 years of experience with industrial lasers and their applications and is currently the general manager of DirectPhotonics, Inc. <br><br>After a short intro into the generation of laser light, the talk will describe how to use light as a tool to generate parts in a way that’s very different from standard manufacturing processes. The laser offers highest power density, highest speed, highest precision, non-contact processing with best controllability. Photonic production is applicable to a wide variety of fields from biomedical and medical to aeronautic and automotive components. 
+        </div>
+    </div>
+
+    <div class="teaching-meeting">
+        <p class="title">Lasers in Material Processing - 5/20/16</p>
+        <img class="image-left" src="images/JeanPhilippeLavoie.jpg" width="200" alt="profile"/>
+        <div class="text-wrap-right">
+            Jean-Philippe (JP) Lavoie earned his Ph.D in Physics from Laval University in 2010. JP joined Coherent as a new product introduction engineer and is now a senior laser applications engineer. JP's work primarily focuses on utilizing high-power fiber, CO2, and diode pumped lasers. <br><br>A basic description of the working principle of a laser and its beam characteristics will be presented along with an overview of the most commonly used laser types in materials processing. Several laser materials processing examples will be presented in hot markets such as microelectronics, transportation and medical. 
         </div>
     </div>
 </div>
