@@ -84,7 +84,6 @@
   background: -moz-linear-gradient(-45deg, #fff 50%, #bbb 51%, #ccc 55%, #ddd 60%, #fff 85%);
   background: -o-linear-gradient(-45deg, #fff 50%, #bbb 51%, #ccc 55%, #ddd 60%, #fff 85%);
   background: -webkit-linear-gradient(-45deg, #fff 50%, #bbb 51%, #ccc 55%, #ddd 60%, #fff 85%);
-  background: -webkit-gradient(-45deg, #fff 50%, #bbb 51%, #ccc 55%, #ddd 60%, #fff 85%);
   background: linear-gradient(-45deg, #fff 50%, #bbb 51%, #ccc 55%, #ddd 60%, #fff 85%);
   -moz-border-top-left-radius: 2px;
   -webkit-border-top-left-radius: 2px;
@@ -101,7 +100,7 @@
   -webkit-transition: width 0.3s ease-out, height 0.3s ease-out;
   transition: width 0.3s ease-out, height 0.3s ease-out;
   width: 0;
-  z-index: 1;
+  z-index: 1000;
 }
 .peelable:hover > .peel {
   width: 35px;

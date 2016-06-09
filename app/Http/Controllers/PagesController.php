@@ -38,4 +38,9 @@ class PagesController extends Controller
   {
     return view('pages.members');
   }
+
+  public function past_members()
+  {
+    return view('pages.past_members');
+  }
 }

@@ -1,7 +1,8 @@
 /* ======================================================
  * Modal Form
  * ======================================================
- * Interactions and helper functions for the modal form.
+ * Interactions and helper functions for dynamic forms
+ * using bootstrap modals.
  *
  * Organization:   NuLeaf Technologies
  * Lead Developer: Tuan Pham (https://github.com/ttpham0111)

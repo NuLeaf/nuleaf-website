@@ -20,7 +20,7 @@
 
           <!-- BEING NAVIGATION BAR BRAND -->
           <a class="navbar-brand" href="{{ action('PagesController@index') }}">
-            <span><img alt="Brand" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></span>
+            <span>Nuleaf Technologies</span>
           </a>
           <!-- END NAVIGATION BAR BRAND -->
 
@@ -36,7 +36,7 @@
           <!-- BEGIN USER DROPDOWN -->
           <li class="dropdown">
             <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-              <img alt="User icon" class="img-circle user-icon" src="{{-- Auth::user()->image1 --}}https://case.edu/medicine/admissions/media/school-of-medicine/admissions/classprofile.png">
+              <img alt="User icon" class="img-circle user-icon" src="{{ Auth::user()->image1 }}https://case.edu/medicine/admissions/media/school-of-medicine/admissions/classprofile.png">
               {{ Auth::user()->firstname }} <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">

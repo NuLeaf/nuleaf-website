@@ -13,18 +13,18 @@
   <body>
 
     <!-- BEGIN HEADER -->
-    <header>
+    <header id="header">
       <a href="{{ action('PagesController@index') }}">
-        {{ HTML::image('images/banner.jpg', null, ['id' => 'logo']) }}
+        <img id="logo" src="{{ URL::asset('images/banner.jpg') }}" />
       </a>
 
       <!-- BEGIN SEARCH BAR -->
-      <span id="search">
+ <!--      <span id="search">
         <input type="text" class="form-control search-bar" placeholder="Search">
         <button type="submit" class="btn btn-default" id="search-button" onclick="location.href='search.php'">
           Submit
         </button>
-      </span>
+      </span> -->
       <!-- END SEARCH BAR -->
 
     </header>
@@ -41,7 +41,7 @@
     <!-- END NAVIGATION BAR -->
 
     <!-- BEGIN CONTENT -->
-    <div class="content-container">
+    <div class="content-container" id="index-content">
       @yield ('content')
     </div>
     <!-- END CONTENT -->

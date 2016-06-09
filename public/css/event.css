@@ -1,0 +1,50 @@
+table {
+   width: 95% !important;
+}
+
+td {
+   border-spacing: 15px 15px;
+}
+
+td.subject {
+   wdith: 40%;
+}
+
+td.location {
+   width: 50%;
+}
+
+td.date {
+   width: 60px;
+}
+
+td.action {
+   width: 100px;
+}
+
+button, input {
+   margin: 0px 5px;
+}
+
+input#subject, input#location {
+   width: 250px;
+}
+
+/* Override Bootstrap */
+input.btn {
+   margin-left: 12px !important;
+   margin-bottom: 10px !important;
+}
+
+a.label.label-important {
+   background-color: #D9534F !important;
+   color: white !important;
+}
+
+button.label.label-important.deleteData {
+   border: 0;
+   outline: 0;
+   background: none;
+   background-color: #D9534F !important;
+   color: white !important;
+}

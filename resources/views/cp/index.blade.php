@@ -27,7 +27,5 @@
 
 <div>
   <h5> UNDER CONSTRUCTION </h5>
-  http://www.keenthemes.com/preview/metronic/theme/admin_1/index.html<br />
-  https://www.behance.net/gallery/10208705/Dashboard
 </div>
 @endsection

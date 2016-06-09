@@ -1,3 +1,4 @@
-vendor/
-components/
+/vendor
+/node_modules
+/public/storage
 .env

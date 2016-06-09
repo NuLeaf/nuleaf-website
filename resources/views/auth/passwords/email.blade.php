@@ -1,4 +1,4 @@
-@extends('layouts.members')
+@extends('layouts.pages')
 
 <!-- Main Content -->
 @section('content')

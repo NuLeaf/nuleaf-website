@@ -36,6 +36,42 @@ class UsersController extends Controller
   }
 
   /**
+   * Display a listing of the resource matching a query.
+   *
+   * @return \Illuminate\Http\Response
+   */
+  public function search(Request $request)
+  {
+    if (!$request->ajax())
+    {
+      $username = $request->input('username');
+      $user = User::where('username', $username)->first();
+      return $this->show($user);
+    }
+
+    $query = $request->input('query');
+    if (!is_string($query) || $query == '')
+    {
+      return;
+    }
+
+    $usernames = User::orderBy('username')->pluck('username');
+
+    // Should server or client do the searching?
+    // TODO: Implement better search/
+
+    $result = [];
+    foreach ($usernames as $username)
+    {
+      if (strpos($username, $query) !== false)
+      {
+        $result[] = $username;
+      }
+    }
+    return $result;
+  }
+
+  /**
    * Store a newly created resource.
    *
    * @param  App\Http\Requests\CreateUserRequest
@@ -130,36 +166,4 @@ class UsersController extends Controller
     $team = Team::create(compact('team_name'));
     return $team->team_id;
   }
-
-  public function search(Request $request)
-  {
-    if (!$request->ajax())
-    {
-      $username = $request->input('username');
-      $user = User::where('username', $username)->first();
-      return $this->show($user);
-    }
-
-    $query = $request->input('query');
-    if (!is_string($query) || $query == '')
-    {
-      return;
-    }
-
-    $usernames = User::orderBy('username')->pluck('username');
-
-    // Should server or client do the searching?
-    // TODO: Implement better search/
-
-    $result = [];
-    foreach ($usernames as $username)
-    {
-      if (strpos($username, $query) !== false)
-      {
-        $result[] = $username;
-      }
-    }
-    return $result;
-  }
-
 }

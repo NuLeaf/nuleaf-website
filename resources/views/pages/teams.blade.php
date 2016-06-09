@@ -4,127 +4,47 @@
 {{ trans('pages.main_title') }} - Teams
 @stop
 
+@section ('page_level_styles')
+<link type="text/css" rel="stylesheet" href="{{ URL::asset('css/teams.css') }}">
+@stop
+
 @section('content')
-<link type="text/css" rel="stylesheet" href="{{ URL::asset('css/teams.css?v=1.1') }}">
-<script type="text/javascript" src="{{ URL::asset('js/teams.js') }}"></script>
-
 <div>
-  <div class="center bold" style="color:red">
-    Hovers do not work on Firefox. Please view on another browser. We
-    apologize for any inconvenience. Our IT Team is on their way to fix
-    this.
-  </div>
 
-  <h3 class="bold" id="map-directions">
-    Hover over numbers for team descriptions.
-  </h3>
+    <br><p class="section-title">ORIGINAL PROPOSAL</p>
+    The original proposal was to use genetic engineering to develop a coating on plants leaves to absorb light not used in photosynthesis and create electricity.  The objective of this project was to be biologically harmless and not rely on photosynthesis.  While this is still our long-term goal, the project has been broken down into several smaller projects.
+    <center><img src="images/originalProposal.jpg" width="500" alt="original"></center>
+    <br><br>
 
-  <center>
-    {{ HTML::image('images/teams.jpg', 'Teams', ['id' => 'map-image', 'width' => '1050', 'usemap' => '#map']) }}
-  </center>
 
-  <map id="team-map" name="team-map">
-    <area shape="circle" coords="25,25,25" title="readware" href="" tabindex="0">
-    <area shape="circle" coords="25,25,25" title="liveware-coating" href="" tabindex="1">
-    <area shape="circle" coords="25,25,25" title="liveware-network" href="" tabindex="2">
-    <area shape="circle" coords="25,25,25" title="hardware" href="" tabindex="3">
-    <area shape="circle" coords="25,25,25" title="software" href="" tabindex="4">
-  </map>
+    <hr><p class="section-title">MICROBIAL FUEL CELL (MFC)</p>
+    A microbial fuel cell is an established renewable energy device that was invented in 2010.  It is currently the only commercially viable method of generating electricity from plants, and is a product of companies such as Plant-E and Bioo.  A microbial fuel cell is a device that converts solar energy into bio electricity through syntrophy between the plant and the microbes in the soil.  The two teams responsible for creation the microbial fuel cell are the Hardware and Photobiology teams.<br><br>
+    The Hardware team’s objective is to create a device to harvest the free electrons in the soil using graphite discs, copper wire, plasti-dip, and polyanaline powder.   The Photobiology team’s objective is to culture symbiotic microbes and fungi, grow them in different combinations with different C4 plants, and compare photosynthetic efficiency to improve the output of the microbial fuel cell.  Increasing the photosynthetic efficiency through a better understanding of this symbiotic relationship is what makes NuLEAF’s MFC project unique.
+    <center><img src="images/MFCTeam.png" width="500" alt="original"></center>
+    <br><br>
 
-  <div id="readware" class="tiptext">
-    <p>
-      <span class="bold">Photobiology/Photochemistry Team</span>
-      - ensure system does not interfere with plant's photosynthetic
-      pathway
-    </p>
-    <p>
-      <span class="bold">Biomimicry and Bio-inspired Team</span>
-      - continual research to adhere to bio-inspired principles
-    </p>
-    <p>
-      <span class="bold">Sustainability and Healthy Integration Team</span>
-      - promote a healthy ecosystem and plant
-    </p>
-  </div>
 
-  <div id="liveware-coating" class="tiptext">
-    <p>
-      <span class="bold">Genetic Engineering Team</span>
-      - mechanism to generate usable nanostructures biologically
-    </p>
-  </div>
+    <p class="section-title">CUTICULAR SOLAR CELL (CSC)</p>
+    <i>Vespa orientalis</i> is a middle eastern wasp that is the only known organism in the animal kingdom that can convert light to electricity.  Researchers at Tel Aviv University have completed over thirty years of research on the hornet and found that the hornet’s yellow cuticle is responsible for this mechanism.  The cuticle’s properties include a photovoltaic molecule, light trapping/anti-reflectivity and semiconducting effects, and the abilities to store charge and convert waste heat to electricity.  The Liveware team is responsible for this project.<br><br>
+    The objective of the Liveware team is to recreate the various properties of the cuticle separately in vitro and later combine them to create a multifunctional solar cell.  Current experiments focus on exploring the electrical, thermal, and optical properties of chitin and optical modeling of the upper layers of the cuticle.  In parallel, the genome of the hornet will be sequenced and studied to recreate the solar cell via synthetic biology and eventually placed in plant.
+    <center><img src="images/CSCTeam.png" width="500" alt="original"></center> 
+    <br><br>
 
-  <div id="liveware-network" class="tiptext">
-    <p>
-      <span class="bold">Structural Team</span>
-      - ideal structure and back-up alternatives other than nanotechnology
-    </p>
-  </div>
+    <p class="section-title">WEBSITE AND FORUM</p>
+    The IT Team houses back-end developers, front-end developers, full-stack developers, and graphic designers.They are responsible for building and maintaining NuLEAF's web presence.This includes the external website which is used for outreach, marketing, and grant-applying purposes. Another task is the internal website which is used to facilitate communication across the different teams and within a team itself. It is also the central hub for NuLEAF's resources and research progress. For the two websites, the team works to maintain the necessary server and databases, ensuring security, reliability, and organization. In addition, the IT Team takes care of NuLEAF's social media sites.
+    <center><img src="images/ITTeam.png" width="500" alt="original"></center>
+    <br><br>
 
-  <div id="hardware" class="tiptext">
-    <p>
-      <span class="bold">Root Wiring Mesh Team</span>
-      - conductive material in soil linking plant to power harvester
-    </p>
-    <p>
-      <span class="bold">External Power Harvester Team</span>
-      - stores and supplies energy to make it accessible to consumer
-    </p>
-  </div>
+    <p class="section-title">GRANT WRITING AND MANAGERIAL TEAMS</p>
+    The managerial team overseas NuLEAF’s operations and keeps the organization running smoothly.  They post weekly announcements with general news and upcoming events, including STEMinars, social gatherings, and conferences.  The newly formed grant writing team is drafting a basic description of NuLEAF while looking for suitable grants to help our research teams to progress.
+    <center><img src="images/banner.jpg" width="500" alt="original"></center>
+    <br><br>
 
-  <div id="software" class="tiptext">
-    <p>
-      <span class="bold">Information Technology Team</span>
-      - public interface as well as central team communication hub
-    </p>
-    <p>
-      <span class="bold">Nano-Simulations Team</span>
-      - creates an animation of protein-nanoscale interactions
-    </p>
-    <p>
-      <span class="bold">Patent Search Team</span>
-      - gain inspiration from previous inventions and technology
-    </p>
-  </div>
-
-  <h3 class="bold">Pillars</h3><hr>
-  <p class="section-title">Bio-inspired</p>
-  The natural world has been solving the same physical problems that
-  mankind is faced with today for the last 3.8 billion years. There is
-  incredible, untapped knowledge is this immense wealth of experience.
-  Each step forward should be grounded in a respect of our natural roots.
-  Collaborating with nature will take us to innovative, more efficient
-  technological heights. 
-
-  <p class="section-title">Interdisciplinary</p>
-  An interdisciplinary project involves reaching across different
-  scientific fields to acknowledge the multi-faceted nature of the world
-  around us.  Though vastly different, we are all connected. By extension,
-  all scientific disciplines are connected.   The sooner we embrace this
-  fact, the sooner we will be able to the produce the best technology
-  possible from a core of intellectual excellence.
-
-  <p class="section-title">Sustainable</p>
-  Living on a healthy planet is so fundamental it should be common sense.
-  To preserve nature’s wonders is to preserve our way of life. Operating
-  in a sustainable manner is currently a challenge that can only be
-  overcome with tenacity, integrity, and creativity. Although difficult,
-  adapting our technology to live in harmony with the natural world around
-  us is truly the only logical course.  
-
-  <p class="section-title">Education</p>
-  A good team is continually growing and learning. The better we make our
-  team, the better our work will be, and member’s personal and professional
-  growth is of paramount importance. We aim to provide our members with
-  access to numerous scientific resources, including STEMinars, so that
-  they can develop skills valuable to their future careers.
-
-  <p class="section-title">Community</p>
-  This is an ambitious, difficult research project with high standards, and
-  we want our members will look back fondly on the experience. We will
-  foster an atmosphere of trust and positive communication with an
-  incredibly diverse group of students.  This includes building a
-  fun-loving, but serious, environment where young scientists come together
-  to solve wide-ranging scientific problems. 
+    <p class="section-title">UPCOMING PLANS</p>
+     By creating a “real science real learning” environment for our students, we are constantly seeking to improve our research and educational experience.  The managerial team continues to plan STEMinars, social events, and send students information on professional conferences and symposiums.  The grant writing team has begun the draft of their first grant and hope to submit it by the end of the summer to continue to fund the MFC and CSC teams.  The IT team is coming to the completion of the second version of the website.<br><br>The Hardware and Photobiology teams are expected to begin planting within the next several weeks and building their first prototype to be completed in the following months.  The three experimental design projects of the Liveware team aim to be completed by the end of the summer while in parallel seeking out sources of funding to begin their experiments.
 </div>
+@stop
+
+@section ('page_level_plugins')
+<script type="text/javascript" src="{{ URL::asset('js/teams.js') }}"></script>
 @stop

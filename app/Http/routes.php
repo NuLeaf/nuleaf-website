@@ -29,11 +29,12 @@
  */  
 Route::group(['middleware' => 'web'], function()
 {
-  Route::get('/'       , 'PagesController@index');
-  Route::get('/about'  , 'PagesController@about');
-  Route::get('/faq'    , 'PagesController@faq');
-  Route::get('/teams'  , 'PagesController@teams');
-  Route::get('/members', 'PagesController@members');
+  Route::get('/'            , 'PagesController@index');
+  Route::get('/about'       , 'PagesController@about');
+  Route::get('/faq'         , 'PagesController@faq');
+  Route::get('/teams'       , 'PagesController@teams');
+  Route::get('/members'     , 'PagesController@members');
+  Route::get('/past-members', 'PagesController@past_members');
   
   /**
    * Authentication

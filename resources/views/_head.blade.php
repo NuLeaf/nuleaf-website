@@ -10,8 +10,9 @@
 
 <noscript>Please enable JavaScript for website's full functionality.</noscript>
 
-<!-- BEGIN GLOBAL STYLES -->
 <link href="{{ URL::asset('images/favicon.ico') }}" rel="shortcut icon">
+
+<!-- BEGIN GLOBAL STYLES -->
 <link crossorigin="anonymous" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 <!-- END GLOBAL STYLES -->
