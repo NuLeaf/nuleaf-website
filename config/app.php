@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost/nuleaf/website',
+    'url' => 'https://nuleaftech',
 
     /*
     |--------------------------------------------------------------------------
