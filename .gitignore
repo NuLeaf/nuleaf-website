@@ -4,3 +4,5 @@
 /bootstrap/cache
 /public/forum
 .env
+
+update_permissions.sh
