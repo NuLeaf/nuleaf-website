@@ -11,7 +11,7 @@
   <!-- END PAGE LEVEL STYLES -->
 
   <!-- BEGIN THEME STYLES -->
-  <link href="{{ URL::asset('css/nuleaf_light.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ URL::asset('css/nuleaf_light_cp.css') }}" rel="stylesheet" type="text/css">
   <!-- BEGIN THEME STYLES -->
 
   <body>
@@ -51,8 +51,9 @@
       <!-- BEGIN CONTENT INNER BODY -->
       @yield ('content')
       <!-- END CONTENT INNER BODY -->
-
+    </div>
     <!-- END PAGE CONTAINER -->
+    
   </body>
 
   @include ('_foot')
@@ -65,9 +66,9 @@
   <!-- END PAGE LEVEL PLUGINS -->
 
   <script>
-  $('[data-toggle="slide"]').click(function()
-  {
-    $($(this).data('target')).toggleClass('slide-in');
-  });
+    $('[data-toggle="slide"]').click(function()
+    {
+      $($(this).data('target')).toggleClass('slide-in');
+    });
   </script>
 </html>

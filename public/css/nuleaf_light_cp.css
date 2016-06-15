@@ -1,0 +1,115 @@
+/* ======================================================
+ * NuLeaf Theme (for Control Panel) - Light
+ * ======================================================
+ * Organization:   NuLeaf Technologies
+ * Lead Developer: Tuan Pham (https://github.com/ttpham0111)
+ * ======================================================*/
+
+/* Bootstrap Custom CSS */
+.btn-success {
+  background-color: #a2be74;
+  color: #fff;
+}
+.btn-success:hover {
+  background-color: #3d5200;
+  color: #fff;
+}
+
+/* Top Navigation Bar */
+.navbar-default {
+  background-color: #a2be74;
+  color: #fff;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-default .dropdown-menu {
+  background-color: #eee;
+}
+.navbar-default .btn {
+  color: #fff;
+}
+
+/* Side Navigation Bar */
+.sidebar {
+  background-color: #d5e6b9;
+}
+.sidebar-nav > li > a {
+  color: #000;
+}
+.sidebar-nav > li > a:hover {
+  background-color: #a2be74;
+}
+.sidebar-nav > .active {
+  background-color: #3d5200;
+}
+.sidebar-nav > .active > a {
+  color: #fff;
+}
+.sidebar-nav > .active > a > .selected {
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #fff;
+  float: right;
+  height: 0;
+  position: relative;
+  top: 8px;
+  width: 0;
+}
+.sidebar-title {
+  font-size: 1.1em;
+  font-variant: small-caps; 
+}
+
+/* Resources */
+.pagination > li > a {
+  color: #888;
+}
+.pagination > .active > span {
+  background-color: #888;
+  border-color: #888;
+}
+.pagination > .active > span:hover {
+  background-color: #888;
+  border-color: #888;
+}
+
+/* Animations */
+.peel {
+  background: -moz-linear-gradient(-45deg, #fff 50%, #9dca54 51%, #a8c578 55%, #b5ce8d 60%, #d5e6b9 85%);
+  background: -o-linear-gradient(-45deg, #fff 50%, #9dca54 51%, #a8c578 55%, #b5ce8d 60%, #d5e6b9 85%);
+  background: -webkit-linear-gradient(-45deg, #fff 50%, #9dca54 51%, #a8c578 55%, #b5ce8d 60%, #d5e6b9 85%);
+  background: linear-gradient(-45deg, #fff 50%, #9dca54 51%, #a8c578 55%, #b5ce8d 60%, #d5e6b9 85%);
+}
+
+/* bootstrap-datetimepicker.css comes before this stylesheet */
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td span.active,
+.bootstrap-datetimepicker-widget .btn-primary.active.focus,
+.bootstrap-datetimepicker-widget .btn-primary.active:focus,
+.bootstrap-datetimepicker-widget .btn-primary.active:hover,
+.bootstrap-datetimepicker-widget .btn-primary:active.focus,
+.bootstrap-datetimepicker-widget .btn-primary:active:focus,
+.bootstrap-datetimepicker-widget .btn-primary:active:hover,
+.bootstrap-datetimepicker-widget .open > .dropdown-toggle.btn-primary.focus,
+.bootstrap-datetimepicker-widget .open > .dropdown-toggle.btn-primary:focus,
+.bootstrap-datetimepicker-widget .open > .dropdown-toggle.btn-primary:hover
+.bootstrap-datetimepicker-widget table td.today:before {
+  background-color: #a2be74;
+}
+.bootstrap-datetimepicker-widget table td.today:before {
+  border-bottom-color: #a2be74;
+}
+.bootstrap-datetimepicker-widget table td.active.today:before {
+  border-bottom-color: #fff;
+}
+.bootstrap-datetimepicker-widget a {
+  color: #a2be74;
+}
+.bootstrap-datetimepicker-widget .btn-primary {
+  background-color: #a2be74;
+  border-color: #3d5200;
+}

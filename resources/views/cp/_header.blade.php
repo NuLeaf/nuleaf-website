@@ -19,7 +19,7 @@
         <div class="navbar-header">
 
           <!-- BEING NAVIGATION BAR BRAND -->
-          <a class="navbar-brand" href="{{ action('PagesController@index') }}">
+          <a class="navbar-brand" href="{{ action('MainController@index') }}">
             <span>Nuleaf Technologies</span>
           </a>
           <!-- END NAVIGATION BAR BRAND -->

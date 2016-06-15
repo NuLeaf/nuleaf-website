@@ -1,14 +1,17 @@
-@extends('layouts.cp')
+@extends ('layouts.cp')
 
-@section('title')
-  {{ trans('pages.main_title') }} - Control Panel
-@endsection
+@section ('title')
+  {{ trans('pages.main_title') }} - Dashboard
+@stop
 
-@section('page_title')
-  <h3>Dashboard</h3>
-@endsection
+@section ('page_level_styles')
+@stop
 
-@section('breadcrumb')
+@section ('page_modals')
+@stop
+
+
+@section ('breadcrumb')
   @push ('breadcrumb')
     <?php
       $breadcrumbs = [
@@ -16,9 +19,13 @@
       ];
     ?>
   @endpush
-@endsection
+@stop
 
-@section('content')
+@section ('page_title')
+  <h3>Dashboard</h3>
+@stop
+
+@section ('content')
   @push ('sidebar-select')
     <?php
       $sidebar_selected = 'dashboard';
@@ -26,6 +33,9 @@
   @endpush
 
 <div>
-  <h5> UNDER CONSTRUCTION </h5>
+  <h5>Welcome {{ Auth::user()->firstname }}.</h5>
 </div>
-@endsection
+@stop
+
+@section ('page_level_plugins')
+@stop

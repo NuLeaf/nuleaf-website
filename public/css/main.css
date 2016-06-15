@@ -1,220 +1,92 @@
-.form-control:focus {
-    border-color: #CCCCCC !important;
-    outline: 0 !important;
-    box-shadow: 0 0 8px rgba(24, 198, 79, 0.6) !important;
+/* ======================================================
+ * Main Styles
+ * ======================================================
+ * Organization:   NuLeaf Technologies
+ * Lead Developer: Tuan Pham (https://github.com/ttpham0111)
+ * ======================================================*/
+
+/* Page Styles */
+body, html {
+  height: 100%;
+}
+.page-title, .page-content {
+  margin: 50px 0;
 }
 
-#header, #navbar, .content-container, #myCarousel, footer {
-    margin-right: auto;
-    margin-left: auto;
-    width: 1100px;
+/* Nav Bar/Footer */
+.nuleaf-navbar,
+#main-footer {
+  background-color: #333;
+}
+.nuleaf-navbar .navbar-toggle {
+  color: #fff;
+  margin: 4px 15px 4px 0;
+  padding: 0 5px;
+}
+#main-navbar > .navbar-nav > li > a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+#main-navbar > .nav > li > a:focus,
+#main-navbar > .nav > li > a:hover {
+  background-color: #555;
+}
+#main-footer {
+  color: #fff;
+  line-height: 30px;
+}
+#main-footer a {
+  color: #fff;
 }
 
-#header {
-    margin-top: -20px;
-    padding: 20px;
-    background-color: #FFFFFF;
-    overflow: auto;
-    position: relative;
+/* Navbar fixed-top fix */
+.page-container {
+  min-height: 96.9%;
+  padding-top: 30px;
 }
 
-#logo {
-    float: left;
-    width: 20%;
+/* Overlay */
+.overlay-img {
+  overflow: hidden;
+}
+.overlay {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.overlay > .btn {
+  background-color: rgba(0,0,0,0);
+  border: 2px solid #fff;
+  border-radius: 0;
+  color: #fff;
+  font-size: 22px;
+  margin-top: -23.5px;
+  margin-left: -75.25px;
+  position: absolute;
+  top: 50%;
+}
+.overlay > .btn:hover {
+  background-color: #555;
 }
 
-#search {
-    float: right !important;
-    position: absolute; 
-    bottom: 20px;
-    right: 20px;
+/* Authentication */
+.login-panel {
+  height: auto;
+  margin: 15% auto 0 auto;
+  max-width: 100%;
+  width: 550px;
 }
 
-#search-button {
-    margin-bottom: 3px;
-}
+/* Custom Bootstrap-like CSS */
 
-input.form-control.search-bar {
-    width: 300px !important;
-    display: inline;
-}
-
-#navbar {
-    text-align: center;
-    height: 50px;
-    background-color: #A2BE74;
-    padding: 12px 0px;
-    font-size: large;
-    font-weight: bold;
-}
-
-a:link, a:focus, a:visited, .glyphicon {
-    color: #8CC43F !important;
-}
-
-#navbar a:link, #navbar a:focus, #navbar a:visited {
-    color: #FFFFFF !important;
-}
-
-a:hover, #navbar a:hover, #currentPage {
-    color: #666666 !important;
-    text-decoration: none !important;
-}
-
-.nav-link {
-    margin: 0px 50px;
-}
-
-button.link {
-    font-family: "Verdana" sans-serif;
-    font-size: 1em;
-    text-align: left;
-    color: #8CC43F ;
-    background: none;
-    margin: 0;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    -moz-user-select: text;
-}
-
-button.link:hover, button.link:focus {
-     color: #666666;
-}
-
-body {
-    background-color: #CCCCCC;
-}
-
-.content-container {
-    text-align: justify;
-    min-height: 500px;
-    background-color: white;
-    overflow: auto;
-}
-
-.content-container div {
-    padding: 10px;
-}
-
-div.left-column {
-    float:left;
-    width:45%;
-}
-
-div.right-column {
-    float:right;
-    width:50%;
-}
-
-p {
-    margin: 5px 0;
+@media (max-width: 768px) {
+  .btn-block-sm {
     display: block;
-}
-
-hr {
-    margin: 0px 0px;
-    border-width: 3px;
-    border-color: #AEAEAE;
-}
-
-.section-title, .title {
-    font-size: large;
-}
-
-.section-title {
-    color: #95B959;
-    font-weight: bold;
-}
-
-.directions {
-   padding-top: 12px;
-}
-
-.center {
-    text-align: center;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.table {
-    margin: 20px 0px;
-    margin-left:auto; 
-    margin-right:auto;
-}
-
-.title {
-    color: #000000;
-    font-weight: bold;
-    text-align: center;
-}
-
-p.warning {
-   text-align: center;
-   color: red;
-   font-size: 2em;
-   line-height: 1.25em;
-}
-
-.red {
-   color: red;
-}
-
-.green {
-
-   color: green;
-}
-
-p#page-links {
-   padding-right: 30px;
-}
-
-footer {
-    background-color: #FFFFFF;
-    overflow: hidden;
-    padding: 10px;
-}
-
-footer > div {
-    padding: 15px 0;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-bold {
-    font-weight: bold;
-}
-
-.text-gray {
-    color: #848484;
-}
-
-footer a:link, footer a:visited {
-    color: #848484;
-}
-
-footer a:hover {
-    color: #8CC43F;
-    text-decoration: none;
-}
-
-footer #members a:link, footer #members a:visited {
-    color: #8CC43F;
-}
-
-footer #members a:hover {
-    color: #848484;
-    text-decoration: none;
-}
-
-#members {
-    color: #8CC43F;
-}
-
-.vertical-center {
-    line-height: 50px;
+    width: 100%;
+  }
 }

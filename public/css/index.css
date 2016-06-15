@@ -1,55 +1,87 @@
-#myCarousel {
-    height:300px;
+/* ======================================================
+ * Main Index Styles
+ * ======================================================
+ * Organization:   NuLeaf Technologies
+ * Lead Developer: Tuan Pham (https://github.com/ttpham0111)
+ * ======================================================*/
+
+/* Main */
+.main-block {
+  padding: 35px 10px;
+ }
+.inner-block {
+  padding: 15px;
 }
 
-#myCarousel a:link, #myCarousel a:visited {
-    color: #666666;
+/* About */
+#about-block {
+  background-color: #eee;
+  font-size: 16px;
 }
 
-#myCarousel a:hover {
-    color: #666666 !important;
-    text-decoration: none !important;
+/* Pillars */
+.pillar-img {
+  height: 150px;
+  width: 150px;
 }
 
-.item {
-    height: 300px;
-    width: 100% !important;
+/* Projects */
+#projects-block {
+  background-color: #eee;
+}
+#projects-block .thumbnail > img {
+  height: 225px;
+}
+#projects-block .thumbnail > .caption {
+  height: 125px;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    line-height: 1;
-    width: 100% !important;
+/* Events */
+.event:hover {
+  background-color: #eee;
+}
+.event > a {
+  color: #000;
+}
+.event > a:hover {
+  color: #000;
+}
+.event .row {
+  padding: 15px;
+}
+#events-block .date {
+  background-color: #777;
+  color: #fff;
+  height: 60px;
+  padding: 7px;
+  width: 110px;
+}
+#events-block .date > .day {
+  font-size: 1.2em;
+}
+.event-title {
+  font-size: 16px;
+  height: 60px;
+  overflow: hidden;
+  padding-left: 10px;
 }
 
-.carousel-caption {
-    position: absolute;
-    bottom: 0px !important;
-    left: 0px !important;
-    right: 0px !important;
-    padding: 0px 0px !important;
-    width: 100% !important;
-    background: rgba(0, 0, 0, 0.75);
+/* Involvement */
+#involvement-block {
+  padding: 0;
+  position: relative;
+  margin: 35px 0;
+}
+#involvement-block > .overlay-img {
+  min-height: 300px;
+  max-height: 400px;
 }
 
-.content-container #myCarousel, #myCarousel div {
-    padding: 0px;
-}
-
-img#banner {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.image-left {
-    float: left;
-    margin-right: 15px;
-}
-
-.teaching-meeting {
-    padding-bottom: 15px;
-    clear:both;
+/* Affiliations */
+#affiliations-block img { 
+  max-width: 200px;
+  max-height: 200px;
+  padding: 15px;
 }

@@ -1,5 +1,9 @@
 @extends ('layouts.cp')
 
+@section ('title')
+  {{ trans('pages.main_title') }} - Manage Events
+@stop
+
 @section ('page_level_styles')
   <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/bootstrap-datetimepicker.css') }}">
   <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/resource.css') }}">
@@ -72,10 +76,6 @@
       ];
     ?>
   @endpush
-@stop
-
-@section ('title')
-  {{ trans('pages.main_title') }} - Manage Events
 @stop
 
 @section ('page_title')

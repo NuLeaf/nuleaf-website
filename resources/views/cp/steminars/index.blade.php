@@ -5,6 +5,10 @@
   <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/resource.css') }}">
 @stop
 
+@section ('title')
+  {{ trans('pages.main_title') }} - Manage Steminars
+@stop
+
 @section ('page_modals')
 
   <!-- BEGIN CONFIRMATION MODAL -->
@@ -72,10 +76,6 @@
       ];
     ?>
   @endpush
-@stop
-
-@section ('title')
-  {{ trans('pages.main_title') }} - Manage Steminars
 @stop
 
 @section ('page_title')
