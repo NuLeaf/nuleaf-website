@@ -58,14 +58,17 @@
   background-color: #777;
   color: #fff;
   height: 60px;
+  font-size: 12px;
+  max-width: 110px;
+  overflow: hidden;
   padding: 7px;
-  width: 110px;
+  white-space: nowrap;
 }
 #events-block .date > .day {
   font-size: 1.2em;
 }
 .event-title {
-  font-size: 16px;
+  font-size: 14px;
   height: 60px;
   overflow: hidden;
   padding-left: 10px;
@@ -87,4 +90,13 @@
   max-width: 200px;
   max-height: 200px;
   padding: 15px;
+}
+
+@media (min-width: 768px) {
+  #events-block .date {
+    font-size: 14px;
+  }
+  .event-title {
+    font-size: 16px;
+  }
 }
