@@ -13,7 +13,7 @@
   <div class="container">
     <h1>What is NuLEAF Technologies?</h1>
     <p class="lead">
-      Harness higher levels of power with minimal ecological impact.
+      Harness higher levels of power with minimal ecological impact
     </p>
     <p>
       This project proposes a technique that will not rely on photosynthesis and will be harmlessly integrated into the plant’s biological system and surrounding environment. 
@@ -29,8 +29,8 @@
         <div class="center-block pillar-img">
           <img class="img-responsive" src="{{ URL::asset('images/learn.png') }}" />
         </div>
-        <h2>Learn</h2>
-        <p class="text-justify">
+        <h2 class="title">Learn</h2>
+        <p>
           The first stage of the project is team formation.
           This project is committed to scientific excellence and to teaching young scientists through “STEMinars” and 
           real-world experience to help them gain confidence to develop both personally and professionally for their future careers.
@@ -40,8 +40,8 @@
         <div class="center-block pillar-img">
           <img class="img-responsive" src="{{ URL::asset('images/research.png') }}" />
         </div>
-        <h2>Research</h2>
-        <p class="text-justify">
+        <h2 class="title">Research</h2>
+        <p>
           Next is an extensive literature search. Our bio-inspired research strives to ensure the project’s commitment to healthy integration in the plant and ecosystem.
           In comparison to solar panels and other methods, this project has the potential to be cheaper, less toxic, and 
           more efficient by using natural materials and not requiring constant maintenance.
@@ -51,8 +51,8 @@
         <div class="center-block pillar-img">
           <img class="img-responsive" src="{{ URL::asset('images/test.png') }}" />
         </div>
-        <h2>Test</h2>
-        <p class="text-justify">
+        <h2 class="title">Test</h2>
+        <p>
           These steps lead towards our goal to create a generation of experimental design reports aimed to define proof of concept. 
           Teams will focus on the modeling of protein-nanostructure interactions, genetic engineering to create the optical coating and bioelectric network, 
           and conductive root wiring mesh and external power harvester development.

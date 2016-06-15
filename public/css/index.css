@@ -20,6 +20,9 @@
 }
 
 /* Pillars */
+#pillars-block .title {
+  color: #000;
+}
 .pillar-img {
   height: 150px;
   width: 150px;
