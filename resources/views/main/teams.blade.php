@@ -16,7 +16,7 @@
     <p>
       The original proposal was to use genetic engineering to develop a coating on plants leaves to absorb light not used in photosynthesis and create electricity.  The objective of this project was to be biologically harmless and not rely on photosynthesis.  While this is still our long-term goal, the project has been broken down into several smaller projects.
       <br /><br />
-      <img class="center-block img-responsive" src="{{ URL::asset('images/originalProposal.jpg') }}" width="500" alt="Original Proposal">
+      <img class="center-block img-responsive" src="{{ URL::asset('images/projects/originalProposal.jpg') }}" width="500" alt="Original Proposal">
     </p>
     <hr />
     <h3>MICROBIAL FUEL CELL (MFC)</h3>
@@ -25,7 +25,7 @@
       <br /><br />
       The Hardware team’s objective is to create a device to harvest the free electrons in the soil using graphite discs, copper wire, plasti-dip, and polyanaline powder.   The Photobiology team’s objective is to culture symbiotic microbes and fungi, grow them in different combinations with different C4 plants, and compare photosynthetic efficiency to improve the output of the microbial fuel cell.  Increasing the photosynthetic efficiency through a better understanding of this symbiotic relationship is what makes NuLEAF’s MFC project unique.
       <br /><br />
-      <img class="center-block img-responsive" src="{{ URL::asset('images/MFCTeam.png') }}" width="500" alt="Microbial Fuel Cell">
+      <img class="center-block img-responsive" src="{{ URL::asset('images/projects/MFCTeam.png') }}" width="500" alt="Microbial Fuel Cell">
     </p>
     <hr />
     <h3>CUTICULAR SOLAR CELL (CSC)</h3>
@@ -34,14 +34,14 @@
       <br /><br />
       The objective of the Liveware team is to recreate the various properties of the cuticle separately in vitro and later combine them to create a multifunctional solar cell.  Current experiments focus on exploring the electrical, thermal, and optical properties of chitin and optical modeling of the upper layers of the cuticle.  In parallel, the genome of the hornet will be sequenced and studied to recreate the solar cell via synthetic biology and eventually placed in plant.
       <br /><br />
-      <img class="center-block img-responsive" src="{{ URL::asset('images/CSCTeam.png') }}" width="500" alt="Cuticular Solar Cell">
+      <img class="center-block img-responsive" src="{{ URL::asset('images/projects/CSCTeam.png') }}" width="500" alt="Cuticular Solar Cell">
     </p>
     <hr />
     <h3>WEBSITE AND FORUM</h3>
     <p>
       The IT Team houses back-end developers, front-end developers, full-stack developers, and graphic designers.They are responsible for building and maintaining NuLEAF's web presence.This includes the external website which is used for outreach, marketing, and grant-applying purposes. Another task is the internal website which is used to facilitate communication across the different teams and within a team itself. It is also the central hub for NuLEAF's resources and research progress. For the two websites, the team works to maintain the necessary server and databases, ensuring security, reliability, and organization. In addition, the IT Team takes care of NuLEAF's social media sites.
       <br /><br />
-      <img class="center-block img-responsive" src="{{ URL::asset('images/ITTeam.png') }}" width="500" alt="Website and Forum">
+      <img class="center-block img-responsive" src="{{ URL::asset('images/projects/ITTeam.png') }}" width="500" alt="Website and Forum">
     </p>
     <hr />
     <h3>GRANT WRITING AND MANAGERIAL TEAMS</h3>

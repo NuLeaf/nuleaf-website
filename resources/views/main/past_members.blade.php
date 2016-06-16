@@ -21,6 +21,9 @@
       <div class="col-md-3 col-sm-6">
         <h4>Miki Rai<br /><small><em>Managerial Team<br>7/2015 - 7/2015</em></small></h4>
       </div>
+
+      <div class="clearfix visible-sm-block"></div>
+
       <div class="col-md-3 col-sm-6">
         <h4>Vaidehi Kaushal<br /><small><em>Managerial Team <!-- <br><!--7/2015 - 7/2015 --> </em></small></h4>
       </div>
@@ -29,7 +32,9 @@
         <h4>Samuel Arnold<br /><small><em>IT Team<br>7/2015 - 8/2015</em></small></h4>
       </div>
     </div>
+    
     <div class="clearfix"></div>
+    
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <h4>Jon Nozik<br /><small><em>IT Team<br>7/2015 - 8/2015</em></small></h4>
@@ -37,6 +42,9 @@
       <div class="col-md-3 col-sm-6">
         <h4>Ekaterina Tcavera<br /><small><em>IT Team<br>7/2015 - 8/2015</em></small></h4>
       </div>
+
+      <div class="clearfix visible-sm-block"></div>
+
       <div class="col-md-3 col-sm-6">
         <h4>Hadia Amin<br /><small><em>IT Team<br>7/2015 - 3/2016</em></small></h4>
       </div>
@@ -45,7 +53,9 @@
         <h4>Alibek Danyalov<br /><small><em>Nano-Simulations Team<br>7/2015 - 9/2015</em></small></h4>
       </div>
     </div>
+    
     <div class="clearfix"></div>
+    
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <h4>Ryan Saitta<br /><small><em>Nano-Simulations Team<br>7/2015 - 12/2015</em></small></h4>
@@ -53,6 +63,9 @@
       <div class="col-md-3 col-sm-6">
         <h4>Matthew Valli<br /><small><em>Nano-Simulations Team <!-- <br>7/2015 - 9/2015 --> </em></small></h4>
       </div>
+
+      <div class="clearfix visible-sm-block"></div>
+
       <!-- Database -->
       <div class="col-md-3 col-sm-6">
         <h4>Rich Hoggan<br /><small><em>Database Team<br>7/2015 - 7/2015</em></small></h4>
@@ -62,7 +75,9 @@
         <h4>Melody R. Cardona<br /><small><em>Genetic Engineering Team<br>7/2015 - 8/2015</em></small></h4>
       </div>
     </div>
+    
     <div class="clearfix"></div>
+    
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <h4>Gabe Hargis<br /><small><em>Genetic Engineering Team<br>7/2015 - 7/2015</em></small></h4>
@@ -71,6 +86,9 @@
       <div class="col-md-3 col-sm-6">
         <h4>Aditi Cherian<br /><small><em>Genetic Engineering Team<br>7/2015 - 9/2015</em></small></h4>
       </div>
+
+      <div class="clearfix visible-sm-block"></div>
+
       <div class="col-md-3 col-sm-6">
         <h4>Trang Tran<br /><small><em>Genetic Engineering Team<br>7/2015 - 9/2015</em></small></h4>
       </div>
@@ -79,7 +97,9 @@
         <h4>Ramya Padmanabhuni<br /><small><em>Genetic Engineering Team<br>9/2015 - 10/2015</em></small></h4>
       </div>
     </div>
+    
     <div class="clearfix"></div>
+    
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <h4>Barry Weickhart<br /><small><em>Genetic Engineering Team <!-- <br>9/2015 - 10/2015 --> </em></small></h4>
@@ -87,6 +107,9 @@
       <div class="col-md-3 col-sm-6">
         <h4>Chase Johnson<br /><small><em>Genetic Engineering Team <!-- <br>9/2015 - 10/2015 --> </em></small></h4>
       </div>
+
+      <div class="clearfix visible-sm-block"></div>
+
       <div class="col-md-3 col-sm-6">
         <h4>Ramya Padmanabhuni<br /><small><em>Genetic Engineering Team <!-- <br>9/2015 - 10/2015 --> </em></small></h4>
       </div>
@@ -95,7 +118,9 @@
         <h4>Hashim Chaudhry<br /><small><em>Structural Team<br>7/2015 - 9/2015</em></small></h4>
       </div>
     </div>
+    
     <div class="clearfix"></div>
+    
     <div class="row">
       <!-- Structural Coating -->
       <div class="col-md-3 col-sm-6">
@@ -105,6 +130,9 @@
       <div class="col-md-3 col-sm-6">
         <h4>Pauldeen Davejan<br /><small><em>Structural Team<br>7/2015 - 9/2015</em></small></h4>
       </div>
+
+      <div class="clearfix visible-sm-block"></div>
+
       <div class="col-md-3 col-sm-6">
         <h4>Allison Inanoria<br /><small><em>Structural Team <!-- <br>7/2015 - 9/2015 --> </em></small></h4>
       </div>
@@ -112,7 +140,9 @@
         <h4>Stan Bode<br /><small><em>Structural Team <!-- <br>7/2015 - 9/2015 --> </em></small></h4>
       </div>
     </div>
+    
     <div class="clearfix"></div>
+    
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <h4>Joseph Lim<br /><small><em>Structural Team <!-- <br>7/2015 - 9/2015 --> </em></small></h4>
@@ -120,7 +150,10 @@
       <!-- Root Wiring Mesh -->
       <div class="col-md-3 col-sm-6">
         <h4>Ryan Phelps<br /><small><em>Root Wiring Mesh and External Harvester Team<br>7/2015 - 7/2015</em></small></h4>
-      </div> 
+      </div>
+
+      <div class="clearfix visible-sm-block"></div>
+
       <div class="col-md-3 col-sm-6">
         <h4>Charlotte Franc<br /><small><em>Root Wiring Mesh and External Harvester Team<br>7/2015 - 10/2015</em></small></h4>
       </div>
@@ -128,7 +161,9 @@
         <h4>Anna Cabot<br /><small><em>Root Wiring Mesh and External Harvester Team<br>7/2015 - 8/2015</em></small></h4>
       </div>
     </div>
+    
     <div class="clearfix"></div>
+    
     <div class="row">
       <!-- External Power Harvester -->
       <div class="col-md-3 col-sm-6">
@@ -138,6 +173,9 @@
       <div class="col-md-3 col-sm-6">
         <h4>Spencer Thompson<br /><small><em>Root Wiring Mesh and External Power Harvester Team <!-- <br>7/2015 - 9/2015 --> </em></small></h4>
       </div>
+
+      <div class="clearfix visible-sm-block"></div>
+
       <div class="col-md-3 col-sm-6">
         <h4>Jonathan Chen<br /><small><em>Root Wiring Mesh and External Power Harvester Team <!-- <br>7/2015 - 9/2015 --> </em></small></h4>
       </div>
@@ -145,7 +183,9 @@
         <h4>Youngon Lee<br /><small><em>Root Wiring Mesh and External Power Harvester Team <!-- <br>7/2015 - 9/2015 --> </em></small></h4>
       </div>
     </div>
+    
     <div class="clearfix"></div>
+    
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <h4>Harold Hall<br /><small><em>Root Wiring Mesh and External Power Harvester Team <!-- <br>7/2015 - 9/2015 --> </em></small></h4>
@@ -153,6 +193,9 @@
       <div class="col-md-3 col-sm-6">
         <h4>Charlotte Franc<br /><small><em>Root Wiring Mesh and External Power Harvester Team <!-- <br>7/2015 - 9/2015 --> </em></small></h4>
       </div>
+
+      <div class="clearfix visible-sm-block"></div>
+
       <!-- Photobiology/ Photochemistry -->
       <div class="col-md-3 col-sm-6">
         <h4>Brandon Peterson<br /><small><em>Photobiology/ Photochemistry Team<br>7/2015 - 7/2015</em></small></h4>
@@ -161,7 +204,9 @@
         <h4>Rachel Kiefer<br /><small><em>Photobiology/ Photochemistry Team <!-- <br>7/2015 - 7/2015 --> </em></small></h4>
       </div>
     </div>
+    
     <div class="clearfix"></div>
+    
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <h4>Karl Muonio<br /><small><em>Photobiology/ Photochemistry Team <!-- <br>7/2015 - 7/2015 --> </em></small></h4>
@@ -169,6 +214,9 @@
       <div class="col-md-3 col-sm-6">
         <h4>Sohail Naderpour<br /><small><em>Photobiology/ Photochemistry Team <!-- <br>7/2015 - 7/2015 --> </em></small></h4>
       </div>
+
+      <div class="clearfix visible-sm-block"></div>
+
       <div class="col-md-3 col-sm-6">
         <h4>David Kim<br /><small><em>Photobiology/ Photochemistry Team <!-- <br>7/2015 - 7/2015 --> </em></small></h4>
       </div>
@@ -177,7 +225,9 @@
         <h4>Apurwa Mishra<br /><small><em>Patent Technology Team<br>7/2015 - 9/2015</em></small></h4>
       </div>
     </div>
+    
     <div class="clearfix"></div>
+    
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <h4>Hoang Giang Ho Nguyen<br /><small><em>Patent Technology Team<br>7/2015 - 9/2015</em></small></h4>
@@ -185,6 +235,9 @@
       <div class="col-md-3 col-sm-6">
         <h4>Eshita Mathur<br /><small><em>Patent Technology Team<br>7/2015 - 9/2015</em></small></h4>
       </div>
+
+      <div class="clearfix visible-sm-block"></div>
+
       <div class="col-md-3 col-sm-6">
         <h4>Aiden Jung<br /><small><em>Patent Technology Team<br>7/2015 - 10/2015</em></small></h4>
       </div>
@@ -192,7 +245,9 @@
         <h4>Eric Chang<br /><small><em>Patent Technology Team<br>7/2015 - 7/2015</em></small></h4>
       </div>
     </div>
+    
     <div class="clearfix"></div>
+    
     <div class="row">
       <!-- Healthy Integration and Sustainability -->
       <div class="col-md-3 col-sm-6">
@@ -202,6 +257,9 @@
       <div class="col-md-3 col-sm-6">
         <h4>Charles Willitis<br /><small><em>Bio-inspired and Sustainability Team<br>7/2015 - 9/2015</em></small></h4>
       </div>
+
+      <div class="clearfix visible-sm-block"></div>
+      
       <div class="col-md-3 col-sm-6">
         <h4>Nicole Cheng<br /><small><em>Bio-inspired and Sustainability Team<br>7/2015 - 9/2015</em></small></h4>
       </div>
@@ -210,7 +268,9 @@
         <h4>Kedar Pradhan<br /><small><em>Bio-inspired and Sustainability Team <!-- <br>7/2015 - 9/2015 --> </em></small></h4>
       </div>
     </div>
+    
     <div class="clearfix"></div>
+    
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <h4>John Kevin Dayao<br /><small><em>Bio-inspired and Sustainability Team<br>6/2015 - 9/2015</em></small></h4>
