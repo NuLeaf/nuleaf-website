@@ -16,6 +16,13 @@ class MainController extends Controller
   {
     $events    = Event::latest('date')->get()->slice(0,10)->all();
     $steminars = Steminar::latest('date')->get()->slice(0,5)->all();
+    return view('main.index_old', compact('events', 'steminars'));
+  }
+
+  public function test()
+  {
+    $events    = Event::latest('date')->get()->slice(0,10)->all();
+    $steminars = Steminar::latest('date')->get()->slice(0,5)->all();
     return view('main.index', compact('events', 'steminars'));
   }
 

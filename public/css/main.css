@@ -72,6 +72,7 @@ body, html {
 }
 .overlay > .btn:hover {
   background-color: #555;
+  background-color: rgba(255,255,255,0.3);
 }
 
 /* Authentication */
@@ -83,10 +84,15 @@ body, html {
 }
 
 /* Custom Bootstrap-like CSS */
-
 @media (max-width: 768px) {
   .btn-block-sm {
     display: block;
     width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .overlay-img.wide-md > img {
+    max-width: 100%;
   }
 }

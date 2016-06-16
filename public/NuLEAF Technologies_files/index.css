@@ -1,0 +1,102 @@
+/* ======================================================
+ * Main Index Styles
+ * ======================================================
+ * Organization:   NuLeaf Technologies
+ * Lead Developer: Tuan Pham (https://github.com/ttpham0111)
+ * ======================================================*/
+
+/* Main */
+.main-block {
+  padding: 35px 10px;
+ }
+.inner-block {
+  padding: 15px;
+}
+
+/* About */
+#about-block {
+  background-color: #eee;
+  font-size: 16px;
+}
+
+/* Pillars */
+#pillars-block .title {
+  color: #000;
+}
+.pillar-img {
+  height: 150px;
+  width: 150px;
+}
+
+/* Projects */
+#projects-block {
+  background-color: #eee;
+}
+#projects-block .thumbnail > img {
+  height: 225px;
+}
+#projects-block .thumbnail > .caption {
+  height: 125px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* Events */
+.event:hover {
+  background-color: #eee;
+}
+.event > a {
+  color: #000;
+}
+.event > a:hover {
+  color: #000;
+}
+.event .row {
+  padding: 15px;
+}
+#events-block .date {
+  background-color: #777;
+  color: #fff;
+  height: 60px;
+  font-size: 12px;
+  max-width: 110px;
+  overflow: hidden;
+  padding: 7px;
+  white-space: nowrap;
+}
+#events-block .date > .day {
+  font-size: 1.2em;
+}
+.event-title {
+  font-size: 14px;
+  height: 60px;
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+/* Involvement */
+#involvement-block {
+  padding: 0;
+  position: relative;
+  margin: 35px 0;
+}
+#involvement-block > .overlay-img {
+  min-height: 300px;
+  max-height: 400px;
+}
+
+/* Affiliations */
+#affiliations-block img { 
+  max-width: 200px;
+  max-height: 200px;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  #events-block .date {
+    font-size: 14px;
+  }
+  .event-title {
+    font-size: 16px;
+  }
+}

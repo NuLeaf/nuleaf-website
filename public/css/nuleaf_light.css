@@ -10,7 +10,7 @@
  * =============*/
 
 a, h1, h2, h3, h4, h5, h6 {
-  color: #a2be74;
+  color: #056408;
 }
 h1 > small, h2 > small, h3 > small, h4 > small, h5 > small, h6 > small {
   color: #3d5200;
@@ -20,7 +20,7 @@ a:hover {
   text-decoration: none;
 }
 .btn-default {
-  background-color: #a2be74;
+  background-color: #056408;
   border-radius: 0;
   color: #fff;
 }
@@ -28,12 +28,4 @@ a:hover {
 .btn-default:active:focus {
   background-color: #3d5200;
   color: #fff;
-}
-
-/* ======
- * Main
- * ======*/
-
-#pillars-block {
-  background-color: #a2be74;
 }

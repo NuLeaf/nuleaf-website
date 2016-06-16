@@ -15,12 +15,12 @@
 
 /* About */
 #about-block {
-  background-color: #eee;
   font-size: 16px;
 }
 
 /* Pillars */
-#pillars-block .title {
+#pillars-block .title,
+#pillars-block .title > small {
   color: #000;
 }
 .pillar-img {
@@ -29,16 +29,8 @@
 }
 
 /* Projects */
-#projects-block {
-  background-color: #eee;
-}
 #projects-block .thumbnail > img {
   height: 225px;
-}
-#projects-block .thumbnail > .caption {
-  height: 125px;
-  overflow: hidden;
-  margin-bottom: 10px;
 }
 
 /* Events */

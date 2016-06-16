@@ -1,0 +1,39 @@
+/* ======================================================
+ * NuLeaf Theme - Light
+ * ======================================================
+ * Organization:   NuLeaf Technologies
+ * Lead Developer: Tuan Pham (https://github.com/ttpham0111)
+ * ======================================================*/
+
+/* =============
+ * Theme Colors
+ * =============*/
+
+a, h1, h2, h3, h4, h5, h6 {
+  color: #a2be74;
+}
+h1 > small, h2 > small, h3 > small, h4 > small, h5 > small, h6 > small {
+  color: #3d5200;
+}
+a:hover {
+  color: #3d5200;
+  text-decoration: none;
+}
+.btn-default {
+  background-color: #a2be74;
+  border-radius: 0;
+  color: #fff;
+}
+.btn-default:hover, .btn-default:active, .btn-default:focus,
+.btn-default:active:focus {
+  background-color: #3d5200;
+  color: #fff;
+}
+
+/* ======
+ * Main
+ * ======*/
+
+#pillars-block {
+  background-color: #a2be74;
+}

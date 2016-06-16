@@ -9,7 +9,13 @@
 @stop
 
 @section ('content')
-<div class="main-block text-center" id="about-block">
+<div class="container-fluid main-block" id="logo-block">
+  <div class="container">
+    <img class="img-responsive center-block" src="{{ URL::asset('images/banner.jpg') }}" />
+  </div>
+</div>
+
+<div class="container-fluid main-block text-center" id="about-block">
   <div class="container">
     <h1>What is NuLEAF Technologies?</h1>
     <p class="lead">
@@ -27,37 +33,25 @@
     <div class="row">
       <div class="col-md-4 inner-block">
         <div class="center-block pillar-img">
-          <img class="img-responsive" src="{{ URL::asset('images/learn.png') }}" />
+          <img class="img-responsive" src="{{ URL::asset('images/icons/learn.png') }}" />
         </div>
-        <h2 class="title">Learn</h2>
-        <p>
-          The first stage of the project is team formation.
-          This project is committed to scientific excellence and to teaching young scientists through “STEMinars” and 
-          real-world experience to help them gain confidence to develop both personally and professionally for their future careers.
-        </p>
+        <h2 class="title">Education<br /><small>We are the next generation of sustainable engineers.</small></h2>
       </div>
       <div class="col-md-4 inner-block">
         <div class="center-block pillar-img">
-          <img class="img-responsive" src="{{ URL::asset('images/research.png') }}" />
+          <img class="img-responsive" src="{{ URL::asset('images/icons/research.png') }}" />
         </div>
-        <h2 class="title">Research</h2>
-        <p>
-          Next is an extensive literature search. Our bio-inspired research strives to ensure the project’s commitment to healthy integration in the plant and ecosystem.
-          In comparison to solar panels and other methods, this project has the potential to be cheaper, less toxic, and 
-          more efficient by using natural materials and not requiring constant maintenance.
-        </p>
+        <h2 class="title">Interdisciplinary<br /><small>Embracing life's connectivity for the best possible technology.</small></h2>
       </div>
       <div class="col-md-4 inner-block">
         <div class="center-block pillar-img">
-          <img class="img-responsive" src="{{ URL::asset('images/test.png') }}" />
+          <img class="img-responsive" src="{{ URL::asset('images/icons/test.png') }}" />
         </div>
-        <h2 class="title">Test</h2>
-        <p>
-          These steps lead towards our goal to create a generation of experimental design reports aimed to define proof of concept. 
-          Teams will focus on the modeling of protein-nanostructure interactions, genetic engineering to create the optical coating and bioelectric network, 
-          and conductive root wiring mesh and external power harvester development.
-        </p>
+        <h2 class="title">Bioinspired<br /><small>Learning from nature for a renewable energy future.</small></h2>
       </div>
+    </div>
+    <div class="text-right">
+      <a class="btn btn-default btn-block-sm btn-sm text-uppercase" href="{{ action('MainController@about') }}" role="button">See more</a>
     </div>
   </div>
 </div>
@@ -67,45 +61,36 @@
     <div class="row">
       <div class="col-md-4 inner-block">
         <div class="thumbnail">
-          <img src="{{ URL::asset('images/MFCTeam.png') }}" />
+          <img src="{{ URL::asset('images/projects/MFCTeam.png') }}" />
           <div class="caption">
             <h4>Microbial Fuel Cell</h4>
-            <p>
-              Improvement of the MFC device, which is an established mechanism of generating electricity from plants, by better understanding the role of symbiotic microbes and fungi and their effect on the photosynthetic efficiency of C4 plants.
-            </p>
           </div>
         </div>
       </div>
       <div class="col-md-4 inner-block">
         <div class="thumbnail">
-          <img src="{{ URL::asset('images/CSCTeam.png') }}" />
+          <img src="{{ URL::asset('images/projects/CSCTeam.png') }}" />
           <div class="caption">
             <h4>Cuticular Solar Cell</h4>
-            <p>
-              Recreate the thermal, electrical, and optical functions of the Oriental Hornet cuticle for a multi-functional solar cell. In parallel, the hornet’s genome will be studied for a synthetic biology approach.
-            </p>
           </div>
         </div>
       </div>
       <div class="col-md-4 inner-block">
         <div class="thumbnail">
-          <img src="{{ URL::asset('images/ITTeam.png') }}" />
+          <img src="{{ URL::asset('images/projects/ITTeam.png') }}" />
           <div class="caption">
             <h4>Website and Forum</h4>
-            <p>
-              Continual improvement and maintenance of our website and forum for improved public presence and inter-team communication.
-            </p>
           </div>
         </div>
       </div>
     </div>
     <div class="text-right">
-      <a class="btn btn-default btn-block-sm btn-sm text-uppercase" href="#" role="button">See more</a>
+      <a class="btn btn-default btn-block-sm btn-sm text-uppercase" href="{{ action('MainController@teams') }}" role="button">See more</a>
     </div>
   </div>
 </div>
 
-<div class="container-fluid main-block"  id="events-block">
+<!-- <div class="container-fluid main-block"  id="events-block">
   <div class="container">
     <h4>Events</h4>
     <ol class="list-unstyled row">
@@ -192,29 +177,91 @@
       <a class="btn btn-default btn-block-sm text-uppercase" href="#" role="button">Full Schedule</a>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="container-fluid main-block text-center" id="involvement-block">
-  <div class="overlay-img">
-    <img src="{{ URL::asset('images/involvement.jpg') }}" />
+  <div class="overlay-img wide-md">
+    <img src="{{ URL::asset('images/bg/leaf_wide.jpg') }}" />
   </div>
   <div class="overlay">
     <a class="btn" href="{{ action('MainController@faq') }}">Get Involved</a>
   </div>
 </div>
 
+<div class="container-fluid main-block" id="acknowledgements-block">
+  <div class="container">
+    <h2>Acknowledgements</h2>
+    <p>
+      This research has been supported by the Advanced Studies Laboratories (ASL) at NASA Ames, Foothill College, the Innovation and Collaboration Group, the Northern California Chapter of the American Vacuum Society, and the Scientific Learning Institute (SLI).  Special thanks to Wenonah Vercoutere, Mike Oye, Russell Kirkman, Robert Cormia, Chris Venture, Frank Cascarano, Geeta Verma, Latha Ramasamy, and Sherman Lee for providing their gracious knowledge, wisdom, and guidance in support of this project.
+      <br /><br />
+      Our largest thanks goes, as always, to the amazing NuLEAF team members.  Thank you for your passion and perseverance - we could never have done it without you and we will continue to do great things alongside you.
+    </p>
+  </div>
+</div>
+
 <div class="container-fluid main-block" id="affiliations-block">
   <div class="container">
-    <h2>Affiliations and Sponsors:</h2>
+    <h2>Supporters and Student Universities:</h2>
     <ul class="list-unstyled row text-center">
-      <li class="affiliation col-md-4">
-        <img src="{{ URL::asset('images/nasa.gif') }}">
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/ames.png') }}">
       </li>
-      <li class="affiliation col-md-4">
-        <img src="{{ URL::asset('images/asl.png') }}">
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/asl.png') }}">
       </li>
-      <li class="affiliation col-md-4">
-        <img src="{{ URL::asset('images/foothill.gif') }}">
+
+      <li class="clearfix visible-sm-block"></li>
+
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/avs.png') }}">
+      </li>
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/deanza.jpg') }}">
+      </li>
+
+      <li class="clearfix visible-sm-block visible-md-block"></li>
+
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/drexel.png') }}">
+      </li>
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/foothill_owls.png') }}">
+      </li>
+
+      <li class="clearfix visible-sm-block"></li>
+
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/iitk.png') }}">
+      </li>
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/iitm.jpg') }}">
+      </li>      
+
+      <li class="clearfix visible-sm-block visible-md-block"></li>
+
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/sardar_patel_uni.png') }}">
+      </li>
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/scu_broncos.png') }}">
+      </li>
+
+      <li class="clearfix visible-sm-block"></li>
+
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/sjsu.png') }}">
+      </li>
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/stanford.png') }}">
+      </li>
+
+      <li class="clearfix visible-sm-block visible-md-block"></li>
+
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/uc.png') }}">
+      </li>
+      <li class="affiliation col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/ucsc_slugs.png') }}">
       </li>
     </ul>
   </div>
