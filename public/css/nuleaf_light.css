@@ -21,7 +21,9 @@ a:hover {
 }
 .btn-default {
   background-color: #056408;
-  border-radius: 0;
+     -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+          border-radius: 0;
   color: #fff;
 }
 .btn-default:hover, .btn-default:active, .btn-default:focus,

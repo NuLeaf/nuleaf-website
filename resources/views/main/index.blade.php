@@ -15,7 +15,7 @@
   </div>
 </div>
 
-<div class="container-fluid main-block text-center" id="about-block">
+<!-- <div class="container-fluid main-block text-center" id="about-block">
   <div class="container">
     <h1>What is NuLEAF Technologies?</h1>
     <p class="lead">
@@ -26,7 +26,7 @@
       This research hinges upon nanogenetics and the use of the plant’s own carbon storage or other biological pathways to create the nanoparticles of the coating and bioelectric network.
     </p>
   </div>
-</div>
+</div> -->
 
 <div class="container-fluid main-block text-center" id="pillars-block">
   <div class="container">
@@ -58,6 +58,7 @@
 
 <div class="container-fluid main-block" id="projects-block">
   <div class="container">
+    <h2>Projects</h2>
     <div class="row">
       <div class="col-md-4 inner-block">
         <div class="thumbnail">
@@ -188,20 +189,9 @@
   </div>
 </div>
 
-<div class="container-fluid main-block" id="acknowledgements-block">
-  <div class="container">
-    <h2>Acknowledgements</h2>
-    <p>
-      This research has been supported by the Advanced Studies Laboratories (ASL) at NASA Ames, Foothill College, the Innovation and Collaboration Group, the Northern California Chapter of the American Vacuum Society, and the Scientific Learning Institute (SLI).  Special thanks to Wenonah Vercoutere, Mike Oye, Russell Kirkman, Robert Cormia, Chris Venture, Frank Cascarano, Geeta Verma, Latha Ramasamy, and Sherman Lee for providing their gracious knowledge, wisdom, and guidance in support of this project.
-      <br /><br />
-      Our largest thanks goes, as always, to the amazing NuLEAF team members.  Thank you for your passion and perseverance - we could never have done it without you and we will continue to do great things alongside you.
-    </p>
-  </div>
-</div>
-
 <div class="container-fluid main-block" id="affiliations-block">
   <div class="container">
-    <h2>Supporters and Student Universities:</h2>
+    <h2>Supporters and Student Universities</h2>
     <ul class="list-unstyled row text-center">
       <li class="affiliation col-md-3 col-sm-6 col-xs-12">
         <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/ames.png') }}">
@@ -264,6 +254,17 @@
         <img class="img-responsive center-block" src="{{ URL::asset('images/affiliations/ucsc_slugs.png') }}">
       </li>
     </ul>
+  </div>
+</div>
+
+<div class="container-fluid main-block" id="acknowledgements-block">
+  <div class="container">
+    <h2>Acknowledgements</h2>
+    <p>
+      This research has been supported by the Advanced Studies Laboratories (ASL) at NASA Ames, Foothill College, the Innovation and Collaboration Group, the Northern California Chapter of the American Vacuum Society, and the Scientific Learning Institute (SLI).  Special thanks to Wenonah Vercoutere, Mike Oye, Russell Kirkman, Robert Cormia, Chris Venture, Frank Cascarano, Geeta Verma, Latha Ramasamy, and Sherman Lee for providing their gracious knowledge, wisdom, and guidance in support of this project.
+      <br /><br />
+      Our largest thanks goes, as always, to the amazing NuLEAF team members.  Thank you for your passion and perseverance - we could never have done it without you and we will continue to do great things alongside you.
+    </p>
   </div>
 </div>
 @stop
