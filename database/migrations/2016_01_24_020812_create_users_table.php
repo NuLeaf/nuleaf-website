@@ -15,17 +15,19 @@ class CreateUsersTable extends Migration
     Schema::create('users', function (Blueprint $table)
     {
       $table->increments('user_id');
-      $table->string('username')->unique();
-      $table->string('email')->unique();
-      $table->string('password', 60);
-      $table->string('firstname', 75);
-      $table->string('lastname', 75);
+      $table->string('username', 128)->unique();
+      $table->string('email', 128)->unique();
+      $table->string('password', 128);
+      $table->string('firstname', 64);
+      $table->string('lastname', 64);
 
-      $table->string('image1')->nullable();
-      $table->string('image2')->nullable();
-      $table->longText('description')->nullable();
+      $table->string('image1', 256)->nullable()->default('');
+      $table->string('image2', 256)->nullable()->default('');
+      $table->longText('description')->nullable()->default('');
 
-      $table->integer('team_id')->unsigned()->nullable();
+      $table->boolean('is_active')->default(true);
+      
+      $table->integer('team_id')->unsigned()->nullable()->default(null);
       $table->foreign('team_id')->references('team_id')->on('teams');
       
       $table->rememberToken();

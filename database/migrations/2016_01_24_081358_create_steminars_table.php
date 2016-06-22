@@ -12,12 +12,13 @@ class CreateSteminarsTable extends Migration
    */
   public function up()
   {
+    // Note: Must follow inheritance from 'events' table.
     Schema::create('steminars', function (Blueprint $table) {
       $table->increments('steminar_id');
-      $table->string('title', 100);
-      $table->dateTime('date');
-      $table->string('location', 100);
-      $table->binary('body');
+      $table->string('title', 128);
+      $table->dateTime('date')->nullable()->default(null);
+      $table->string('location', 128)->nullable()->default('');
+      $table->binary('body')->nullable();
       $table->timestamps();
     });
   }

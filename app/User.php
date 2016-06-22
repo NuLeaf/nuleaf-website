@@ -57,6 +57,7 @@ class User extends Authenticatable
    * @param  string       $boolean
    * @return boolean
    */
+  public function hasRole($role) { return hasRoles($role); }
   public function hasRoles($roles, $boolean = 'and')
   {
     $hasRole = false;

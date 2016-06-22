@@ -40,14 +40,15 @@ class CreateUserRequest extends Request
     $team_id = isset($team_id) ? '|exists:teams,team_id,team_id,'.$team_id : '';
 
     return [
-      'username'    => 'required|string|unique:users,username'.$user_id,
-      'email'       => 'required|email|unique:users,email'.$user_id,
-      'password'    => $require_password.'string|confirmed',
-      'firstname'   => 'required|string|max:75',
-      'lastname'    => 'required|string|max:75',
-      'image1'      => 'url|max:100',
-      'image2'      => 'url|max:100',
+      'username'    => 'required|string|max:128|unique:users,username'.$user_id,
+      'email'       => 'required|email|max:128|unique:users,email'.$user_id,
+      'password'    => $require_password.'string|confirmed|max:128',
+      'firstname'   => 'required|string|max:64',
+      'lastname'    => 'required|string|max:64',
+      'image1'      => 'url|max:256',
+      'image2'      => 'url|max:256',
       'description' => 'string',
+      'is_active'   => 'boolean',
       'team_id'     => $require_team_id.'|integer'.$team_id,
       'team_name'   => $require_team_name.'|string|max:100'
     ];

@@ -61,7 +61,7 @@ Route::group(['middleware' => 'web'], function()
     /**
      * Editor access
      */
-    Route::group(['middleware' => 'editor'], function()
+    Route::group(['middleware' => 'role:or,editor,admin'], function()
     {
       // Resource: Events
       Route::get   ('/cp/events'             , 'EventsController@index');
@@ -82,7 +82,7 @@ Route::group(['middleware' => 'web'], function()
       /**
        * Admin access
        */
-      Route::group(['middleware' => 'admin'], function()
+      Route::group(['middleware' => 'role:admin'], function()
       {
 
         // Resource: Users

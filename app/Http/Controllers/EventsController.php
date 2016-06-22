@@ -44,7 +44,8 @@ class EventsController extends Controller
     {
       $title    = $request->input('title');
       $location = $request->input('location');
-      $date     = new Carbon($request->input('date'));
+      $date     = $request->input('date');
+      $date     = $date === null ? null : new Carbon($date);
       
       Event::create(compact('title', 'date', 'location'));
       return;
@@ -65,7 +66,8 @@ class EventsController extends Controller
     {
       $title    = $request->input('title');
       $location = $request->input('location');
-      $date     = new Carbon($request->input('date'));
+      $date     = $request->input('date');
+      $date     = $date === null ? null : new Carbon($date);
 
       $event->update(compact('title', 'date', 'location'));
       return;

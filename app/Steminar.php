@@ -2,9 +2,9 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use App\Event;
 
-class Steminar extends Model
+class Steminar extends Event
 {
   /**
    * The table associated with this model.
@@ -35,14 +35,4 @@ class Steminar extends Model
   protected $guarded = [
     'steminar_id',
   ];
-
-  /**
-   * Defines the M:1 relations between events and users.
-   *
-   * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-   */
-  public function user()
-  {
-    return $this->belongsTo('App\User');
-  }
 }

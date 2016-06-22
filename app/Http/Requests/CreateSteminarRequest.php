@@ -27,11 +27,10 @@ class CreateSteminarRequest extends Request
     $steminar_id = isset($steminar) ? $steminar->steminar_id : NULL;
     $steminar_id = isset($steminar_id) ? ','.$steminar_id.',steminar_id' : '';
     return [
-      'title'    => 'required|string|min:5|max:100|
-                     unique:steminars,title'.$steminar_id,
-      'date'     => 'required|date',
-      'location' => 'required|string|min:5|max:100',
-      'body'     => 'required|string|min:100'
+      'title'    => 'required|string|unique:steminars,title'.$steminar_id.'|min:1|max:128',
+      'date'     => 'date',
+      'location' => 'string|max:128',
+      'body'     => 'string'
     ];
   }
 }
