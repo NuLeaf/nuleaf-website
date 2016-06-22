@@ -23,8 +23,6 @@ class CreateUserRequest extends Request
    */
   public function rules()
   {
-    // TODO: Add more extensive validation rules.
-    // TODO: Set upper limits based on columns in database.
     $user    = $this->route('user');
     $user_id = isset($user)    ? $user->user_id          : NULL;
     $user_id = isset($user_id) ? ','.$user_id.',user_id' : '';

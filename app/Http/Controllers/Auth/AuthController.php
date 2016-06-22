@@ -38,6 +38,13 @@ class AuthController extends Controller
     protected $redirectAfterLogout = '/';
 
     /**
+     * The column used as the username.
+     *
+     * @var string
+     */
+    protected $username = 'username';
+
+    /**
      * Create a new authentication controller instance.
      *
      * @return void
