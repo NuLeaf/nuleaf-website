@@ -19,6 +19,8 @@ a:hover {
   color: #3d5200;
   text-decoration: none;
 }
+
+/* Bootstrap Modifications */
 .btn-default {
   background-color: #056408;
      -moz-border-radius: 0;
