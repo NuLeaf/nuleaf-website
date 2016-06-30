@@ -91,6 +91,19 @@
   </div>
 </div>
 
+{{-- <div class="container-fluid main-block" id="steminars-block">
+  <div class="container">
+    <h2>Steminars</h2>
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+      </div>
+  </div>
+</div> --}}
+
 <!-- <div class="container-fluid main-block"  id="events-block">
   <div class="container">
     <h4>Events</h4>

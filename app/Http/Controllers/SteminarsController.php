@@ -58,8 +58,9 @@ class SteminarsController extends Controller
       $date     = $request->input('date');
       $date     = $date === null ? null : new Carbon($date);
       $body     = $request->input('body');
+      $image    = $request->input('image');
       
-      Steminar::create(compact('title', 'date', 'location', 'body'));
+      Steminar::create(compact('title', 'date', 'location', 'body', 'image'));
       return;
     }
     return redirect(action('SteminarsController@index'));
@@ -81,8 +82,9 @@ class SteminarsController extends Controller
       $date     = $request->input('date');
       $date     = $date === null ? null : new Carbon($date);
       $body     = $request->input('body');
+      $image    = $request->input('image');
       
-      $steminar->update(compact('title', 'date', 'location', 'body'));
+      $steminar->update(compact('title', 'date', 'location', 'body', 'image'));
       return;
     }
     return redirect(action('SteminarsController@index'));
