@@ -18,6 +18,10 @@
 }
 .thumbnail > .rect-img-sm,
 .rect-img-sm {
+  height: 350px;
+}
+.thumbnail > .wide-rect-img-sm,
+.wide-rect-img-sm {
   height: 250px;
 }
 

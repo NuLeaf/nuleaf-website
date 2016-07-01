@@ -113,7 +113,7 @@
     <!-- BEGIN STEMINAR LIST -->
     <ul class="list-group">
       @foreach ($steminars as $steminar)
-        <li class="list-group-item peelable resource" data-href-delete="{{ action('SteminarsController@destroy', $steminar) }}" data-href-patch="{{ action('SteminarsController@update', $steminar) }}" data-close="dblclick" data-resource='{ "title":"{{ htmlspecialchars(htmlspecialchars($steminar->title)) }}", "location":"{{ $steminar->location }}", "date":"{{ $steminar->date->format('m/d/Y h:i a') }}", "body":"{{ htmlspecialchars(htmlspecialchars($steminar->body)) }}", "image":"{{ $steminar->image }}" }'>
+        <li class="list-group-item peelable resource" data-href-delete="{{ action('SteminarsController@destroy', $steminar) }}" data-href-patch="{{ action('SteminarsController@update', $steminar) }}" data-close="dblclick" data-resource='{ "title":"{{ htmlspecialchars(htmlspecialchars($steminar->title)) }}", "location":"{{ $steminar->location }}", "date":"{{ $steminar->date->format('m/d/Y h:i a') }}", "body":"{{ htmlspecialchars(htmlspecialchars($steminar->body)) }}", "image":"{{ $steminar->image }}", "host":"{{ $steminar->host }}" }'>
           <div class="hidden-xs hidden-sm peel"></div>
           <div class="row">
             <div class="col-xs-7">

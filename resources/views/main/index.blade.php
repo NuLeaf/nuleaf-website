@@ -61,7 +61,7 @@
     <div class="row">
       <div class="col-md-4 square-padding">
         <div class="thumbnail">
-          <img class="rect-img-sm" src="{{ URL::asset('images/projects/MFCTeam.png') }}" />
+          <img class="wide-rect-img-sm" src="{{ URL::asset('images/projects/MFCTeam.png') }}" />
           <div class="caption text-center">
             <h4>Microbial Fuel Cell</h4>
           </div>
@@ -69,7 +69,7 @@
       </div>
       <div class="col-md-4 square-padding">
         <div class="thumbnail">
-          <img class="rect-img-sm" src="{{ URL::asset('images/projects/CSCTeam.png') }}" />
+          <img class="wide-rect-img-sm" src="{{ URL::asset('images/projects/CSCTeam.png') }}" />
           <div class="caption text-center">
             <h4>Cuticular Solar Cell</h4>
           </div>
@@ -77,7 +77,7 @@
       </div>
       <div class="col-md-4 square-padding">
         <div class="thumbnail">
-          <img class="rect-img-sm" src="{{ URL::asset('images/projects/ITTeam.png') }}" />
+          <img class="wide-rect-img-sm" src="{{ URL::asset('images/projects/ITTeam.png') }}" />
           <div class="caption text-center">
             <h4>Website and Forum</h4>
           </div>
@@ -97,7 +97,7 @@
       @foreach ($steminars as $steminar)
       <div class="col-md-4 square-padding">
         <div class="thumbnail">
-          <img src="{{ $steminar->image }}" />
+          <img class="rect-img-sm" src="{{ $steminar->image }}" />
           <div class="caption text-center">
             <h4>{{ $steminar->host }}<br /><small>{{ $steminar->title }}</small></h4>
           </div>
