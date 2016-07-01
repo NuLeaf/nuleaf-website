@@ -31,7 +31,8 @@ class CreateSteminarRequest extends Request
       'date'     => 'date',
       'location' => 'string|max:128',
       'body'     => 'string',
-      'image'    => 'url|max:256'
+      'image'    => 'url|max:256',
+      'host'     => 'string|max:128'
     ];
   }
 }

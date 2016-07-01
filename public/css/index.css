@@ -6,11 +6,19 @@
  * ======================================================*/
 
 /* Main */
-.main-block {
+.wide-block {
   padding: 35px 10px;
  }
-.inner-block {
+.square-block {
   padding: 15px;
+}
+.square-img-sm {
+  height: 150px;
+  width: 150px;
+}
+.thumbnail > .rect-img-sm,
+.rect-img-sm {
+  height: 250px;
 }
 
 /* About */
@@ -18,19 +26,9 @@
   font-size: 16px;
 }
 
-/* Pillars */
 #pillars-block .title,
 #pillars-block .title > small {
   color: #000;
-}
-.pillar-img {
-  height: 150px;
-  width: 150px;
-}
-
-/* Projects */
-#projects-block .thumbnail > img {
-  height: 225px;
 }
 
 /* Events */

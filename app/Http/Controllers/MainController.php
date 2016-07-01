@@ -22,7 +22,7 @@ class MainController extends Controller
   public function test()
   {
     $events    = Event::latest('date')->get()->slice(0,10)->all();
-    $steminars = Steminar::latest('date')->get()->slice(0,5)->all();
+    $steminars = Steminar::whereIn('steminar_id', [12, 13, 14])->get();
     return view('main.index', compact('events', 'steminars'));
   }
 

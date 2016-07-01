@@ -9,13 +9,12 @@
 @stop
 
 @section ('content')
-<div class="container-fluid main-block" id="logo-block">
-  <div class="container">
-    <img class="img-responsive center-block" src="{{ URL::asset('images/banner.jpg') }}" />
-  </div>
+<div class="container-fluid wide-block">
+  <img class="img-responsive center-block hidden-xs" src="{{ URL::asset('images/logo2.png') }}" />
+  <img class="img-responsive center-block visible-xs-block" src="{{ URL::asset('images/banner.jpg') }}" />
 </div>
 
-<!-- <div class="container-fluid main-block text-center" id="about-block">
+<!-- <div class="container-fluid wide-block text-center" id="about-block">
   <div class="container">
     <h1>What is NuLEAF Technologies?</h1>
     <p class="lead">
@@ -28,24 +27,24 @@
   </div>
 </div> -->
 
-<div class="container-fluid main-block text-center" id="pillars-block">
+<div class="container-fluid wide-block text-center" id="pillars-block">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 inner-block">
-        <div class="center-block pillar-img">
-          <img class="img-responsive" src="{{ URL::asset('images/icons/learn.png') }}" />
+      <div class="col-md-4 square-block">
+        <div class="center-block">
+          <img class="square-img-sm" src="{{ URL::asset('images/icons/learn.png') }}" />
         </div>
         <h2 class="title">Education<br /><small>We are the next generation of sustainable engineers.</small></h2>
       </div>
-      <div class="col-md-4 inner-block">
-        <div class="center-block pillar-img">
-          <img class="img-responsive" src="{{ URL::asset('images/icons/research.png') }}" />
+      <div class="col-md-4 square-padding">
+        <div class="center-block">
+          <img class="square-img-sm" src="{{ URL::asset('images/icons/research.png') }}" />
         </div>
         <h2 class="title">Interdisciplinary<br /><small>Embracing life's connectivity for the best possible technology.</small></h2>
       </div>
-      <div class="col-md-4 inner-block">
-        <div class="center-block pillar-img">
-          <img class="img-responsive" src="{{ URL::asset('images/icons/test.png') }}" />
+      <div class="col-md-4 square-padding">
+        <div class="center-block">
+          <img class="square-img-sm" src="{{ URL::asset('images/icons/test.png') }}" />
         </div>
         <h2 class="title">Bioinspired<br /><small>Learning from nature for a renewable energy future.</small></h2>
       </div>
@@ -56,30 +55,30 @@
   </div>
 </div>
 
-<div class="container-fluid main-block" id="projects-block">
+<div class="container-fluid wide-block">
   <div class="container">
     <h2>Projects</h2>
     <div class="row">
-      <div class="col-md-4 inner-block">
+      <div class="col-md-4 square-padding">
         <div class="thumbnail">
-          <img src="{{ URL::asset('images/projects/MFCTeam.png') }}" />
-          <div class="caption">
+          <img class="rect-img-sm" src="{{ URL::asset('images/projects/MFCTeam.png') }}" />
+          <div class="caption text-center">
             <h4>Microbial Fuel Cell</h4>
           </div>
         </div>
       </div>
-      <div class="col-md-4 inner-block">
+      <div class="col-md-4 square-padding">
         <div class="thumbnail">
-          <img src="{{ URL::asset('images/projects/CSCTeam.png') }}" />
-          <div class="caption">
+          <img class="rect-img-sm" src="{{ URL::asset('images/projects/CSCTeam.png') }}" />
+          <div class="caption text-center">
             <h4>Cuticular Solar Cell</h4>
           </div>
         </div>
       </div>
-      <div class="col-md-4 inner-block">
+      <div class="col-md-4 square-padding">
         <div class="thumbnail">
-          <img src="{{ URL::asset('images/projects/ITTeam.png') }}" />
-          <div class="caption">
+          <img class="rect-img-sm" src="{{ URL::asset('images/projects/ITTeam.png') }}" />
+          <div class="caption text-center">
             <h4>Website and Forum</h4>
           </div>
         </div>
@@ -91,20 +90,28 @@
   </div>
 </div>
 
-{{-- <div class="container-fluid main-block" id="steminars-block">
+<div class="container-fluid wide-block">
   <div class="container">
     <h2>Steminars</h2>
     <div class="row">
-      <div class="col-md-4">
+      @foreach ($steminars as $steminar)
+      <div class="col-md-4 square-padding">
+        <div class="thumbnail">
+          <img src="{{ $steminar->image }}" />
+          <div class="caption text-center">
+            <h4>{{ $steminar->host }}<br /><small>{{ $steminar->title }}</small></h4>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-      </div>
-      <div class="col-md-4">
-      </div>
+      @endforeach
+    </div>
+    <div class="text-right">
+      <a class="btn btn-default btn-block-sm btn-sm text-uppercase" href="{{-- {{ action('MainController@events') }} --}}" role="button">See more</a>
+    </div>
   </div>
-</div> --}}
+</div>
 
-<!-- <div class="container-fluid main-block"  id="events-block">
+<!-- <div class="container-fluid wide-block"  id="events-block">
   <div class="container">
     <h4>Events</h4>
     <ol class="list-unstyled row">
@@ -193,7 +200,7 @@
   </div>
 </div> -->
 
-<div class="container-fluid main-block text-center" id="involvement-block">
+<div class="container-fluid wide-block text-center" id="involvement-block">
   <div class="overlay-img wide-md">
     <img src="{{ URL::asset('images/bg/leaf_wide.jpg') }}" />
   </div>
@@ -202,7 +209,7 @@
   </div>
 </div>
 
-<div class="container-fluid main-block" id="affiliations-block">
+<div class="container-fluid wide-block" id="affiliations-block">
   <div class="container">
     <h2>Supporters and Student Universities</h2>
     <ul class="list-unstyled row text-center">
@@ -270,7 +277,7 @@
   </div>
 </div>
 
-<div class="container-fluid main-block" id="acknowledgements-block">
+<div class="container-fluid wide-block" id="acknowledgements-block">
   <div class="container">
     <h2>Acknowledgements</h2>
     <p>

@@ -4,6 +4,11 @@
   <span class="error-message" data-input="#title"></span>
 </div>
 <div class="form-group">
+  <label for="host">Hosted By</label>
+  <input class="form-control" id="host" maxlength="128" name="host" placeholder="Steminar Host" type="text" />
+  <span class="error-message" data-input="#host"></span>
+</div>
+<div class="form-group">
   <label for="location">Location</label>
   <input class="form-control" id="location" maxlength="128" name="location" placeholder="Steminar Location" type="text" />
   <span class="error-message" data-input="#location"></span>
