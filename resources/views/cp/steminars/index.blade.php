@@ -135,7 +135,8 @@
           </div>
           <div class="row">
             <p class="col-xs-12">
-              <strong class="">Location:</strong> {{ $steminar->location }}<br />
+              <strong>Hosted by:</strong> {{ $steminar->host }}<br />
+              <strong>Location:</strong> {{ $steminar->location }}<br />
               <strong>Date:</strong> {{ $steminar->date->format('M d, Y h:i A') }}
             </p>
           </div>
