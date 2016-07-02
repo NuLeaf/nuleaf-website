@@ -10,7 +10,7 @@
 
 @section ('content')
 <div class="container-fluid wide-block">
-  <img class="img-responsive center-block hidden-xs" src="{{ URL::asset('images/logo2.png') }}" />
+  <img class="img-responsive center-block hidden-xs" src="{{ URL::asset('images/logo2-1.png') }}" onmouseover="this.src='{{ URL::asset('images/logo2.png') }}'" onmouseout="this.src='{{ URL::asset('images/logo2-1.png') }}'" />
   <img class="img-responsive center-block visible-xs-block" src="{{ URL::asset('images/banner.jpg') }}" />
 </div>
 
