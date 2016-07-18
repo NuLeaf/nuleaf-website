@@ -9,7 +9,7 @@
 
 @section ('content')
 <div class="container">
-  <div id="steminars">
+  <div class="container-fluid" id="steminars">
     <h2 class="theme-text">STEMinars<br /><small>Educational seminars focused on STEM topics</small></h2>
 
     <div class="panel-group" id="steminar-list" role="tablist" aria-multiselectable="true">
@@ -65,16 +65,14 @@
         <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="heading-event-{{ $y }}-{{ $m }}">
             <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#event-list-{{ $y }}" href="#event-{{ $y }}-{{ $m }}" aria-expanded="false" aria-controls="event-{{ $y }}-{{ $m }}">
-                {{ DateTime::createFromFormat('!m', $m)->format('F') }}
-                <span class="badge">
-                  {{ count($month_events = $year_events->filter(function($event) use ($m)
-                   {
-                      return $event->date->month === $m;
-                    }))
-                  }}
-                </span>
-              </a>
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#event-list-{{ $y }}" href="#event-{{ $y }}-{{ $m }}" aria-expanded="false" aria-controls="event-{{ $y }}-{{ $m }}">{{ DateTime::createFromFormat('!m', $m)->format('F') }}</a>
+              <span class="badge">
+                {{ count($month_events = $year_events->filter(function($event) use ($m)
+                 {
+                    return $event->date->month === $m;
+                  }))
+                }}
+              </span>
             </h4>
           </div>
           <div id="event-{{ $y }}-{{ $m }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#heading-event-{{ $y }}-{{ $m }}">

@@ -129,7 +129,6 @@
                 <a class="btn btn-warning" data-form="modal" data-target="#confirm-modal" data-toggle="modal" role="button">
                   <i aria-label="Delete" class="fa fa-trash"></i>
                 </a>
-
               </div>
             </div>
           </div>
@@ -140,11 +139,14 @@
               <strong>Date:</strong> {{ $steminar->date->format('M d, Y h:i A') }}
             </p>
           </div>
-          <div class="row">
-            <div class="col-xs-12 steminar-body-wrapper">
-              <div class="steminar-body">
-                {!! $steminar->body !!}
+          <div class="row steminar-body">
+            <div class="col-sm-3 col-lg-2">
+              <div class="thumbnail">
+                <img src="{{ $steminar->image }}" />
               </div>
+            </div>
+            <div class="col-sm-9 col-lg-10">
+              {!! $steminar->body !!}
             </div>
           </div>
         </li>

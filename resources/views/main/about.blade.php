@@ -6,10 +6,10 @@
 
 @section ('content')
 <div class="container">
-  <h1 class="page-title">About</h1>
+  <h1 class="page-title theme-text">About</h1>
   <hr />
   <div class="page-content">
-    <h3 class="text-uppercase">Team Overview</h3>
+    <h3 class="text-uppercase theme-text">Team Overview</h3>
     <p>
       NuLEAF Technologies is a student-led engineering research organization dedicated to interdisciplinary science, biomimicry, and sustainability. We create bio-inspired solutions for a renewable energy future while building practical skills in the next generation of sustainable engineers.
       <br /><br />
@@ -18,7 +18,7 @@
       We have five research teams that work on two projects, the microbial fuel cell and cuticular solar cell.  Our three operational teams are focused on the logistical aspects of running NuLEAF, including running STEMinars, writing grants, and maintaining our website and forum.
     </p>
     <br />
-    <h3 class="text-uppercase">Research Overview</h3>
+    <h3 class="text-uppercase theme-text">Research Overview</h3>
     <p>
       NuLEAF’s original objective was to develop a biomimetic method to generate electricity from plants without relying on photosynthesis.  While this is still our final goal, our engineering interests and projects have grown to also encompass the broader topic of harnessing solar energy.
       <br /><br />
@@ -27,7 +27,7 @@
       Compared to current developments of generating electricity from plants, NuLEAF uses bio-inspired techniques to harness higher levels of power with minimal biological impacts. In relation to conventional solar panels, NuLEAF has the potential to be cheaper, less toxic, and more efficient without constant maintenance.  Our research projects will provide knowledge to the fields of bioengineering, genomics, biomaterials, synthetic biology, and solar energy.
     </p>
     <br />
-    <h3 class="text-uppercase">Pillars</h3>
+    <h3 class="text-uppercase theme-text">Pillars</h3>
     <p>
       Our pillars are the core values that NuLEAF embodies as an organization.  They help to guide and shape our research to maintain scientific integrity and excellence.
     </p>
@@ -52,7 +52,7 @@
       This is an ambitious, difficult research project with high standards, and we want our members will look back fondly on the experience.  We will foster an atmosphere of trust and positive communication with an incredibly diverse group of students. This includes building a fun-loving, but serious, environment where young scientists come together to solve wide-ranging scientific problems.
     <p>
     <br />
-    <h3 class="text-uppercase">Progress to Date</h3>
+    <h3 class="text-uppercase theme-text">Progress to Date</h3>
     <p>
       The Hardware and Photobiology teams successfully wrote and negotiated a grant from the Scientific Learning Institute (SLI) to fund the microbial fuel cell project.  The have completed the experimental design phase and are beginning their experiments. For all students involved, this was the first time they had wrote or negotiated a grant and, for many, their first time designing an experiment.
       <br /><br />
@@ -63,12 +63,12 @@
       For more detailed information on team progress or information on upcoming plans please visit the <a href="{{ action('MainController@teams') }}">Teams page.</a>
     </p>
     <br />
-    <h3 class="text-uppercase">Upcoming Plans</h3>
+    <h3 class="text-uppercase theme-text">Upcoming Plans</h3>
     <p>
       Our team come from various scientific backgrounds, including biology, chemistry, psychology, kinesiology, animation, and computer science, to name a few. The education of the students ranges from lower division undergraduate to master programs.  The STEMinars, in which students, industry professionals, and established scientists give lectures, have begun.
     </p>
     <br />
-    <h3 class="text-uppercase">How to Contribute</h3>
+    <h3 class="text-uppercase theme-text">How to Contribute</h3>
     <p>
       If you have questions about the application process, please visit our <a href="{{ action('MainController@faq') }}">FAQ page</a>.<br />
       If you would like to volunteer as a STEMinar speaker or have resources and ideas you would like to add, please email to: <a href="mailto:contact@nuleaftech.com">contact@nuleaftech.com</a>.

@@ -6,10 +6,10 @@
 
 @section ('content')
 <div class="container">
-  <h1 class="page-title">Frequently Asked Questions</h1>
+  <h1 class="page-title theme-text">Frequently Asked Questions</h1>
   <hr />
   <div class="page-content">
-    <h2>What is NuLEAF Technologies?</h2>
+    <h2 class="theme-text">What is NuLEAF Technologies?</h2>
     <br />
     <div class="panel-group" id="what-is-nuleaf-technologies" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
@@ -88,7 +88,7 @@
         </div>
       </div>
     </div>
-    <h2>How can I join NuLEAF Technologies?</h2>
+    <h2 class="theme-text">How can I join NuLEAF Technologies?</h2>
     <br />
     <div class="panel-group" id="how-can-i-join-nuleaf-technologies" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
