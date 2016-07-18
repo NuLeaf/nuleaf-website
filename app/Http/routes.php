@@ -31,6 +31,7 @@ Route::group(['middleware' => 'web'], function()
 {
   Route::get('/'            , 'MainController@index');
   Route::get('/about'       , 'MainController@about');
+  Route::get('/events'      , 'MainController@events');
   Route::get('/faq'         , 'MainController@faq');
   Route::get('/teams'       , 'MainController@teams');
   Route::get('/members'     , 'MainController@members');
@@ -56,7 +57,6 @@ Route::group(['middleware' => 'web'], function()
   Route::group(['middleware' => 'auth'], function()
   {
     Route::get('/cp/index', 'MembersController@index');
-    Route::get('/test'    , 'MainController@test');
     
     /**
      * Editor access

@@ -14,21 +14,20 @@ class MainController extends Controller
 {
   public function index()
   {
-    $events    = Event::latest('date')->get()->slice(0,10)->all();
-    $steminars = Steminar::latest('date')->get()->slice(0,5)->all();
-    return view('main.index_old', compact('events', 'steminars'));
-  }
-
-  public function test()
-  {
-    $events    = Event::latest('date')->get()->slice(0,10)->all();
     $steminars = Steminar::whereIn('steminar_id', [12, 13, 14])->get();
-    return view('main.index', compact('events', 'steminars'));
+    return view('main.index', compact('steminars'));
   }
 
   public function about()
   {
     return view('main.about');
+  }
+
+  public function events()
+  {
+    $events    = Event::latest('date')->get();
+    $steminars = Steminar::latest('date')->get();
+    return view('main.events', compact('events', 'steminars'));
   }
 
   public function faq()

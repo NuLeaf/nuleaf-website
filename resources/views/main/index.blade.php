@@ -5,27 +5,15 @@
 @stop
 
 @section ('page_level_styles')
-<link href="{{ URL::asset('css/index.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ URL::asset('css/index.css?v=1.2') }}" rel="stylesheet" type="text/css"/>
 @stop
 
 @section ('content')
 <div class="container-fluid wide-block">
-  <img class="img-responsive center-block hidden-xs" src="{{ URL::asset('images/logo2-1.png') }}" onmouseover="this.src='{{ URL::asset('images/logo2.png') }}'" onmouseout="this.src='{{ URL::asset('images/logo2-1.png') }}'" />
+  <img class="img-responsive center-block hidden-xs" src="{{ URL::asset('images/logo2.png') }}" />
   <img class="img-responsive center-block visible-xs-block" src="{{ URL::asset('images/banner.jpg') }}" />
+  <h2 class="text-center">Turning a NuLEAF in Tech</h2>
 </div>
-
-<!-- <div class="container-fluid wide-block text-center" id="about-block">
-  <div class="container">
-    <h1>What is NuLEAF Technologies?</h1>
-    <p class="lead">
-      Harness higher levels of power with minimal ecological impact
-    </p>
-    <p>
-      This project proposes a technique that will not rely on photosynthesis and will be harmlessly integrated into the plant’s biological system and surrounding environment. 
-      This research hinges upon nanogenetics and the use of the plant’s own carbon storage or other biological pathways to create the nanoparticles of the coating and bioelectric network.
-    </p>
-  </div>
-</div> -->
 
 <div class="container-fluid wide-block text-center" id="pillars-block">
   <div class="container">
@@ -36,13 +24,13 @@
         </div>
         <h2 class="title">Education<br /><small>We are the next generation of sustainable engineers.</small></h2>
       </div>
-      <div class="col-md-4 square-padding">
+      <div class="col-md-4 square-block">
         <div class="center-block">
           <img class="square-img-sm" src="{{ URL::asset('images/icons/research.png') }}" />
         </div>
         <h2 class="title">Interdisciplinary<br /><small>Embracing life's connectivity for the best possible technology.</small></h2>
       </div>
-      <div class="col-md-4 square-padding">
+      <div class="col-md-4 square-block">
         <div class="center-block">
           <img class="square-img-sm" src="{{ URL::asset('images/icons/test.png') }}" />
         </div>
@@ -59,7 +47,7 @@
   <div class="container">
     <h2>Projects</h2>
     <div class="row">
-      <div class="col-md-4 square-padding">
+      <div class="col-md-4 square-block">
         <div class="thumbnail">
           <img class="wide-rect-img-sm" src="{{ URL::asset('images/projects/MFCTeam.png') }}" />
           <div class="caption text-center">
@@ -67,7 +55,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 square-padding">
+      <div class="col-md-4 square-block">
         <div class="thumbnail">
           <img class="wide-rect-img-sm" src="{{ URL::asset('images/projects/CSCTeam.png') }}" />
           <div class="caption text-center">
@@ -75,7 +63,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 square-padding">
+      <div class="col-md-4 square-block">
         <div class="thumbnail">
           <img class="wide-rect-img-sm" src="{{ URL::asset('images/projects/ITTeam.png') }}" />
           <div class="caption text-center">
@@ -95,7 +83,7 @@
     <h2>Steminars</h2>
     <div class="row">
       @foreach ($steminars as $steminar)
-      <div class="col-md-4 square-padding">
+      <div class="col-md-4 square-block">
         <div class="thumbnail">
           <img class="rect-img-sm" src="{{ $steminar->image }}" />
           <div class="caption text-center">
@@ -106,7 +94,7 @@
       @endforeach
     </div>
     <div class="text-right">
-      <a class="btn btn-default btn-block-sm btn-sm text-uppercase" href="{{-- {{ action('MainController@events') }} --}}" role="button">See more</a>
+      <a class="btn btn-default btn-block-sm btn-sm text-uppercase" href="{{ action('MainController@events') }}" role="button">See more</a>
     </div>
   </div>
 </div>
@@ -277,7 +265,7 @@
   </div>
 </div>
 
-<div class="container-fluid wide-block" id="acknowledgements-block">
+<div class="container-fluid wide-block">
   <div class="container">
     <h2>Acknowledgements</h2>
     <p>

@@ -11,7 +11,7 @@
   <!-- END PAGE LEVEL STYLES -->
 
   <!-- BEGIN THEME STYLES -->
-  <link href="{{ URL::asset('css/nuleaf_light.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ URL::asset('css/nuleaf_light.css?v=1.1') }}" rel="stylesheet" type="text/css">
   <!-- BEGIN THEME STYLES -->
   
   <body>
