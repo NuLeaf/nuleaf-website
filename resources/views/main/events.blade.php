@@ -52,8 +52,8 @@
     <h2 class="theme-text">General Events<br /><small>Conferences, Symposiums, and Social Events</small></h2>
     
     <div class="container-fluid">
-      <div class="panel-group" id="event-list-2016" role="tablist" aria-multiselectable="true">
-        @for ($y = $events->first()->date->year; $y >= $events->last()->date->year; --$y)
+      @for ($y = $events->first()->date->year; $y >= $events->last()->date->year; --$y)
+      <div class="panel-group" id="event-list-{{ $y }}" role="tablist" aria-multiselectable="true">
         <h4>
           {{ $y }}
           <span class="badge">
@@ -64,34 +64,35 @@
             }}
           </span>
         </h4>
-          @for ($m = $year_events->first()->date->month; $m >= $year_events->last()->date->month; --$m)
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading-event-{{ $y }}-{{ $m }}">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#event-list-{{ $y }}" href="#event-{{ $y }}-{{ $m }}" aria-expanded="false" aria-controls="event-{{ $y }}-{{ $m }}">{{ DateTime::createFromFormat('!m', $m)->format('F') }}</a>
-                <span class="badge">
-                  {{ count($month_events = $year_events->filter(function($event) use ($m)
-                   {
-                      return $event->date->month === $m;
-                    }))
-                  }}
-                </span>
-              </h4>
-            </div>
-            <div id="event-{{ $y }}-{{ $m }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#heading-event-{{ $y }}-{{ $m }}">
-              <div class="panel-body">
-                <ul>
-                  @foreach ($month_events as $event)
-                  <li>{{ $event->title }}</li>
-                  @endforeach
-                </ul>
-              </div>
+        
+        @for ($m = $year_events->first()->date->month; $m >= $year_events->last()->date->month; --$m)
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="heading-event-{{ $y }}-{{ $m }}">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#event-list-{{ $y }}" href="#event-{{ $y }}-{{ $m }}" aria-expanded="false" aria-controls="event-{{ $y }}-{{ $m }}">{{ DateTime::createFromFormat('!m', $m)->format('F') }}</a>
+              <span class="badge">
+                {{ count($month_events = $year_events->filter(function($event) use ($m)
+                 {
+                    return $event->date->month === $m;
+                  }))
+                }}
+              </span>
+            </h4>
+          </div>
+          <div id="event-{{ $y }}-{{ $m }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#heading-event-{{ $y }}-{{ $m }}">
+            <div class="panel-body">
+              <ul>
+                @foreach ($month_events as $event)
+                <li>{{ $event->title }}</li>
+                @endforeach
+              </ul>
             </div>
           </div>
-          @endfor
-        <br />
+        </div>
         @endfor
+        <br />
       </div>
+      @endfor
     </div>
   </div>
 @stop
