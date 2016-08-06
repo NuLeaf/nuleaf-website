@@ -1,5 +1,5 @@
 # NuLEAF Technology Website
-This repository includes all files needed to run the website locally. Refer to this our [Wiki page](https://github.com/NuLeaf/nuleaf-website/wiki) for more detail.
+This repository includes all files needed to run the website locally. Refer to our [Wiki page](https://github.com/NuLeaf/nuleaf-website/wiki) for more detail.
 
 To begin, please follow the steps below. You may also choose to instead install the [Laravel Homestead Virtual Machine](https://laravel.com/docs/5.2/homestead) which will include everything you need to get started without actually installing anything else on your machine. Everything below does not apply if you choose to use Homestead.
 
