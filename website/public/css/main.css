@@ -83,9 +83,9 @@ body, html {
   width: 550px;
 }
 
-/* Custom Bootstrap-like CSS */
 @media (max-width: 768px) {
-  .btn-block-sm {
+  /* Custom Bootstrap-like CSS */
+  .btn-block-xs {
     display: block;
     width: 100%;
   }

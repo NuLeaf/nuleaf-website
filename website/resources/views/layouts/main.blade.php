@@ -3,7 +3,7 @@
   @include ('_head')
 
   <!-- BEGIN LOCAL STYLES -->
-  <link href="{{ URL::asset('css/main.css') }}" rel="stylesheet" type="text/css"/>
+  <link href="{{ URL::asset('css/main.css?v=1.1') }}" rel="stylesheet" type="text/css"/>
   <!-- END LOCAL STYLES -->
 
   <!-- BEGIN PAGE LEVEL STYLES -->

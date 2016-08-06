@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="text-right">
-      <a class="btn btn-default btn-block-sm btn-sm text-uppercase" href="{{ action('MainController@about') }}" role="button">See more</a>
+      <a class="btn btn-default btn-block-xs btn-sm text-uppercase" href="{{ action('MainController@about') }}" role="button">See more</a>
     </div>
   </div>
 </div>
@@ -73,7 +73,7 @@
       </div>
     </div>
     <div class="text-right">
-      <a class="btn btn-default btn-block-sm btn-sm text-uppercase" href="{{ action('MainController@teams') }}" role="button">See more</a>
+      <a class="btn btn-default btn-block-xs btn-sm text-uppercase" href="{{ action('MainController@teams') }}" role="button">See more</a>
     </div>
   </div>
 </div>
@@ -94,7 +94,7 @@
       @endforeach
     </div>
     <div class="text-right">
-      <a class="btn btn-default btn-block-sm btn-sm text-uppercase" href="{{ action('MainController@events') }}" role="button">See more</a>
+      <a class="btn btn-default btn-block-xs btn-sm text-uppercase" href="{{ action('MainController@events') }}" role="button">See more</a>
     </div>
   </div>
 </div>
@@ -183,7 +183,7 @@
       </li>
     </ol>
     <div class="text-right">
-      <a class="btn btn-default btn-block-sm text-uppercase" href="#" role="button">Full Schedule</a>
+      <a class="btn btn-default btn-block-xs text-uppercase" href="#" role="button">Full Schedule</a>
     </div>
   </div>
 </div> -->
