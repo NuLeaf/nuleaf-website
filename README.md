@@ -30,7 +30,7 @@ Move into the new directory and make sure the directory permissions are set as p
 composer install
 ```
 
-You will then need to properly set the configuration file ".env". There is an example file ".env.example" that you may follow. Please contact Tuan at this point to obtain the right configurations.
+You will then need to properly set the configuration file ".env". There is an example file ".env.example" that you may follow. Please contact your team leader at this point to obtain the right configurations.
 
 Once you have the right configurations, set up your database and run:
 ```
