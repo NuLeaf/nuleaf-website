@@ -25,16 +25,40 @@ Run the command below to clone this repo. It will be cloned to your current dire
 git clone https://github.com/NuLeaf/nuleaf-website.git
 ```
 
-Move into the new directory and make sure the directory permissions are set as per the Laravel Installation Guide. Then run:
+Move into the new directory and create some folders.
+```
+mkdir bootstrap/cache storage storage/logs storage/framework storage/framework/views storage/framework/sessions
+```
+
+Modify permissions. www-data is the group used by apache2 on Linux, if you're on MacOSX then you will use _www instead.
+```
+sudo chown -R (your_username):www-data storage bootstrap/cache
+```
+
+Install dependencies
 ```
 composer install
 ```
 
-You will then need to properly set the configuration file ".env". There is an example file ".env.example" that you may follow. Please contact Tuan at this point to obtain the right configurations.
+You will then need to properly set the configuration file ".env". There is an example file ".env.example" that you may follow. Use this command to generate an application key.
+```
+php artisan key:generate
+```
 
-Once you have the right configurations, set up your database and run:
+Once you have the right configurations, set up your database.
+```
+mysql -u (username) -p      // Type in your password when prompted. Will need root permissions.
+> CREATE DATABASE (your_database_name)   // This name should be the same has your DB_DATABASE in your .env file
+```
+
+Once your database is correctly configured (you may have to mess with config/app.php and config/database.php) run the following command to populate your database. If you are using Mac, refer to this [StackOverflow](http://stackoverflow.com/questions/19475762/setting-up-laravel-on-a-mac-php-artisan-migrate-error-no-such-file-or-directory)
 ```
 php artisan migrate
 ```
 
-Point your web browser to [localhost](localhost) and access the public folder from your web browser. You may google Apache2 site configurations if you want to customize your local domain name.
+Once the migration is finished, start your development server.
+```
+php artisan serve --port=8888
+```
+
+Point your web browser to [localhost:8888](localhost:8888). You may google Apache2 site configurations if you want to customize your local domain name.
