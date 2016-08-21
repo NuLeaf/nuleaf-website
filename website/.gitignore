@@ -3,6 +3,7 @@
 /storage
 /bootstrap/cache
 /public/forum
+/config/database.php
 .env
 
 update_permissions.sh
