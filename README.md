@@ -51,7 +51,7 @@ mysql -u (username) -p      // Type in your password when prompted. Will need ro
 > CREATE DATABASE (your_database_name)   // This name should be the same has your DB_DATABASE in your .env file
 ```
 
-Once your database is correctly configured (you may have to mess with config/app.php and config/database.php) run the following command to populate your database. You may get an error, in which case you most likely have a Mac and you need to configure config/database.php to point to your socket file.
+Once your database is correctly configured (you may have to mess with config/app.php and config/database.php) run the following command to populate your database. If you are using Mac, refer to this [StackOverflow](http://stackoverflow.com/questions/19475762/setting-up-laravel-on-a-mac-php-artisan-migrate-error-no-such-file-or-directory)
 ```
 php artisan migrate
 ```
