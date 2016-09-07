@@ -22,7 +22,7 @@ use App\Event;
 class EventsController extends Controller
 {
   /**
-   * Display a listing of the resource.
+   * Returns a JSON response with paginated events.
    *
    * @return \Illuminate\Http\Response
    */
