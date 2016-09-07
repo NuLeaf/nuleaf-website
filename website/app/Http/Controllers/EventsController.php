@@ -24,7 +24,7 @@ class EventsController extends Controller
   /**
    * Returns a JSON response with paginated events.
    *
-   * @return \Illuminate\Http\Response
+   * @return \Illuminate\Http\JsonResponse
    */
   public function index()
   {
