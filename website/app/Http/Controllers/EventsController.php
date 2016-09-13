@@ -41,7 +41,6 @@ class EventsController extends Controller
    */
   public function store(CreateEventRequest $request)
   {
-    @include status.blade.php
 
     if ($request->ajax())
     {
@@ -51,10 +50,10 @@ class EventsController extends Controller
       $date     = $date === null ? null : new Carbon($date);
       
       Event::create(compact('title', 'date', 'location'));
-      return status["Success"];
+      return response()->json("success" => true);
     }
-    redirect(action('EventsController@index'));
-    return status["Failure"];
+
+    return response()->json("success" => false);
   }
 
   /**
@@ -66,7 +65,6 @@ class EventsController extends Controller
    */
   public function update(CreateEventRequest $request, Event $event)
   { 
-    @include status.blade.php
 
     if ($request->ajax())
     {
@@ -76,10 +74,10 @@ class EventsController extends Controller
       $date     = $date === null ? null : new Carbon($date);
 
       $event->update(compact('title', 'date', 'location'));
-      return status["Success"];
+      return response()->json("success" => true);
     }
-    redirect(action('EventsController@index'));
-    return status["Failure"];
+
+    return response()->json("success" => false);
   }
 
   /**
@@ -91,14 +89,13 @@ class EventsController extends Controller
    */
   public function destroy(Request $request, Event $event)
   {
-    @include status.blade.php
     
     if ($request->ajax())
     {
       $event->delete();
-      return status["Success"];
+      return response()->json("success" => true);
     }
-    redirect(action('EventsController@index'));
-    return status["Failure"];
+
+    return response()->json("success" => false);
   }
 }
