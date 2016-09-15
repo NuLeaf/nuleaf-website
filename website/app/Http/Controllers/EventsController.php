@@ -48,9 +48,9 @@ class EventsController extends Controller
       $date     = $date === null ? null : new Carbon($date);
       
       Event::create(compact('title', 'date', 'location'));
-      return;
+      return response()->json("success" => true);
     }
-    return redirect(action('EventsController@index'));
+    return response()->json("success" => false);
   }
 
   /**
@@ -70,9 +70,9 @@ class EventsController extends Controller
       $date     = $date === null ? null : new Carbon($date);
 
       $event->update(compact('title', 'date', 'location'));
-      return;
+      return response()->json("success" => true);
     }
-    return redirect(action('EventsController@index'));
+    return response()->json("success" => false);
   }
 
   /**
@@ -87,8 +87,8 @@ class EventsController extends Controller
     if ($request->ajax())
     {
       $event->delete();
-      return;
+      return response()->json("success" => true);
     }
-    return redirect(action('EventsController@index'));
+    return response()->json("success" => false);
   }
 }
