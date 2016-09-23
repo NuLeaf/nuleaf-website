@@ -19,9 +19,10 @@
 .thumbnail:hover {
   margin-right: 15px;
   position: absolute;
+  min-width: 250px;
 }
-.thumbnail:hover .caption {
-  display: block;
+.thumbnail:hover > .caption {
+  display: inline-block;
 }
 .caption {
   display: none;
