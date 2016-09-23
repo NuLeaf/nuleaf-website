@@ -9,6 +9,9 @@
 }
 .thumbnail {
   background-color: #fff;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
   z-index: 1;
 }
 .thumbnail:hover {

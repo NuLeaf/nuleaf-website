@@ -5,7 +5,7 @@
 @stop
 
 @section ('page_level_styles')
-<link type="text/css" rel="stylesheet" href="{{ URL::asset('css/members.css') }}">
+<link type="text/css" rel="stylesheet" href="{{ URL::asset('css/members.css?v=1.1') }}">
 @stop
 
 @section ('content')
@@ -15,7 +15,7 @@
   <div class="page-content">
     <div class="row">
     @foreach ($users as $i=>$user)
-      <div class="col-xs-6 col-md-3 member-profile">
+      <div class="col-xs-6 col-sm-3 member-profile">
         <div class="thumbnail text-center">
           <img src="{{ URL::asset($user->image1) }}" onmouseover="this.src='{{ $user->image2 }}'" onmouseout="this.src='{{ $user->image1 }}'" alt="profile">
           <div class="caption">
