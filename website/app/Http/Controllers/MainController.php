@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 
 use App\Event;
 use App\Steminar;
+use App\User;
 
 class MainController extends Controller
 {
@@ -42,7 +43,8 @@ class MainController extends Controller
 
   public function members()
   {
-    return view('main.members');
+    $users = User::orderBy('team_id')->orderBy('user_id')->get();
+    return view('main.members', compact('users'));
   }
 
   public function past_members()
