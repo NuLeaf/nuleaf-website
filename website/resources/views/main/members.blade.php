@@ -31,9 +31,9 @@
         </div>
       </div>
       
-    @if ($i != 0 && $i%4 == 0)
+    @if ($i != 0 && ($i+1) % 4 == 0)
       <div class="clearfix"></div>
-    @elseif ($i != 0 && $i%2 == 0)
+    @elseif ($i != 0 && ($i+1) % 2 == 0)
       <div class="clearfix visible-xs-block visible-sm-block"></div>
     @endif
     @endforeach
