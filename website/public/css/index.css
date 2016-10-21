@@ -25,6 +25,13 @@
   height: 250px;
 }
 
+/* Donation Button */
+.donation-button {
+  position: absolute;
+  margin: 9px;
+  right: 0;
+}
+
 /* Events */
 .event:hover {
   background-color: #eee;
