@@ -82,7 +82,7 @@
       </div>
     </div>
     <div class="text-right">
-      <a class="btn btn-default btn-block-xs btn-sm text-uppercase" href="{{ action('MainController@teams') }}" role="button">See more</a>
+      <a class="btn btn-default btn-block-xs btn-sm text-uppercase" href="{{ action('MainController@research') }}" role="button">See more</a>
     </div>
   </div>
 </div>
@@ -278,9 +278,9 @@
   <div class="container">
     <h2 class="theme-text">Acknowledgements</h2>
     <p>
-      This research has been supported by the Advanced Studies Laboratories (ASL) at NASA Ames, Foothill College, the Innovation and Collaboration Group, the Northern California Chapter of the American Vacuum Society, and the Scientific Learning Institute (SLI).  Special thanks to Wenonah Vercoutere, Mike Oye, Russell Kirkman, Robert Cormia, Chris Venture, Frank Cascarano, Geeta Verma, Latha Ramasamy, and Sherman Lee for providing their gracious knowledge, wisdom, and guidance in support of this project.
+      This research has been supported by the Advanced Studies Laboratories (ASL) at NASA Ames, Foothill College, the Innovation and Collaboration Group (ICG), the Northern California Chapter of the American Vacuum Society, Experiment.com, and the Scientific Learning Institute (SLI).  Special thanks to Wenonah Vercoutere, Mike Oye, Russell Kirkman, Robert Cormia, Chris Venture, Frank Cascarano, Geeta Verma, Latha Ramasamy, and Sherman Lee for providing their gracious knowledge, wisdom, and guidance in support of this project.
       <br /><br />
-      Our largest thanks goes, as always, to the amazing NuLEAF team members.  Thank you for your passion and perseverance - we could never have done it without you and we will continue to do great things alongside you.
+      Our largest thanks goes, as always, to the amazing NuLEAF team members. Thank you for your passion and perseverance - we could never have done it without you and we will continue to do great things alongside you.
     </p>
   </div>
 </div>

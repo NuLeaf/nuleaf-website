@@ -23,9 +23,9 @@
         </div>
         <div id="who-are-you" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#heading-who-are-you">
           <div class="panel-body">
-            We are a student-lead engineering research organization based out of Los Altos, CA with team members and mentors contributing from several universities and corporations in Silicon Valley.
+            We are an engineering research organization based out of Los Altos, CA with team members and mentors contributing from several universities and corporations in Silicon Valley.  
             <br /><br />
-            Our project is in connection with Foothill College, the Advanced Studies Laboratories (ASL), a partnership group with NASA Ames Research Center and UC Santa Cruz, the Scientific Learning Institute, and the Northern California Chapter of the American Vacuum Society (NCCAVS).  NuLEAF Tech is the largest project within its parent organization, the Innovation and Collaboration group.
+            Our project is allied by Foothill College, the Advanced Studies Laboratories (ASL) at NASA Ames, the Scientific Learning Institute, and the Northern California Chapter of the American Vacuum Society (NCCAVS).
           </div>
         </div>
       </div>
@@ -41,7 +41,9 @@
         </div>
         <div id="who-are-our-members" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#heading-who-are-our-members">
           <div class="panel-body">
-            Our students range from high school, undergraduate, and graduate students coming from various scientific and educational backgrounds. To see who's on our team, please visit our <a href="{{ action('MainController@members') }}">Members Page</a>. Our mentors also include professors and industry professionals.
+            Our members include high school, undergraduate, and graduate students, industry professionals, and professors coming from various scientific and educational backgrounds. To see who's on our team, please visit our <a href="{{ action('MainController@members') }}">Members</a> Page. 
+            <br /><br />
+            Please visit our <a href="{{ action('MainController@about') }}">About</a> page for more information.
           </div>
         </div>
       </div>
@@ -73,7 +75,7 @@
         </div>
         <div id="contact-nuleaf" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#heading-contact-nuleaf">
           <div class="panel-body">
-            Below are emails you can contact us through. Please choose the appropriate address to send your requests and questions to. If necessary, your email will be routed to the correct person and we will get back to you as soon as possible.
+            Below are emails you can contact us through.
             <ul>
               <li type="square">
                 <strong>Rachel Major, Project Lead:</strong>
@@ -109,7 +111,7 @@
               <li type="square">Post doctoral students</li>
               <li type="square">Faculty members</li>
             </ul>
-            (If you do not fit any of the categories above, but are still interested in participating. Please send an email explaining your circumstances.)
+            If you do not fit any of the categories above, but are still interested in participating. Please send an email explaining your circumstances.
           </div>
         </div>
       </div>
@@ -125,11 +127,9 @@
         </div>
         <div id="how-do-i-apply" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#heading-how-do-i-apply">
           <div class="panel-body">
-            You may apply to NuLEAF at any time, although there may not be openings on your desired team. To apply, please fill out this <a href="https://docs.google.com/forms/d/1vVYPLhU0PC0r5jPbNMD7OjPsqtjhxopFstKAjZlZAss/viewform">Google form</a>.
+            There are currently openings for our PMFC, social media, and grant writing teams. To apply, please fill out this <a href="https://docs.google.com/forms/d/1vVYPLhU0PC0r5jPbNMD7OjPsqtjhxopFstKAjZlZAss/viewform">Google form</a>
             <br />
-            After completion of this form, you must send your resume to <a href="mailto:contact@nuleaftech.com">contact@nuleaftech.com</a> otherwise your application will not be processed.
-            <br />
-            When your application is processed and if you are granted an interview, you will be interviewed by a member from your top ranking team(s) to determine your qualifications and compatibility.
+            After completion of this form, send your resume to <a href="mailto:contact@nuleaftech.com">contact@nuleaftech.com</a> for your application to be processed.
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@
         </div>
         <div id="not-us-citizen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#heading-not-us-citizen">
           <div class="panel-body">   
-            Yes! Currently, many of our participants are from other countries. We hope to have a diverse group of students from different backgrounds. However, please be aware that due to government regulations there is an extended process to get into the ASL system when you are not a citizen or permanent resident of the U.S.
+            Yes! However, please be aware that due to government regulations there is an extended process to get into the ASL system when you are not a citizen or permanent resident of the U.S.
           </div>
         </div>
       </div>
@@ -161,7 +161,7 @@
         </div>
         <div id="type-of-tasks" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#heading-type-of-tasks">
           <div class="panel-body">
-            Please refer to our <a href="{{ action('MainController@teams') }}">Teams page</a> for more information.
+            Please refer to our <a href="{{ action('MainController@research') }}">Teams page</a> for more information.
           </div>
         </div>
       </div>
@@ -177,7 +177,7 @@
         </div>
         <div id="volunteer-duration" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#heading-volunteer-duration">
           <div class="panel-body">
-            The minimum volunteering period is six months, although exceptions can be made depending on student circumstances. There are evaluations every 3 months for returning volunteers.
+            The minimum volunteering period is six months, although exceptions can be made depending on student circumstances.
           </div>
         </div>
       </div>
@@ -225,7 +225,7 @@
         </div>
         <div id="local-to-apply" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#heading-local-to-apply">
           <div class="panel-body">
-            No. Although we highly recommend you be residing in the Bay Area, as this will make it much easier for you to commute to and from team meetings and STEMinars, it is not a requirement.
+            No, although we discourage students from working remotely our members are from all over silicon valley.
           </div>
         </div>
       </div>
@@ -241,7 +241,7 @@
         </div>
         <div id="where-are-meetings" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#heading-where-are-meetings">
           <div class="panel-body">
-            Team meeting locations are to be decided by team leaders for the convenience of each team.  STEMinars will usually be held at Foothill College. There will usually be one team meeting and one STEMinar every week.
+            Team meeting locations are to be decided by team leaders for the convenience of each team, but are typically held at Foothill College or ASL at NASA Ames.
           </div>
         </div>
       </div>
@@ -257,7 +257,7 @@
         </div>
         <div id="expected-commitments" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#heading-expected-commitments">
           <div class="panel-body">
-            You are expected to attend each individual team meeting and on average dedicate 5-10 hours a week to NuLEAF. STEMinars are optionally but hightly recommended.
+            You are expected to attend each individual team meeting and on average dedicate 5-10 hours a week to NuLEAF.
           </div>
         </div>
       </div>

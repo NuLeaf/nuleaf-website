@@ -17,7 +17,7 @@
           <li><a href="{{ action('MainController@about') }}">About</a></li>
           <li><a href="{{ action('MainController@events') }}">Events</a></li>
           <li><a href="{{ action('MainController@faq') }}">FAQ</a></li>
-          <li><a href="{{ action('MainController@teams') }}">Teams</a></li>
+          <li><a href="{{ action('MainController@research') }}">Research</a></li>
           <li><a href="{{ action('MainController@members') }}">Members</a></li>
         </ul>
         <!-- END NAVIGATION BAR BODY -->

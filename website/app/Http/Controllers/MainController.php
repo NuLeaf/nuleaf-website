@@ -36,9 +36,9 @@ class MainController extends Controller
     return view('main.faq');
   }
 
-  public function teams()
+  public function research()
   {
-    return view('main.teams');
+    return view('main.research');
   }
 
   public function members()

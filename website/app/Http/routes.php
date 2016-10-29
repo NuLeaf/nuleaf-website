@@ -33,7 +33,7 @@ Route::group(['middleware' => 'web'], function()
   Route::get('/about'       , 'MainController@about');
   Route::get('/events'      , 'MainController@events');
   Route::get('/faq'         , 'MainController@faq');
-  Route::get('/teams'       , 'MainController@teams');
+  Route::get('/research'    , 'MainController@research');
   Route::get('/members'     , 'MainController@members');
   Route::get('/past-members', 'MainController@past_members');
   
